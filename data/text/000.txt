@@ -1,0 +1,12 @@
+返回
+查看
+丢弃
+移动
+放弃
+请选择照片。
+怎么处理\n选中的照片？
+和哪张照片对换？
+选中的照片换了位置。
+丢弃这张照片吗？
+{STRVAR 3,0}的照片\n在{STRVAR 4,1}\n与{STRVAR 1,2}的合影\n{STRVAR 53,3}／{STRVAR 51,4}／{STRVAR 51,5}
+{STRVAR 3,0}的照片\n在{STRVAR 4,1}\n与{STRVAR 1,2}们的合影\n{STRVAR 53,3}／{STRVAR 51,4}／{STRVAR 51,5}

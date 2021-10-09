@@ -1,0 +1,29 @@
+返回
+放弃
+浇水
+种果实
+浇肥料
+摘果实
+请触摸树果培养皿
+没有果实！
+没有肥料！
+←→键或触摸移动
+软软的地面
+撒着{STRVAR 8,2}！
+种着{STRVAR 8,0}的果实！
+{STRVAR 8,0}长出了幼苗！
+{STRVAR 8,0}树长大了！
+{STRVAR 8,0}开花了！
+{STRVAR 8,0}的果实\n结出了{STRVAR 51,1}个！
+在地上撒下\n{STRVAR 8,2}！
+软软的土地上长出了\n{STRVAR 8,0}的果实！
+看上去非常享受呢！
+摘下了{STRVAR 8,0}的果实\n{STRVAR 51,1}个！
+将{STRVAR 8,0}的果实收进背包！\n又变成了软软的土地
+背包满了，\n放弃了{STRVAR 8,0}的果实
+-----
+Ｎ　{STRVAR 51,0}/{STRVAR 51,1}/{STRVAR 51,2} {STRVAR 51,3}:{STRVAR 51,4}:{STRVAR 51,5}　Ｓ　{STRVAR 51,6}/{STRVAR 51,7}/{STRVAR 51,8} {STRVAR 51,9}:{STRVAR 51,10}:{STRVAR 51,11}
+Ｄ　{STRVAR 55,0}:{STRVAR 51,1}:{STRVAR 51,2}　TIME-RATE {STRVAR 52,3}倍
+{STRVAR 8,0}：{STRVAR 8,1}
+{STRVAR 8,0}：{STRVAR 8,1} ST{STRVAR 50,2} CT{STRVAR 51,3}\nN:{STRVAR 53,4} D:{STRVAR 53,5} SH:{STRVAR 51,6} GH:{STRVAR 52,7}
+无

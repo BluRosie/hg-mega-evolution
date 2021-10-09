@@ -1,0 +1,7 @@
+请输入朋友号码
+请输入资料编号
+返回
+结束
+Please enter your Wii number.
+Please enter the Registration Code.
+Please enter the 4-digit password.

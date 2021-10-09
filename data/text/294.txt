@@ -1,0 +1,20 @@
+拜托了！\n{STRVAR 28,0}！
+去吧！{STRVAR 28,0}！
+用{STRVAR 28,0}来决胜负！
+{STRVAR 28,0}啊！
+{STRVAR 28,0}\n用{STRVAR 28,1}攻击！
+看着{STRVAR 28,0}！
+给你看看{STRVAR 28,0}！
+来吧！\n{STRVAR 28,0}！
+让你看看{STRVAR 28,0}作战方案！
+开始{STRVAR 28,0}！
+{STRVAR 28,0}让你吓一跳！
+{STRVAR 28,0}的开始哦！
+这场胜负是\n{STRVAR 28,0}！
+只有{STRVAR 28,0}是不会\n被打败的！
+{STRVAR 28,0}队\n参上！
+你觉得你能战胜{STRVAR 28,0}吗？
+{STRVAR 28,0}！\n{STRVAR 28,1}力量！
+这是\n{STRVAR 28,0}精灵啊！
+{STRVAR 28,0}的话\n绝对不会输！
+拜托了{STRVAR 28,0}！\n{STRVAR 28,1}！

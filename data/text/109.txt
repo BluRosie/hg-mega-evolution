@@ -1,0 +1,53 @@
+欢迎来到战斗城堡！\r在这里向您介绍单人玩的\n单人战和双打！\r
+要挑战哪一个呢？{YESNO 0}
+在这个战斗城堡里\n灵活使用城堡点数，\f看看能够撑到什么地步。\f城堡点数……\r也就是ＣＰ会根据你的\n胜利方式和内容发生变化！\r推荐用这些ＣＰ\n回复精灵的体力，\r或者租借道具来进行战斗。\r成功取得７连胜之后\n将获赠ＢＰ值！\r另外，如果要临时中断挑战，\r必须保存好进度，不然\n就不能从上次的\r中断点接着玩了！\n一定要注意这一点！\r
+欢迎来到战斗城堡！\r这儿向您介绍可以和\n朋友一起玩的多人战！\r
+要挑战战斗城堡多人战吗？{YESNO 0}
+这儿可以两个人合作\n与训练师进行多人战！\r战胜了的话每人都能得到ＣＰ！\rＣＰ不但可以用于自己的精灵\n也可以用于朋友的精灵。\r不断征战当成功实现\n７连胜之后，\f会获赠ＢＰ值！\r另外，在进行多人战的时候\n不能临时中断！\r
+那么，恭候您的再次光临！
+那么，请选择要参加的精灵！\r
+这位客人！\n您这里能够参加比赛的\f精灵不足{STRVAR 50,0}只！\r要参加比赛必须准备{STRVAR 50,1}只种类\n不同的精灵！\r
+另外，蛋不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，\n不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，\n{STRVAR 0,2}，\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，\n{STRVAR 0,2}，{STRVAR 0,3}，\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}，{STRVAR 0,7}，\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}，{STRVAR 0,7}，{STRVAR 0,8}\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}，{STRVAR 0,7}，{STRVAR 0,8}\f{STRVAR 0,9}，\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}，{STRVAR 0,7}，{STRVAR 0,8}\f{STRVAR 0,9}，{STRVAR 0,10}，\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}，{STRVAR 0,7}，{STRVAR 0,8}\f{STRVAR 0,9}，{STRVAR 0,10}，{STRVAR 0,11}，\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}，{STRVAR 0,7}，{STRVAR 0,8}\f{STRVAR 0,9}，{STRVAR 0,10}，{STRVAR 0,11}\f{STRVAR 0,12}\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}，{STRVAR 0,7}，{STRVAR 0,8}\f{STRVAR 0,9}，{STRVAR 0,10}，{STRVAR 0,11}\f{STRVAR 0,12}，{STRVAR 0,13}，\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}，{STRVAR 0,7}，{STRVAR 0,8}\f{STRVAR 0,9}，{STRVAR 0,10}，{STRVAR 0,11}\f{STRVAR 0,12}，{STRVAR 0,13}，{STRVAR 0,14}，\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}，{STRVAR 0,7}，{STRVAR 0,8}\f{STRVAR 0,9}，{STRVAR 0,10}，{STRVAR 0,11}\f{STRVAR 0,12}，{STRVAR 0,13}，{STRVAR 0,14}\f{STRVAR 0,15}，\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}，{STRVAR 0,7}，{STRVAR 0,8}\f{STRVAR 0,9}，{STRVAR 0,10}，{STRVAR 0,11}\f{STRVAR 0,12}，{STRVAR 0,13}，{STRVAR 0,14}\f{STRVAR 0,15}，{STRVAR 0,16}，\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}，{STRVAR 0,7}，{STRVAR 0,8}\f{STRVAR 0,9}，{STRVAR 0,10}，{STRVAR 0,11}\f{STRVAR 0,12}，{STRVAR 0,13}，{STRVAR 0,14}\f{STRVAR 0,15}，{STRVAR 0,16}，{STRVAR 0,17}，\f不能参加比赛！\r
+另外，蛋，{STRVAR 0,1}，{STRVAR 0,2}，\n{STRVAR 0,3}，{STRVAR 0,4}，{STRVAR 0,5}\f{STRVAR 0,6}，{STRVAR 0,7}，{STRVAR 0,8}\f{STRVAR 0,9}，{STRVAR 0,10}，{STRVAR 0,11}\f{STRVAR 0,12}，{STRVAR 0,13}，{STRVAR 0,14}\f{STRVAR 0,15}，{STRVAR 0,16}，{STRVAR 0,17}\f{STRVAR 0,18}，\f不能参加比赛！\r
+请准备好了再来。\r
+您和朋友选择了同样的{STRVAR 0,0}！\r请和朋友商量好之后再来。\r
+您和朋友选择了同样的{STRVAR 0,0}或者{STRVAR 0,1}！\r请和朋友商量好之后再来。\r
+在介绍之前要保存进度\n可以吗？{YESNO 0}
+好啦，请到这边来！
+已经等您很久了！\r在接着玩刚才的挑战之前，\n保存进度！
+这位客人！！\r上次您没有保存好进度\n就结束了比赛吧！\r挑战已经无效了！\r
+恭喜您了！\r您将获得缎带作为\n这场胜利的奖赏！\r
+{STRVAR 3,0}把金印花\n放进战斗记录器！\r
+{STRVAR 3,0}把银印花\n放进战斗记录器！\r
+单人战
+双打
+进行挑战
+听取说明
+放弃
+２人中的１人选择“成为领队”\r另１人请选择“加入小组”。{YESNO 0}
+开始进行ＤＳ无线通信吗？{YESNO 0}
+开始介绍之前保存进度！
+竖起耳朵给我听好了！\n如果能让精灵无伤获胜，\f那你将能得到\f大量的城堡点数！\r这东西是多多益善，\n你看大叔我\f一个子儿都摸不出来，真丢人啊。
+如果你提升了对手的\n等级并取得胜利，\f那你获得的\f城堡点数也就是ＣＰ\f将会有所增加。\r这也就是\n所谓的\f风险与机遇并存。
+在开战之前，\n你别吝啬自己的ＣＰ，\f应该在这好好对对手调查一番！\r俗话说的好，\r不入虎穴\n焉得虎子\n……　……　……\r呀，貌似不是这么用的！
+国兰\r能舍身为卡特兰……\f这年头，\r还能找到这么好的人吗？
+刚开始的时候\n只能回复精灵的ＨＰ，\r但随着ＣＰ的增加和\n等级的提升，\r就算是ＰＰ\n也是可以回复的！
+在这座城堡中，\n你要意识到因为一个失败\r而让你辛苦积攒的ＣＰ\n付诸东流就和家常便饭一样。
+我将来的愿望就是\n穿上漂亮的礼服，\f住在城堡中！\r……错了错了！\r是和穿着漂亮的礼服的人\n共塌堡中！

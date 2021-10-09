@@ -1,0 +1,20 @@
+你好！\n{STRVAR 28,0}！
+我最喜欢{STRVAR 28,0}了！
+我最喜欢{STRVAR 28,0}了！\n{STRVAR 28,1}也很喜欢！
+这个{STRVAR 28,0}是\n{STRVAR 28,1}吧！
+为了{STRVAR 28,0}，\n我做什么都行！
+这个{STRVAR 28,0}是\n{STRVAR 28,1}哟！
+{STRVAR 28,0}才是\n{STRVAR 28,1}啊！
+说不准是{STRVAR 28,0}……
+只有{STRVAR 28,0}了！
+是{STRVAR 28,0}！\n那是{STRVAR 28,1}！
+果然还是\n{STRVAR 28,0}好啊！
+{STRVAR 28,0}是\n{STRVAR 28,1}吗？
+喜欢{STRVAR 28,0}吗？
+觉得{STRVAR 28,0}怎么样？
+{STRVAR 28,0}真是\n{STRVAR 28,1}！
+{STRVAR 28,0}是\n{STRVAR 28,1}哟！
+{STRVAR 28,0}对吧！
+你知道{STRVAR 28,0}吗？\n那可是{STRVAR 28,1}哦！
+那个啥……\n是{STRVAR 28,0}！
+{STRVAR 28,0}对吧？\n{STRVAR 28,1}！

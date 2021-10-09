@@ -1,0 +1,910 @@
+几　\r
+几　\n{COLOR 2}凡　　{COLOR 0}\r
+凡　\n{COLOR 2}几　　{COLOR 0}\r
+几　\n{COLOR 2}凤　　{COLOR 0}\r
+凤　\n{COLOR 2}几　　{COLOR 0}\r
+几　\n{COLOR 2}凭　　{COLOR 0}\r
+凭　\n{COLOR 2}几　　{COLOR 0}\r
+几　\n{COLOR 2}　　{COLOR 0}\r
+　\n{COLOR 2}几　　{COLOR 0}\r
+几　\n{COLOR 2}凯　　{COLOR 0}\r
+凯　\n{COLOR 2}几　　{COLOR 0}\r
+凡　\n{COLOR 2}凤　　{COLOR 0}\r
+凤　\n{COLOR 2}凡　　{COLOR 0}\r
+凡　\n{COLOR 2}凭　　{COLOR 0}\r
+凭　\n{COLOR 2}凡　　{COLOR 0}\r
+凡　\n{COLOR 2}　　{COLOR 0}\r
+　\n{COLOR 2}凡　　{COLOR 0}\r
+凡　\n{COLOR 2}凯　　{COLOR 0}\r
+凯　\n{COLOR 2}凡　　{COLOR 0}\r
+凤　\n{COLOR 2}凭　　{COLOR 0}\r
+凭　\n{COLOR 2}凤　　{COLOR 0}\r
+凤　\n{COLOR 2}　　{COLOR 0}\r
+　\n{COLOR 2}凤　　{COLOR 0}\r
+凤　\n{COLOR 2}凯　　{COLOR 0}\r
+凯　\n{COLOR 2}凤　　{COLOR 0}\r
+凭　\n{COLOR 2}　　{COLOR 0}\r
+　\n{COLOR 2}凭　　{COLOR 0}\r
+凭　\n{COLOR 2}凯　　{COLOR 0}\r
+凯　\n{COLOR 2}凭　　{COLOR 0}\r
+　\n{COLOR 2}凯　　{COLOR 0}\r
+凯　\n{COLOR 2}　　{COLOR 0}\r
+hello!\r
+凡　\r
+凤　\r
+凭　\r
+　\r
+凯　\r
+……嗯！\n已经是这个时候了啊！\r那么，在这之后\n要去哪里？\r
+……嗯！\n已经是这个时候了啊！\r那么，差不多\n要睡觉了吧？\r
+……嗯！\n已经是这个时候了啊！\r那么，先睡\n一睡如何？\r
+{STRVAR 3,0}\n「啊！初次见面！\r
+{STRVAR 3,0}\n「{STRVAR 3,1}！\f又见面了啊！\r
+……现在\n好像很忙！\r
+{STRVAR 3,0}\n「再见！\r
+{STRVAR 3,0}\n「还有别的……\r
+对不起！现在有点事，\n下次再说吧！\r
+{STRVAR 3,0}\n「啊？什么什么？\r
+{STRVAR 3,0}\n「现在有空吗？\r
+{STRVAR 3,0}\n「对不起！有点难，\f回答不了啊！\r
+{STRVAR 3,0}\n「啊！回答不出也\n没什么！\r
+{STRVAR 3,0}\n「原来如此啊……\r
+{STRVAR 3,0}\n「啊！一样啊！\f有点高兴呢！\r
+{STRVAR 3,0}\n「谢谢你的回答！\r
+{STRVAR 3,0}\n「还有……\r
+{STRVAR 3,0}\n「还有什么事吗？\r
+{STRVAR 3,0}\n「喜欢的颜色是指？\r
+{STRVAR 3,0}\n「喜欢怎样的精灵？\r
+{STRVAR 3,0}\n「指今天的天气吗？\r
+{STRVAR 3,0}\n「刚刚去干嘛了？\r
+{STRVAR 3,0}\n「明天的计划已经\f定了吗？\r
+{STRVAR 3,0}\n「去旅行的话\f哪里比较好恩？\r
+{STRVAR 3,0}\n「你象谁呢？\r
+{STRVAR 3,0}\n「现在有想要的东西吗？\r
+{STRVAR 3,0}\n「不擅长的东西是哪些？\r
+{STRVAR 3,0}\n「去玩的话，\f哪里比较好呢？\r
+{STRVAR 3,0}\n「擅长哪种广场游戏？\r
+{STRVAR 3,0}\n「周围现在流行什么？\r
+{STRVAR 3,0}\n「告诉我你擅长什么！\r
+{STRVAR 3,0}\n「有没有不能舍弃的东西？\r
+{STRVAR 3,0}\n「有被拒绝过吗？\r
+{STRVAR 3,0}\n「已经决定今后要做什么了吗？\r
+{STRVAR 3,0}\n「你家的周围有什么？\r
+{STRVAR 3,0}\n「和朋友玩一般都玩什么？\r
+{STRVAR 3,0}\n「有重要的人在吗？\r
+{STRVAR 3,0}\n「会被怎样的人说？\r
+{STRVAR 3,0}\n「什么时候会感到幸福？\r
+{STRVAR 3,0}\n「有困惑的时候吗？\r
+{STRVAR 3,0}\n「有在努力做的事吗？\r
+{STRVAR 3,0}\n「擅长的运动是什么？\r
+{STRVAR 3,0}\n「有向往的职业吗？\r
+{STRVAR 3,0}\n「对于自己住的地方满意吗？\r
+{STRVAR 3,0}\n「住的地方是哪里？\r
+{STRVAR 3,0}\n「周围会发出怎样的声音？\r
+{STRVAR 3,0}\n「周围现在有什么气味？\r
+{STRVAR 3,0}\n「现在有什么在意的事吗？\r
+{STRVAR 3,0}\n「嗯……自己的话……\r
+{STRVAR 3,0}\n「嗯……自己的话……\r
+{STRVAR 3,0}\n「嗯……这边的话……\r
+{STRVAR 3,0}\n「嗯……这边的话……\r
+{STRVAR 3,0}\n「嗯……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「嗯……这边的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「嗯……这边的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+{STRVAR 3,0}\n「嗯……这边的话……\r
+{STRVAR 3,0}\n「嗯……这边的话……\r
+{STRVAR 3,0}\n「嗯……这边的话……\r
+{STRVAR 3,0}\n「嗯……这边的话……\r
+{STRVAR 3,0}\n「唔……自己的话……\r
+红
+蓝
+黄色
+绿
+好像很强精灵
+可爱的精灵
+漂亮的精灵
+奇怪的精灵
+晴天
+阴天
+雨天
+下雪
+睡着了
+外出
+工作
+吃饭
+没决定
+很忙
+休息
+秘密
+温暖的地方
+寒冷的地方
+人多的地方
+没人的地方
+哥哥
+姐姐
+叔叔
+阿姨
+时间
+金钱
+朋友
+吃饭
+学习
+运动
+早起
+清扫
+公园
+超市
+游乐园
+戏院
+辽阔吞食王
+咕噜咕噜魔尼尼
+咚咚果然翁
+没做过
+电视和音乐
+游戏和电脑
+学习和运动
+打扮和恋爱
+活动身体
+动脑子
+显眼
+交朋友
+读书
+音乐
+电脑
+熬夜
+时装
+室内装饰
+美食家
+人生
+广场游戏
+脚印板
+客人观点
+广场新闻
+别人的家
+各种各样的店
+大工厂
+大自然
+运动
+游戏
+说话
+买东西
+家人
+朋友
+自己
+秘密
+明亮
+有趣
+温柔
+神秘的
+玩耍的时候
+努力的时候
+睡觉的时候
+吃东西的时候
+零花钱
+学习
+运动
+朋友
+学习
+减肥
+恋爱
+修行
+球类比赛
+跑步
+游水
+跳舞
+运动选手
+发明家
+艺术家
+喜剧演员
+很便利
+人生很充实
+很寂静
+有罕见的东西
+热的地方
+温暖的地方
+寒冷的地方
+凉爽的地方
+人的声音
+音乐
+电视的声音
+听不见
+吃饭的气味
+人的气味
+季节的气味
+不爽的气味
+最新的玩具
+时髦的洋服
+明天的天气
+新的偶像
+停止说话
+{STRVAR 3,0}\n「红色吧！\r
+{STRVAR 3,0}\n「蓝色吧！\r
+{STRVAR 3,0}\n「黄色吧！\r
+{STRVAR 3,0}\n「绿色吧！\r
+{STRVAR 3,0}\n「好像很强精灵吧\r
+{STRVAR 3,0}\n「可爱的精灵吧\r
+{STRVAR 3,0}\n「漂亮的精灵吧\r
+{STRVAR 3,0}\n「奇怪的精灵吧\r
+{STRVAR 3,0}\n「这边是晴天哦！\r
+{STRVAR 3,0}\n「这边是多云哦\r
+{STRVAR 3,0}\n「这边是雨天哦\r
+{STRVAR 3,0}\n「这边是下雪哦\r
+{STRVAR 3,0}\n「唔……\f睡着了吧\r
+{STRVAR 3,0}\n「唔……\f外出了吧\r
+{STRVAR 3,0}\n「唔……\f去工作吧\r
+{STRVAR 3,0}\n「唔……\f吃饭了吧\r
+{STRVAR 3,0}\n「没决定吧\r
+{STRVAR 3,0}\n「很忙吧\r
+{STRVAR 3,0}\n「休息吧！\r
+{STRVAR 3,0}\n「秘密吧……\r
+{STRVAR 3,0}\n「温暖的地方真好！\r
+{STRVAR 3,0}\n「寒冷的地方真好！\r
+{STRVAR 3,0}\n「人多的\f地方真好！\r
+{STRVAR 3,0}\n「没人的\f地方真好！\r
+{STRVAR 3,0}\n「是啊……\f哥哥吧？\r
+{STRVAR 3,0}\n「是啊……\f姐姐吧？\r
+{STRVAR 3,0}\n「是啊……\f叔叔吧？\r
+{STRVAR 3,0}\n「是啊……\f阿姨吧？\r
+{STRVAR 3,0}\n「还是时间吧\r
+{STRVAR 3,0}\n「还是金钱吧\r
+{STRVAR 3,0}\n「还是朋友吧\r
+{STRVAR 3,0}\n「还是吃饭吧\r
+{STRVAR 3,0}\n「是啊……\f学习吧……\r
+{STRVAR 3,0}\n「是啊……\f运动吧……\r
+{STRVAR 3,0}\n「是啊……\f早起吧……\r
+{STRVAR 3,0}\n「是啊……\f清扫吧……\r
+{STRVAR 3,0}\n「公园真好！！\r
+{STRVAR 3,0}\n「超市真好！！\r
+{STRVAR 3,0}\n「游乐园真好！！\r
+{STRVAR 3,0}\n「戏院真好！！\r
+{STRVAR 3,0}\n「辽阔吞食王吧！\r
+{STRVAR 3,0}\n「咕噜咕噜魔尼尼吧！\r
+{STRVAR 3,0}\n「咚咚果然翁吧！\r
+{STRVAR 3,0}\n「嗯没试过呢\r
+{STRVAR 3,0}\n「电视或者音乐吧……\r
+{STRVAR 3,0}\n「游戏或者电脑吧……\r
+{STRVAR 3,0}\n「学习或者运动吧……\r
+{STRVAR 3,0}\n「打扮或者恋爱吧……\r
+{STRVAR 3,0}\n「活动身体吧？\r
+{STRVAR 3,0}\n「动脑子吧？\r
+{STRVAR 3,0}\n「总之先出位吧？\r
+{STRVAR 3,0}\n「交朋友吧？\r
+{STRVAR 3,0}\n「读书呢！\r
+{STRVAR 3,0}\n「音乐啊！\r
+{STRVAR 3,0}\n「电脑啊！\r
+{STRVAR 3,0}\n「熬夜吧\r
+{STRVAR 3,0}\n「这是时装哦！\r
+{STRVAR 3,0}\n「这是室内装饰哦！\r
+{STRVAR 3,0}\n「这是美食家哦！\r
+{STRVAR 3,0}\n「这就是人生哦！\r
+{STRVAR 3,0}\n「广场游戏吧\r
+{STRVAR 3,0}\n「脚印板吧\r
+{STRVAR 3,0}\n「客人观点吧\r
+{STRVAR 3,0}\n「广场新闻吧\r
+{STRVAR 3,0}\n「可以看到别人的家\r
+{STRVAR 3,0}\n「可以看到各种各样的店\r
+{STRVAR 3,0}\n「可以看到大工厂\r
+{STRVAR 3,0}\n「就是大自然的感觉吧\r
+{STRVAR 3,0}\n「唔\f运动吧……\r
+{STRVAR 3,0}\n「唔……\f游戏吧……\r
+{STRVAR 3,0}\n「唔\f说话吧……\r
+{STRVAR 3,0}\n「唔……\f买东西吧……\r
+{STRVAR 3,0}\n「还是家族呢！\r
+{STRVAR 3,0}\n「还是朋友呢！\r
+{STRVAR 3,0}\n「还是自己呢！\r
+{STRVAR 3,0}\n「还是秘密呢！\r
+{STRVAR 3,0}\n「唔……明亮吧？\r
+{STRVAR 3,0}\n「唔……有趣吧？\r
+{STRVAR 3,0}\n「唔……温柔吧？\r
+{STRVAR 3,0}\n「唔……神秘的吧？\r
+{STRVAR 3,0}\n「玩的时候吧！\r
+{STRVAR 3,0}\n「努力的时候吧！\r
+{STRVAR 3,0}\n「睡觉的时候吧！\r
+{STRVAR 3,0}\n「吃东西的时候吧！\r
+{STRVAR 3,0}\n「作看守的时候吧……\r
+{STRVAR 3,0}\n「学习吧……\r
+{STRVAR 3,0}\n「运动吧……\r
+{STRVAR 3,0}\n「朋友吧……\r
+{STRVAR 3,0}\n「学习吧？\r
+{STRVAR 3,0}\n「减肥吧？\r
+{STRVAR 3,0}\n「恋爱吧？\r
+{STRVAR 3,0}\n「修行吧？\r
+{STRVAR 3,0}\n「球类比赛吧！\r
+{STRVAR 3,0}\n「跑步吧！\r
+{STRVAR 3,0}\n「游水吧！\r
+{STRVAR 3,0}\n「跳舞吧！\r
+{STRVAR 3,0}\n「是运动选手啊\r
+{STRVAR 3,0}\n「是发明家啊\r
+{STRVAR 3,0}\n「艺术家并且\r
+{STRVAR 3,0}\n「喜剧演员哟\r
+{STRVAR 3,0}\n「是很方便吧！\r
+{STRVAR 3,0}\n「人生很充实吧！\r
+{STRVAR 3,0}\n「很幽静吧！\r
+{STRVAR 3,0}\n「有很珍贵的东西吧！\r
+{STRVAR 3,0}\n「热的地方\r
+{STRVAR 3,0}\n「温暖的地方\r
+{STRVAR 3,0}\n「寒冷的地方！\r
+{STRVAR 3,0}\n「凉爽的地方\r
+{STRVAR 3,0}\n「这边是有人的声音\f哦！\r
+{STRVAR 3,0}\n「这边是有音乐的\f声音哦！\r
+{STRVAR 3,0}\n「这边是电视的声音\f哦！\r
+{STRVAR 3,0}\n「这边是很\f幽静呢\r
+{STRVAR 3,0}\n「唔\f吃饭的气味吧……\r
+{STRVAR 3,0}\n「唔\f人的气味吧……\r
+{STRVAR 3,0}\n「唔\f季节的气味吧……\r
+{STRVAR 3,0}\n「唔\f是不爽的气味吧……\r
+{STRVAR 3,0}\n「最新的玩具吧\r
+{STRVAR 3,0}\n「时髦的洋服吧\r
+{STRVAR 3,0}\n「明天的天气吧\r
+{STRVAR 3,0}\n「新的偶像吧\r
+{STRVAR 3,0}\n「唔……\f有点难……\f不能回答，抱歉！\r
+{STRVAR 3,0}\n「唔！红色啊！\r
+{STRVAR 3,0}\n「唔！蓝色啊！\r
+{STRVAR 3,0}\n「唔！黄色啊！\r
+{STRVAR 3,0}\n「唔！绿色啊！\r
+{STRVAR 3,0}\n「好像很强精灵呢\r
+{STRVAR 3,0}\n「可爱的精灵呢\r
+{STRVAR 3,0}\n「漂亮的精灵呢\r
+{STRVAR 3,0}\n「奇怪的精灵呢\r
+{STRVAR 3,0}\n「唔！晴天了啊！\r
+{STRVAR 3,0}\n「唔！阴天啊！\r
+{STRVAR 3,0}\n「唔！雨天啊！\r
+{STRVAR 3,0}\n「唔！下雪啊！\r
+{STRVAR 3,0}\n「睡着了啊！\r
+{STRVAR 3,0}\n「外出了啊！\r
+{STRVAR 3,0}\n「工作了啊！\r
+{STRVAR 3,0}\n「吃饭了啊！\r
+{STRVAR 3,0}\n「唔\f还没决定啊\r
+{STRVAR 3,0}\n「唔\f很忙啊\r
+{STRVAR 3,0}\n「唔\f休息啊\r
+{STRVAR 3,0}\n「嗯\f秘密吗！？\r
+{STRVAR 3,0}\n「温暖的地方吗……\r
+{STRVAR 3,0}\n「寒冷的地方吗……\r
+{STRVAR 3,0}\n「人多的地方吗……\r
+{STRVAR 3,0}\n「没人的地方吗……\r
+{STRVAR 3,0}\n「唔！\f象哥哥呢！\r
+{STRVAR 3,0}\n「唔！\f象姐姐呢！\r
+{STRVAR 3,0}\n「唔！\f象叔叔啊！\r
+{STRVAR 3,0}\n「唔！\f象阿姨呢！\r
+{STRVAR 3,0}\n「时间啊……\f原来如此\r
+{STRVAR 3,0}\n「金钱吗……\f原来如此\r
+{STRVAR 3,0}\n「朋友吗……\f原来如此\r
+{STRVAR 3,0}\n「吃饭吗……\f原来如此\r
+{STRVAR 3,0}\n「学习吗……\r
+{STRVAR 3,0}\n「运动吗……\r
+{STRVAR 3,0}\n「早起吗……\r
+{STRVAR 3,0}\n「清扫吗……\r
+{STRVAR 3,0}\n「唔！\f公园啊！\r
+{STRVAR 3,0}\n「唔！\f超市啊！\r
+{STRVAR 3,0}\n「唔！\f游乐园啊！\r
+{STRVAR 3,0}\n「唔！\f戏院啊！\r
+{STRVAR 3,0}\n「唔！\f辽阔吞食王啊！\r
+{STRVAR 3,0}\n「唔！\f咕噜咕噜魔尼尼啊！\r
+{STRVAR 3,0}\n「唔！\f咚咚果然翁啊！\r
+{STRVAR 3,0}\n「是吗\f还没做过呢\r
+{STRVAR 3,0}\n「电视或者音乐啊！\n唔原来如此\r
+{STRVAR 3,0}\n「游戏或者电脑啊！\n唔原来如此\r
+{STRVAR 3,0}\n「学习或者运动啊！\f唔原来如此\r
+{STRVAR 3,0}\n「打扮或者恋爱啊！\n唔原来如此！\r
+{STRVAR 3,0}\n「活动身体啊！\f真让人感到意外\r
+{STRVAR 3,0}\n「动脑子啊！\f真让人感到意外啊\r
+{STRVAR 3,0}\n「总之是很显眼啊啊！\f真让人感到意外\r
+{STRVAR 3,0}\n「交朋友啊！\f真让人感到意外\r
+{STRVAR 3,0}\n「嗯！读书啊！\r
+{STRVAR 3,0}\n「嗯！音乐啊！\r
+{STRVAR 3,0}\n「嗯！电脑啊！\r
+{STRVAR 3,0}\n「嗯！熬夜啊！\r
+{STRVAR 3,0}\n「时装吗原来如此\r
+{STRVAR 3,0}\n「室内装饰吗原来如此\r
+{STRVAR 3,0}\n「美食家吗原来如此\r
+{STRVAR 3,0}\n「嗯！人生啊！\r
+{STRVAR 3,0}\n「广场游戏啊\r
+{STRVAR 3,0}\n「脚印板啊\r
+{STRVAR 3,0}\n「客人观点啊\r
+{STRVAR 3,0}\n「广场新闻啊\r
+{STRVAR 3,0}\n「唔！可以看见别人\f的家！\r
+{STRVAR 3,0}\n「唔！可以看见\f各种店！\r
+{STRVAR 3,0}\n「唔！可以看见\f大工厂！\r
+{STRVAR 3,0}\n「唔！是大自然的\f感觉吗！\r
+{STRVAR 3,0}\n「唔！运动啊\r
+{STRVAR 3,0}\n「唔！游戏啊！\r
+{STRVAR 3,0}\n「唔！说话啊！\r
+{STRVAR 3,0}\n「唔！买东西啊！\r
+{STRVAR 3,0}\n「家族吗……\r
+{STRVAR 3,0}\n「朋友吗……\r
+{STRVAR 3,0}\n「自己吗……\r
+{STRVAR 3,0}\n「秘密吗……\r
+{STRVAR 3,0}\n「这就是明亮啊！\r
+{STRVAR 3,0}\n「这就是有趣啊！\r
+{STRVAR 3,0}\n「这就是温柔啊！\r
+{STRVAR 3,0}\n「这就是神秘的啊！\r
+{STRVAR 3,0}\n「玩的时候吗\f嗯嗯原来如此……\r
+{STRVAR 3,0}\n「努力的时候吗\f嗯嗯原来如此……\r
+{STRVAR 3,0}\n「睡觉的时候吗\f嗯嗯原来如此……\r
+{STRVAR 3,0}\n「吃饭的时候吗\f嗯嗯原来如此……\r
+{STRVAR 3,0}\n「看守人啊！！\r
+{STRVAR 3,0}\n「学习啊！！\r
+{STRVAR 3,0}\n「运动啊！！\r
+{STRVAR 3,0}\n「朋友啊！！\r
+{STRVAR 3,0}\n「哇，真厉害！\f学习啊！！\r
+{STRVAR 3,0}\n「哇，真厉害！\f减肥吗！\r
+{STRVAR 3,0}\n「哇，真厉害！\f恋爱吗！！\r
+{STRVAR 3,0}\n「哇，真厉害！\f修行吗！！\r
+{STRVAR 3,0}\n「唔！球类比赛啊！\r
+{STRVAR 3,0}\n「唔！跑步啊！\r
+{STRVAR 3,0}\n「唔！游水啊！\r
+{STRVAR 3,0}\n「唔！跳舞啊！\r
+{STRVAR 3,0}\n「运动选手啊！\r
+{STRVAR 3,0}\n「发明家啊！\r
+{STRVAR 3,0}\n「艺术家啊！\r
+{STRVAR 3,0}\n「小丑啊！\r
+{STRVAR 3,0}\n「非常便利的地方\f啊！哇真好！\r
+{STRVAR 3,0}\n「人生充实的地方\f啊！哇真好！\r
+{STRVAR 3,0}\n「非常幽静的地方\f啊！哇真好！\r
+{STRVAR 3,0}\n「有着珍贵物品的地方\f啊！哇真好！\r
+{STRVAR 3,0}\n「原来如此……\f热的地方吗\r
+{STRVAR 3,0}\n「原来如此……\f温暖的地方吗\r
+{STRVAR 3,0}\n「原来如此……\f寒冷的地方吗\r
+{STRVAR 3,0}\n「原来如此……\f凉爽的地方吗\r
+{STRVAR 3,0}\n「唔，人的声音吗\r
+{STRVAR 3,0}\n「唔，音乐吗\r
+{STRVAR 3,0}\n「唔，电视的声音吗\r
+{STRVAR 3,0}\n「是吗，什么都听不见吗\r
+{STRVAR 3,0}\n「唔，那里有着吃饭的\f气味哦\r
+{STRVAR 3,0}\n「唔，那里有着人的\f气味哦\r
+{STRVAR 3,0}\n「唔那里有着季节的\f气味哦\r
+{STRVAR 3,0}\n「哇那里有着\f令人不爽的气味呢\r
+{STRVAR 3,0}\n「最新的玩具啊\f唔原来如此\r
+{STRVAR 3,0}\n「时髦的洋服啊\f唔原来如此\r
+{STRVAR 3,0}\n「明天的天气啊\f唔原来如此\r
+{STRVAR 3,0}\n「新的偶像啊\f唔原来如此\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「那边怎么样了？\r
+{STRVAR 3,0}\n「那边怎么样了？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「那边怎样？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「那边怎样？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「那边怎样？\r
+{STRVAR 3,0}\n「那边怎样？\r
+{STRVAR 3,0}\n「那边怎样？\r
+{STRVAR 3,0}\n「那边怎样？\r
+{STRVAR 3,0}\n「你是怎么的感觉？\r
+{STRVAR 3,0}\n「啊！凑　　已经\f集成一套了。\f真高兴啊！\r
+{STRVAR 3,0}\n「你所持有的接触导管是\f凝　　啊！\r这边是凝　ぁ哦！\n可以的话分点给你吧？\r
+{STRVAR 3,0}\n「请收下！\f要好好珍惜哦！\r
+从{STRVAR 3,0}那\n获得了分好的\f凝　　！\r
+{STRVAR 3,0}\n「持有\f凑　　啊！真不错！\r
+{STRVAR 3,0}\n「……凑　　\f分好再拿可以吗？\r
+{STRVAR 3,0}将\n凝　　分好\f了！\r
+{STRVAR 3,0}\n「谢谢！要好好珍惜哦！\r
+接触导管
+说话
+取消
+获得
+喜欢的颜色是？
+喜欢怎样的精灵？
+今天的天气怎样？
+刚刚在干什么了？
+明天的计划定了吗？
+去旅行的话哪里比较好？
+你象谁呢？
+现在有想要的东西吗？
+不擅长什么？
+去玩的话哪里比较好？
+擅长哪种游戏？
+最近流行什么？
+擅长的事是什么？
+有不能舍弃的东西吗？
+有被拒绝过吗？
+已经定好了今后要做什么吗？
+家的周围有什么？
+和朋友一起玩什么？
+有重要的人吗？
+被人认为是怎样的人？
+什么时候感到幸福？
+有试过烦恼吗？
+有曾经努力过吗？
+擅长哪种运动？
+有向往的职业吗？
+自己住的地方\n有让你觉得自豪的吗？
+住在什么地方？
+周围现在是什么声音？
+周围是什么样的气味？
+现在有令你在意的事吗？
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「啊！初次见面呢！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「{STRVAR 3,1}！\f又见面了啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「再见！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「其他还有……\r
+「对不起！因为有事，\n等会再说吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯？什么？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「可以吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「对不起！有点难\f回答不出来呢！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「啊！回答不出\f也没关系了！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「原来如此……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「啊！一样的嘛！\f有点高兴呢！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「谢谢你的回答！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「剩下就是……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「还有什么别的事吗？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「喜欢的颜色是？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「喜欢怎样的精灵？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「今天的天气如何？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「刚刚在干嘛？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「明天的计划内\f决定了吗？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「如果去旅行的话，\f哪里比较好呢？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你象谁呢？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「现在有想要的东西吗？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「不擅长的是什么？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「去玩的话哪里\f比较好呢？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯……这边的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯……这边的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「红色吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「蓝色吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「黄色吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「绿色吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「好像很强精灵吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「可爱的精灵吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「漂亮的精灵吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「奇怪的精灵吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「这边是晴天哦！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「这边是阴天哦\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「这边是雨天哦\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「这边是下雪哦\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……\f睡着了吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……\f外出了吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……\f在工作吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……\f吃饭了吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「没决定吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「很忙吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「休息啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「秘密吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「温暖的地方真好！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「寒冷的地方真好！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「人多的\f地方真好！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「没人的\f地方真好！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「是啊……\f哥哥吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「是啊……\f姐姐吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「是啊……\f叔叔吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「是啊……\f阿姨吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「还是时间吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「还是金钱吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「还是朋友吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「还是吃饭吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「是啊……\f学习吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「是啊……\f运动吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「是啊……\f早起吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「是啊……\f清扫吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「公园真好！！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「超市真好！！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「游乐园真好！！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「戏院真好！！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……\f有点难呢……\f回答不了，对不起！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！红色啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！蓝色啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！黄色啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！绿色啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「好像很强精灵呢\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「可爱的精灵呢\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「漂亮的精灵呢\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「奇怪的精灵呢\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！晴天哦！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！阴天啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！雨天啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！下雪啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「睡着了啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「外出了啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「在工作啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「吃饭了啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔\f还没决定呢\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔\f很忙啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔\f休息啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯\f是秘密吗！？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「温暖的地方吗……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「寒冷的地方吗……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「人多的地方吗……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「没人的地方吗……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！\f象哥哥啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！\f象姐姐啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！\f象叔叔啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！\f象阿姨啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「时间吗……\f原来如此啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「金钱吗……\f原来如此啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「朋友吗……\f原来如此啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「吃饭吗……\f原来如此啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「学习吗……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「运动吗……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「早起吗……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「清扫吗……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！\f公园啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！\f超市啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！\f游乐园啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！\f戏院啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你怎么样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你怎么样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「那边怎么样了？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「那边怎么样了？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你怎么样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你怎么样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你怎么样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你怎么样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你怎么样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你怎么样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「啊！凑　　\f已经收集齐了呢\f很开心啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你的接触导管\f凝　　啊！\r这是凝　ぁ哦！\n可以的话分点出来吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「请收下！\f要珍惜哦！\r
+从{COLOR 2}{STRVAR 3,0}{COLOR 0}那\n分到了\f凝　　！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「持有凑　　\f啊！真不错！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「……凑　　\f分开拿可以吗？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「谢谢！灰珍惜的！\r
+{STRVAR 3,0}\n「{COLOR 2}{STRVAR 3,1}{COLOR 0}！\f又见面了啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「{COLOR 2}{STRVAR 3,1}{COLOR 0}！\f又见面了啊！\r
+{STRVAR 3,0}\n「怎么了？没问题吧？
+{STRVAR 3,0}\n「嗯……请等会……
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「怎么了？没问题吧？
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯嗯……请稍等……
+{STRVAR 3,0}\n「稍微谈谈话吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「稍微谈谈话吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你擅长哪种游戏呢？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「周围都流行什么？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「告诉我你擅长什么！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「有什么是不能舍弃的吗？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「有被拒绝过吗？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「决定好今后做什么了吗？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「家的周围有什么？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「和朋友在一起玩什么呢？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「有重要的人吗？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「会被人如何评价？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「什么时候最幸福？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「有烦恼过吗？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「有努力过吗？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「擅长什么运动？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「向往的职业是什么？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「现在住的地方\n有什么令你自豪的吗？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「现在哪里住呢？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「周围是什么声音呢？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「周围是什么气味呢？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「现在有令你在意的东西吗？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯……这边的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯……这边的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯……这边的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯……这边的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯……这边的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯……这边的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……自己的话……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「辽阔吞食王吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「咕噜咕噜魔尼尼吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「咚咚果然翁吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯，没试过呢。\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「电视或者音乐吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「游戏或者电脑吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「学习或者运动吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「打扮或者恋爱吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「活动身体吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「动脑子吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「总之要显眼吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「交朋友吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「读书！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「音乐！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「电脑啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「熬夜吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「这是时装哦！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「这是室内装饰哦！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「这是美食家哦！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「这就是人生哦！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「广场游戏吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「脚印板吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「客人观点吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「广场新闻吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「可以看到别人的家\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「可以看到各种各样的店。\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「可以看到大工厂哦\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「就像是大自然的感觉吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔\f运动吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……\f游戏吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔\f说话吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……\f买东西吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「还是家族啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「还是朋友！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「还是自己啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「还是秘密啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……明亮吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……有趣吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……温柔吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔……神秘的吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「玩的时候吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「努力的时候吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「睡觉的时候吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「吃东西的时候吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「零花钱吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「学习吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「运动吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「朋友吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「学习吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「减肥吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「恋爱吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「修行吧？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「球类比赛吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「跑步吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「游水吧！\r
+{STRVAR 3,0}\n「跳舞吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「运动选手哦\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「发明家哦\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「是艺术家并且\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「是喜剧演员啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「非常便利的吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「人生很充实了吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「真是非常幽静啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「应该有珍惜的东西吧！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「热的地方\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「温暖的地方\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「寒冷的地方！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「凉爽的地方\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「这边是人的声音\f哦！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「这边是音乐\f哦！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「这边是电视的声音\f哦！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「这边是很\f幽静哦\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔\f吃饭的气味吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔\f人的气味吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔\f季节的气味吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔\f不爽的气味吧……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「最新的玩具吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「时髦的洋服吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「明天的天气吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「新的偶像吧\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！\f辽阔吞食王啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！\f咕噜咕噜魔尼尼啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！\f咚咚果然翁啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「是吗\f还没做过呢\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「电视或者音乐啊！\n唔原来如此\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「游戏或者电脑啊！\n唔原来如此\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「学习或者运动啊！\f唔原来如此\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「打扮或者恋爱啊！\n唔原来如此！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「活动身体啊！\f真让人感到意外啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「动脑子啊！\f真让人感到意外啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「总之要显眼啊！\f真让人感到意外啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「要交朋友啊！\f真让人感到意外啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯！读书啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯！音乐啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯！电脑啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯！熬夜啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「时装吗原来如此\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「室内装饰吗原来如此\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「美食家吗原来如此\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「嗯！人生啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「广场游戏啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「脚印板啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「客人观点啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「广场新闻啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！可以看到\f别人的家哦！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！可以看到各种各样\f的店哦！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！可以看到\f大工厂哦！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！有种大自然的\f感觉！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！运动啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！游戏啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！说话啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！买东西啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「家族吗……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「朋友吗……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「自己吗……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「秘密吗……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「被评价为开朗！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「被评价成有趣！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「被评价成温柔！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「被评价成神秘！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「玩的时候吗\f嗯嗯原来如此……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「努力的时候吗\f嗯嗯原来如此……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「睡觉的时候吗\f嗯嗯原来如此……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「吃东西的时候吗\f嗯嗯原来如此……\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「零化钱啊！！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「学习啊！！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「运动啊！！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「朋友啊！！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「哇，真厉害！\f学习啊！！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「哇，真厉害！\f减肥吗！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「哇，真厉害！\f恋爱吗！！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「哇，真厉害！\f修行吗！！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！球类比赛啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！跑步啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！游水啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔！跳舞啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「运动选手啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「发明家啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「艺术家啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「喜剧演员啊！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「非常便利的地方\f啊！哇真好！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「人生充实的地方\f啊！哇真好！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「非常幽静的地方\f啊！哇，真好！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「有着珍贵物品的地方\f啊！哇真好！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「原来如此……\f热的地方吗\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「原来如此……\f温暖的地方吗\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「原来如此……\f寒冷的地方吗\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「原来如此……\f凉爽的地方吗\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔，人的声音吗\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔，音乐吗\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔，电视的声音吗\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「是吗，什么都听不见吗\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔那里有着吃饭的\f气味哦\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔那里有着人的\f气味哦\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「唔那里有着季节的\f气味哦\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「哇那里有着\f不爽的气味！\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「最新的玩具啊\f唔原来如此啊\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「时髦的洋服啊\f唔原来如此\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「明天的天气啊\f唔原来如此\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「新的偶像啊\f唔原来如此\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「那边怎样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「那边怎样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「那边怎样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「那边怎样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「那边怎样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「那边怎样？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n「你是怎么的感觉？\r
+{COLOR 2}{STRVAR 3,0}{COLOR 0}\n将凝　　\f分好了！\r

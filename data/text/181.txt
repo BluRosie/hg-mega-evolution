@@ -1,0 +1,7 @@
+第{STRVAR 53,0}次进入殿堂　{STRVAR 53,1}／{STRVAR 51,2}／{STRVAR 51,3}
+Ｌｖ{STRVAR 52,0}
+主人：
+{COLOR 3}♂{COLOR 0}
+{COLOR 1}♀{COLOR 0}
+／
+返回

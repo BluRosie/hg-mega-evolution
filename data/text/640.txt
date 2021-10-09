@@ -1,0 +1,78 @@
+喂？我是{STRVAR 3,1}……\r呀～{STRVAR 3,0}，早上好！\r
+喂？我是{STRVAR 3,1}……\r呀～{STRVAR 3,0}，早上好！\r
+喂？我是{STRVAR 3,1}……\r呀～{STRVAR 3,0}，你好！\r
+喂？我是{STRVAR 3,1}……\r呀～{STRVAR 3,0}，早上好！\r
+喂？我是{STRVAR 3,1}……\r呀～{STRVAR 3,0}，晚上好！\r
+喂？我是{STRVAR 3,1}……\r呀～{STRVAR 3,0}，晚上好！\r
+{STRVAR 3,0}，早上好！\r我是{STRVAR 3,1}，你还在睡懒觉吗？\r
+{STRVAR 3,0}，早上好！\r我是{STRVAR 3,1}，你还在睡懒觉吗？\r
+{STRVAR 3,0}，你好！\r我是{STRVAR 3,1}，最近还好吗？\r
+{STRVAR 3,0}，你好！\r我是{STRVAR 3,1}，最近还好吗？\r
+{STRVAR 3,0}，晚上好！\r我是{STRVAR 3,1}，还没睡吧？\r
+{STRVAR 3,0}，晚上好！\r我是{STRVAR 3,1}，还没睡吧？\r
+喂？我是{STRVAR 3,1}……\r哎呀～{STRVAR 3,0}，早上好！\r
+喂？我是{STRVAR 3,1}……\r哎呀～{STRVAR 3,0}，早上好！\r
+喂？我是{STRVAR 3,1}……\r哎呀～{STRVAR 3,0}，你好！\r
+喂？我是{STRVAR 3,1}……\r哎呀～{STRVAR 3,0}，你好！\r
+喂？我是{STRVAR 3,1}……\r哎呀～{STRVAR 3,0}，晚上好！\r
+喂？我是{STRVAR 3,1}　……\r哎呀～{STRVAR 3,0}，晚上好！\r
+{STRVAR 3,0}，早上好！\r我是{STRVAR 3,1}，状态怎么样？\r
+{STRVAR 3,0}，早上好！\r我是{STRVAR 3,1}，状态怎么样？\r
+{STRVAR 3,0}，你好！\r我是{STRVAR 3,1}，你在干什么呢？\r
+{STRVAR 3,0}，你好！\r我是{STRVAR 3,1}，你在干什么呢？\r
+{STRVAR 3,0}，晚上好！\r我是{STRVAR 3,1}，还醒着吗？\r
+{STRVAR 3,0}，晚上好！\r我是{STRVAR 3,1}，还醒着吗？\r
+嗨，我是{STRVAR 3,1}！\r哦！{STRVAR 3,0}，早上好！\r
+嗨，我是{STRVAR 3,1}！\r哦！{STRVAR 3,0}，早上好！\r
+嗨，我是{STRVAR 3,1}！\r哦！{STRVAR 3,0}，你好！\r
+嗨，我是{STRVAR 3,1}！\r哦！{STRVAR 3,0}，你好！\r
+嗨，我是{STRVAR 3,1}！\r哦！{STRVAR 3,0}，晚上好！\r
+嗨，我是{STRVAR 3,1}！\r哦！{STRVAR 3,0}，晚上好！\r
+哦！\r我是{STRVAR 3,1}，你最近还好吗？\r
+哦！\r我是{STRVAR 3,1}，你最近还好吗？\r
+哦！\r我是{STRVAR 3,1}，你最近还好吗？\r
+哦！\r我是{STRVAR 3,1}，你最近还好吗？\r
+哦！\r我是{STRVAR 3,1}，你最近还好吗？\r
+哦！\r我是{STRVAR 3,1}，你最近还好吗？\r
+嗨～我是{STRVAR 3,1}。\r哎呀，{STRVAR 3,0}，早上好。\r
+嗨～我是{STRVAR 3,1}。\r哎呀，{STRVAR 3,0}，早上好。\r
+嗨～我是{STRVAR 3,1}。\r哎呀，{STRVAR 3,0}，你好。\r
+嗨～我是{STRVAR 3,1}。\r哎呀，{STRVAR 3,0}，你好。\r
+嗨～我是{STRVAR 3,1}。\r哎呀，{STRVAR 3,0}，晚上好\r
+嗨～我是{STRVAR 3,1}。\r哎呀，{STRVAR 3,0}，晚上好\r
+{STRVAR 3,0}，早上好。\r我是{STRVAR 3,1}，你还在睡吗？\r
+{STRVAR 3,0}，早上好。\r我是{STRVAR 3,1}，你还在睡吗？\r
+{STRVAR 3,0}，你好。\r我是{STRVAR 3,1}，最近还好吗？\r
+{STRVAR 3,0}，你好。\r我是{STRVAR 3,1}，最近还好吗？\r
+{STRVAR 3,0}，晚上好。\r我是{STRVAR 3,1}，你还没睡的吧？\r
+{STRVAR 3,0}，晚上好。\r我是{STRVAR 3,1}，你还没睡吧？\r
+嗨～我是{STRVAR 3,1}……\r哦呀哦呀，早上好。\r
+嗨～我是{STRVAR 3,1}……\r哦呀哦呀，早上好。\r
+嗨～我是{STRVAR 3,1}……\r哦呀哦呀，你好。\r
+嗨～我是{STRVAR 3,1}……\r哦呀哦呀，你好。\r
+嗨～我是{STRVAR 3,1}……\r哦呀哦呀，晚上好。\r
+嗨～我是{STRVAR 3,1}……\r哦呀哦呀，晚上好。\r
+喂喂喂？我是{STRVAR 3,1}，\r最近还好吗？早安！\r
+喂喂喂？我是{STRVAR 3,1}，\r最近还好吗？早安！\r
+喂喂喂？我是{STRVAR 3,1}，\r最近还好吗？午安！\r
+喂喂喂？我是{STRVAR 3,1}，\r最近还好吗？午安！\r
+喂喂喂？我是{STRVAR 3,1}，\r最近还好吗？晚上好！\r
+喂喂喂？我是{STRVAR 3,1}，\r最近还好吗？晚上好！\r
+嗨～我是{STRVAR 3,1}～\n早上好！\r
+嗨～我是{STRVAR 3,1}～\n早上好！\r
+嗨～我是{STRVAR 3,1}～\n你好！\r
+嗨～我是{STRVAR 3,1}～\n你好！\r
+嗨～我是{STRVAR 3,1}～\n晚上好！\r
+嗨～我是{STRVAR 3,1}～\n晚上好！\r
+喂喂喂，早上好！\n我是{STRVAR 3,1}～\r
+喂喂喂，早上好！\n我是{STRVAR 3,1}～\r
+喂喂喂，你好！\n我是{STRVAR 3,1}～\r
+喂喂喂，你好！\n我是{STRVAR 3,1}～\r
+喂喂喂，晚上好！\n我是{STRVAR 3,1}～\r
+喂喂喂，晚上好！\n我是{STRVAR 3,1}～\r
+早上好！\r这里是精灵寄存系统的\n管理服务！\r
+您好！\r这里是精灵寄存系统的\n管理服务！\r
+您辛苦啦！\r这里是精灵寄存系统的\n管理服务！\r
+我是{STRVAR 3,1}……\r是{STRVAR 3,0}吗！早晨的空气不错啊！\r
+我是{STRVAR 3,1}……\r是{STRVAR 3,0}吗！今天天气不错啊！\r
+我是{STRVAR 3,1}……\r是{STRVAR 3,0}吗！月亮不错啊！\r

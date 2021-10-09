@@ -1,0 +1,20 @@
+胜利了！\n{STRVAR 28,0}！
+赢了！\n{STRVAR 28,0}赢了！
+{STRVAR 28,0}很强吧！
+果然{STRVAR 28,0}\n还是得{STRVAR 28,1}！
+{STRVAR 28,0}万岁！
+耶，{STRVAR 28,0}！\n{STRVAR 28,1}！
+对不起，{STRVAR 28,0}\n是{STRVAR 28,1}吧。
+{STRVAR 28,0}\n谢谢！
+现在的心情是\n{STRVAR 28,0}！
+看见{STRVAR 28,0}\n变得很想要了！
+多亏了{STRVAR 28,0}！
+用{STRVAR 28,0}的话\n说不定就赢了！
+最高兴的是\n{STRVAR 28,0}！
+{STRVAR 28,0}是胜利的\n最重要因素！
+这个{STRVAR 28,0}\n实在是太好了！
+{STRVAR 28,0}\n真有趣啊！
+啥！\n{STRVAR 28,0}？
+{STRVAR 28,0}是最强的！
+真高兴！\n{STRVAR 28,0}真高兴！
+怎么样！\n{STRVAR 28,0}！

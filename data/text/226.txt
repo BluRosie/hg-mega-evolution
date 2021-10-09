@@ -1,0 +1,8 @@
+{COLOR 2}♈{COLOR 0}道具
+{COLOR 2}♌{COLOR 0}回复类
+{COLOR 2}♎{COLOR 0}精灵球
+{COLOR 2}♊{COLOR 0}技能训练机
+{COLOR 2}♍{COLOR 0}树果
+{COLOR 2}♋{COLOR 0}信件
+{COLOR 2}♏{COLOR 0}战斗用品
+{COLOR 2}♉{COLOR 0}贵重物品

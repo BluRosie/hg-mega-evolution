@@ -1,0 +1,6 @@
+把{STRVAR 0,0}送给{STRVAR 3,2}！
+再见！{STRVAR 0,0}！
+{STRVAR 3,2}把{STRVAR 0,1}送给了你！
+你要好好对待{STRVAR 0,1}！
+把{STRVAR 0,0}寄存了
+把{STRVAR 0,1}拿了出来！

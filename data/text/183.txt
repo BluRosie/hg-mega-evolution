@@ -1,0 +1,50 @@
+取消
+{STRVAR 3,0}
+{STRVAR 3,1}
+{STRVAR 1,2}
+{STRVAR 1,3}
+{STRVAR 1,4}
+{STRVAR 1,5}
+{STRVAR 1,6}
+{STRVAR 1,7}
+{STRVAR 1,8}
+{STRVAR 1,9}
+{STRVAR 1,10}
+{STRVAR 1,11}
+{STRVAR 1,12}
+{STRVAR 1,13}
+请选择精灵
+{STRVAR 1,0}\n要做什么？
+查看能力
+确定交换
+返回
+通信待机中！\n请稍等。
+要用{STRVAR 1,0}交换{STRVAR 1,1}吗？
+是
+否
+交换被取消
+停止交换吗？
+是
+否
+等待好友的结束……
+打算进行\n精灵的交换！
+将{STRVAR 1,0}送给了{STRVAR 3,1}！
+再见！{STRVAR 1,0}！
+得到了{STRVAR 3,1}赠送的{STRVAR 1,0}！
+要好好对待{STRVAR 1,0}啊！
+这个精灵一旦交换\n冒险就无法进行！
+正在保存，\n请不要切断电源。
+分离球贴可以吗？
+您持有不能交换的精灵。
+对方持有不能交换的精灵。
+♂
+♀
+Ｌｖ．
+道具
+{STRVAR 1,0}
+{STRVAR 52,1}
+{STRVAR 8,2}
+{STRVAR 1,3}
+{STRVAR 52,4}
+{STRVAR 8,5}
+无

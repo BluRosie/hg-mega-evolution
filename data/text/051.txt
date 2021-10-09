@@ -1,0 +1,6 @@
+皮皮『皮，皮！
+这里是月见山广场，\r请不要乱扔垃圾！
+{STRVAR 3,0}找到了\n{STRVAR 8,1}！
+{STRVAR 3,0}把{STRVAR 8,1}放进了{COLOR 2}\n{STRVAR 31,2}{COLOR 0}口袋里。
+得到了{STRVAR 8,0}！\r可惜！\n背包已经满了……
+打烊了

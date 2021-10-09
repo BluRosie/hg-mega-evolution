@@ -1,0 +1,35 @@
+战斗房间成绩
+多人战斗房间成绩
+Ｗｉ－Ｆｉ战斗房间成绩
+{COLOR 1}单人战{COLOR 3}的{COLOR 2}\n{COLOR 1}记录{COLOR 0}
+{COLOR 1}多人战{COLOR 3}的{COLOR 0}\n{COLOR 1}记录{COLOR 0}
+{COLOR 1}现在{COLOR 3}的{COLOR 0}\n{COLOR 1}排名{COLOR 0}
+{COLOR 1}双人战{COLOR 3}的{COLOR 0}\n{COLOR 1}记录{COLOR 0}
+{COLOR 1}通信{COLOR 3}的{COLOR 0}\n{COLOR 1}记录{COLOR 0}
+{COLOR 1}Ｗｉ－Ｆｉ{COLOR 3}的{COLOR 0}\n{COLOR 1}记录{COLOR 0}
+{COLOR 1}上次{COLOR 0}
+{COLOR 1}现在{COLOR 0}
+{COLOR 1}最好{COLOR 0}
+{COLOR 1}排名{COLOR 0}
+{COLOR 2}{STRVAR 53,0}{COLOR 0}连胜
+{STRVAR 51,0}
+{STRVAR 53,0}
+连胜
+排名{STRVAR 51,0}
+战斗房间{STRVAR 52,1}
+历代首领一览
+{STRVAR 50,0}
+／
+{COLOR 3}{STRVAR 3,0}{COLOR 0}的情报
+{COLOR 1}{STRVAR 3,0}{COLOR 0}的情报
+返回
+{STRVAR 36,0}\n{STRVAR 37,1}
+{STRVAR 36,0}
+居住地未登录
+居住地
+{STRVAR 36,0}
+{STRVAR 37,0}
+未登录
+成为了第一名的心情
+心灵
+灵魂
