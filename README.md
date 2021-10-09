@@ -34,6 +34,7 @@ After downloading and before proceeding to install, make sure that the **add to 
 
 # Credits
 * [CREDITS.md](CREDITS.md).
+* [**Bubble (C Injection Template)**][TEMPLATE]
 * [**Skeli (FR template)**][CFRU]
 * [**CodenamePU (NARC tool)**][G5T]
 * [**BluRosie (hgss-monexpansion)**][MONEXPAND]
@@ -46,3 +47,4 @@ After downloading and before proceeding to install, make sure that the **add to 
 [G5T]: https://github.com/CodenamePU/Gen5Tools
 [ARM9]: https://pokehacking.com/tutorials/ramexpansion/
 [diamond]:https://github.com/pret/pokediamond
+[TEMPLATE]: https://github.com/Bubble791/Pokemon-Heart-Gold-Engine
