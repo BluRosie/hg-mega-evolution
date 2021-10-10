@@ -1,4 +1,0 @@
-蛋孵化了，\n{STRVAR 0,0}出生！
-要给{STRVAR 0,0}\n起名字吗？{YESNO 0}
-{CENTER 0}是
-{CENTER 0}否

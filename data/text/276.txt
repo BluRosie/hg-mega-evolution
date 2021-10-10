@@ -1,6 +1,0 @@
-{STRVAR 0,0}
-♂
-♀
-Lv{STRVAR 51,0}
-持有物
-{STRVAR 8,0}

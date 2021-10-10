@@ -1,9 +1,0 @@
-抓起了{STRVAR 0,0}！
-{STRVAR 0,0}与\n{STRVAR 0,1}交换吗？
-放生了{STRVAR 0,1}\n捉住了{STRVAR 0,0}！
-放生了{STRVAR 0,0}\n留下了{STRVAR 0,1}！
-{STRVAR 0,0}
-♂
-♀
-
-{STRVAR 52,0}

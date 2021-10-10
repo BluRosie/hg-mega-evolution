@@ -166,7 +166,7 @@ def build_txt():
         OBJ = "build/text/7_" + i.replace(".txt","")
         if os.path.isfile(OBJ) and os.path.getmtime(DIR + "/" + i) < os.path.getmtime(OBJ):
             continue
-        cmd = ["tools/msgenc.exe"] + [DIR + "/" + i,DIR + "/" + i.replace(".txt",".key"),"charmap.txt",OBJ]
+        cmd = ["tools/msgenc.exe"] + ["-e", "-c","charmap.txt", DIR + "/" + i,OBJ]
         flag = True
         RunCommand(cmd)
 
@@ -280,7 +280,7 @@ if __name__ == '__main__':
     build_sprite()
     build_icon()
     build_ow()
-    #build_txt()
+    build_txt()
     #build_script()
     build_anim_script()
     build_seq_script()

@@ -213,7 +213,7 @@ all: $(OUTPUT) narc_data
 	cp narc/pokemonpic.narc base/root/pbr/pokegra.narc
 	cp narc/pokemonicon.narc base/root/a/0/2/0
 	cp narc/pokemonow.narc base/root/a/0/8/1
-	#@cp narc/text.narc base/root/a/0/2/7
+	@cp narc/text.narc base/root/a/0/2/7
 	#cp narc/wilddata.narc base/root/a/0/3/7
 	cp narc/footprints.narc base/root/a/0/6/9
 	cp data/rawdata/gs_sound_data.sdat base/root/data/sound/gs_sound_data.sdat
