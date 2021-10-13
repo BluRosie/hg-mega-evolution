@@ -208,7 +208,7 @@ const struct FormData PokeFormDataTbl[]=
         .need_rev = 1,
         .file = 974,
     },
-    /*{
+    {
         //Mega电龙
         .species = 181, 
         .form_no = 1,
@@ -461,7 +461,7 @@ const struct FormData PokeFormDataTbl[]=
         .form_no = 1,
         .need_rev = 1,
         .file = 1009,
-    },*/
+    },
 
 };
 

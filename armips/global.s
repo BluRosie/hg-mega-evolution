@@ -5,13 +5,7 @@
 .include "armips/include/movenums.s"
 
 .include "armips/data/iconpalettetable.s"
-.include "armips/data/monoverworlds.s"
-.include "armips/data/hideability.s"
 
-.include "armips/asm/type.s"
-.include "armips/asm/cries.s"
 .include "armips/asm/icons.s"
-.include "armips/asm/pokedex.s"
-.include "armips/asm/overworlds.s"
-.include "armips/asm/syntheticoverlay.s"
 .include "armips/asm/move.s"
+.include "armips/asm/syntheticoverlay.s"

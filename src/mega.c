@@ -6,6 +6,7 @@
 #include "../include/constants/ability.h"
 #include "../include/constants/item.h"
 #include "../include/constants/file.h"
+#include "../include/constants/species.h"
 
 struct MegaStrcut
 {
@@ -30,6 +31,7 @@ const struct MegaStrcut sMegaTable[] =
     {142,1},
     {150,1},
     {150,2},
+    {SPECIES_SCEPTILE, 1},
     /*{181,0},
     {208,0},
     {212,0},
