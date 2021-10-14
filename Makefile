@@ -172,7 +172,7 @@ $(OUTPUT):$(LINK)
 narc_data: narc/babymons.narc narc/eggmoves.narc narc/evodata.narc narc/heighttable.narc narc/levelupdata.narc \
 narc/areadata.narc narc/itemdata.narc narc/mondata.narc narc/overworlddata.narc narc/pokezukan.narc narc/tutordata.narc narc/pokedexdata.narc narc/movedata.narc
 
-all: $(OUTPUT) narc_data
+all: $(OUTPUT) #narc_data
 	@rm -rf base
 	@mkdir -p base
 	@mkdir -p narc
@@ -185,37 +185,32 @@ all: $(OUTPUT) narc_data
 	@echo -e "\e[32;1m$(ROMNAME) Decompression successful!!\e[37;1m"
 	@$(NARCHIVE) extract base/root/a/0/2/8 -o build/a028/ -nf
 	@$(PYTHON) scripts/make.py
-	@mkdir -p narc/a180/ 
-	@$(NARCHIVE) extract base/root/a/1/8/0 -o build/a180/ -nf
-	$(ARMIPS) armips/data/spriteoffsets.s
-	@$(NARCHIVE) create narc/a180.narc narc/a180 -nf
-	@rm -rf narc/a180
 	$(ARMIPS) armips/global.s
-	@$(NARCHIVE) create narc/footprints.narc data/rawdata/footprints -nf
-	cp narc/levelupdata.narc base/root/a/0/3/3
-	cp narc/mondata.narc base/root/a/0/0/2
-	cp narc/heighttable.narc base/root/a/0/0/5
-	cp narc/heighttable.narc base/root/a/1/9/5
-	cp narc/a180.narc base/root/a/1/8/0
-	cp narc/evodata.narc base/root/a/0/3/4
-	cp narc/pokezukan.narc base/root/a/1/3/8
-	cp narc/areadata.narc base/root/a/1/3/3
-	cp narc/itemdata.narc base/root/a/0/1/7
-	cp narc/eggmoves.narc base/root/a/2/2/9
-	cp narc/movedata.narc base/root/a/0/1/1
-	cp narc/pokedexdata.narc base/root/a/2/1/4
-	cp narc/eggmoves.narc base/root/data/kowaza.narc
-	cp narc/babymons.narc base/root/poketool/personal/pms.narc
-	cp narc/tutordata.narc base/root/fielddata/wazaoshie/waza_oshie.bin
-	cp narc/overworlddata.narc base/root/a/1/4/1
+	#@$(NARCHIVE) create narc/footprints.narc data/rawdata/footprints -nf
+	#cp narc/levelupdata.narc base/root/a/0/3/3
+	#cp narc/mondata.narc base/root/a/0/0/2
+	#cp narc/heighttable.narc base/root/a/0/0/5
+	#cp narc/heighttable.narc base/root/a/1/9/5
+	#cp narc/a180.narc base/root/a/1/8/0
+	#cp narc/evodata.narc base/root/a/0/3/4
+	#cp narc/pokezukan.narc base/root/a/1/3/8
+	#cp narc/areadata.narc base/root/a/1/3/3
+	#cp narc/itemdata.narc base/root/a/0/1/7
+	#cp narc/eggmoves.narc base/root/a/2/2/9
+	#cp narc/movedata.narc base/root/a/0/1/1
+	#cp narc/pokedexdata.narc base/root/a/2/1/4
+	#cp narc/eggmoves.narc base/root/data/kowaza.narc
+	#cp narc/babymons.narc base/root/poketool/personal/pms.narc
+	#cp narc/tutordata.narc base/root/fielddata/wazaoshie/waza_oshie.bin
+	#cp narc/overworlddata.narc base/root/a/1/4/1
 	@$(PYTHON) scripts/build.py
 	cp narc/pokemonpic.narc base/root/a/0/0/4
 	cp narc/pokemonpic.narc base/root/pbr/pokegra.narc
 	cp narc/pokemonicon.narc base/root/a/0/2/0
-	cp narc/pokemonow.narc base/root/a/0/8/1
+	#cp narc/pokemonow.narc base/root/a/0/8/1
 	@cp narc/text.narc base/root/a/0/2/7
 	#cp narc/wilddata.narc base/root/a/0/3/7
-	cp narc/footprints.narc base/root/a/0/6/9
+	#cp narc/footprints.narc base/root/a/0/6/9
 	cp data/rawdata/gs_sound_data.sdat base/root/data/sound/gs_sound_data.sdat
 	@make move_narc
 	@$(NARCHIVE) create narc/synth.narc build/a028/ -nf
@@ -230,79 +225,72 @@ clean:
 	rm -rf base/*
 
 move_narc:
-	@echo "战斗背景:"
+	@echo "battle hud layout:"
 	@$(NARCHIVE) extract base/root/a/0/0/7 -o build/a007/ -nf
 	cp -r data/rawdata/battle_sprite/. build/a007
 	@$(NARCHIVE) create narc/a007.narc build/a007/ -nf
 	mv narc/a007.narc base/root/a/0/0/7
 	rm -rf build/a007/
 	
-	@echo "技能粒子:"
+	@echo "move particles:"
 	@$(NARCHIVE) extract base/root/a/0/2/9 -o build/a029/ -nf
 	cp -r data/rawdata/move_spa/. build/a029
 	@$(NARCHIVE) create narc/a029.narc build/a029/ -nf
 	mv narc/a029.narc base/root/a/0/2/9
 	rm -rf build/a029/
 
-	@echo "技能动画脚本:"
+	@echo "move animations:"
 	@$(NARCHIVE) extract base/root/a/0/1/0 -o build/a010/ -nf
 	cp -r data/move/move_anim/. build/a010
 	@$(NARCHIVE) create narc/a010.narc build/a010/ -nf
 	mv narc/a010.narc base/root/a/0/1/0
 	#rm -rf build/a010/
 
-	@echo "技能脚本:"
+	@echo "move subeffects:"
 	@$(NARCHIVE) extract base/root/a/0/0/1 -o build/a001/ -nf
 	cp -r data/move/move_seq/. build/a001
 	@$(NARCHIVE) create narc/a001.narc build/a001/ -nf
 	mv narc/a001.narc base/root/a/0/0/1
 	#rm -rf build/a001/
 
-	@echo "技能效果脚本:"
+	@echo "move effects:"
 	@$(NARCHIVE) extract base/root/a/0/3/0 -o build/a030/ -nf
 	cp -r data/move/move_effect/. build/a030
 	@$(NARCHIVE) create narc/a030.narc build/a030/ -nf
 	mv narc/a030.narc base/root/a/0/3/0
 	rm -rf build/a030/
 
-	@echo "道具图片:"
-	@$(NARCHIVE) extract base/root/a/0/1/8 -o build/a018/ -nf
-	cp -r data/rawdata/itempic/. build/a018
-	@$(NARCHIVE) create narc/a018.narc build/a018/ -nf
-	mv narc/a018.narc base/root/a/0/1/8
-	rm -rf build/a018/
-
-	@echo "技能sub:"
+	@echo "move subroutines:"
 	@$(NARCHIVE) extract base/root/a/0/0/0 -o build/a000/ -nf
 	cp -r data/move/move_sub/. build/a000
 	@$(NARCHIVE) create narc/a000.narc build/a000/ -nf
 	mv narc/a000.narc base/root/a/0/0/0
 	#rm -rf build/a000/
 
-	@$(NARCHIVE) extract base/root/a/0/0/8 -o build/a008/ -nf
-	@$(NARCHIVE) extract base/root/a/0/1/7 -o build/a017/ -nf
+	@echo "item gfx:"
+	@$(NARCHIVE) extract base/root/a/0/1/8 -o build/a018/ -nf
+	cp -r data/rawdata/itempic/. build/a018
+	@$(NARCHIVE) create narc/a018.narc build/a018/ -nf
+	mv narc/a018.narc base/root/a/0/1/8
+	rm -rf build/a018/
+
+	@echo "saving/frame gfx:"		
 	@$(NARCHIVE) extract base/root/a/0/3/8 -o build/a038/ -nf
-	@$(NARCHIVE) extract base/root/a/0/1/2 -o build/a012/ -nf
-	@$(NARCHIVE) extract base/root/a/0/1/4 -o build/a014/ -nf
-	@$(NARCHIVE) extract base/root/a/0/1/6 -o build/a016/ -nf
-	cp -r data/rawdata/filesa008/. build/a008
-	cp -r data/rawdata/filesa014/. build/a014
 	cp -r data/rawdata/filesa038/. build/a038
-	cp -r data/rawdata/font/. build/a016
-	cp -r data/script/. build/a012
-	cp data/rawdata/a068 base/root/a/0/6/8
-	@$(NARCHIVE) create narc/a008.narc build/a008/ -nf
-	@$(NARCHIVE) create narc/a014.narc build/a014/ -nf
-	@$(NARCHIVE) create narc/a012.narc build/a012/ -nf
 	@$(NARCHIVE) create narc/a038.narc build/a038/ -nf
-	@$(NARCHIVE) create narc/font.narc build/a016/ -nf
-	mv narc/a008.narc base/root/a/0/0/8
-	mv narc/a014.narc base/root/a/0/1/4
-	mv narc/a012.narc base/root/a/0/1/2
 	mv narc/a038.narc base/root/a/0/3/8
-	mv narc/font.narc base/root/a/0/1/6
-	rm -rf build/a014/
-	rm -rf build/a008/
-	rm -rf build/a012/
-	rm -rf build/a016/
 	rm -rf build/a038/
+	
+	@echo "scripts:"
+	@$(NARCHIVE) extract base/root/a/0/1/2 -o build/a012/ -nf
+	cp -r data/script/. build/a012
+	@$(NARCHIVE) create narc/a012.narc build/a012/ -nf
+	mv narc/a012.narc base/root/a/0/1/2
+	rm -rf build/a012/
+
+	@$(NARCHIVE) extract base/root/a/0/1/7 -o build/a017/ -nf
+	@$(NARCHIVE) extract base/root/a/0/1/6 -o build/a016/ -nf
+	
+	cp data/rawdata/a068 base/root/a/0/6/8
+
+	

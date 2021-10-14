@@ -18,11 +18,7 @@ bool8 random_pokemon(u16 num)
 	if ((i > 143 && i <= 151) ||
 		(i > 242 && i <= 251) ||
 		(i > 376 && i <= 386) ||
-		(i > 479 && i <= 493) ||
-		(i > 637 + 50 && i <= 649 + 50) ||
-		(i > 715 + 50 && i <= 721 + 50) ||
-		(i > 786 + 50 && i <= 809 + 50) ||
-		(i > 887 + 50 && i <= 898 + 50))
+		(i > 479 && i <= 493))
 		{return TRUE;}
 	return FALSE;
 }
@@ -37,7 +33,7 @@ u16 random(void)
 
 		for(;;)
 		{
-			i = gf_rand() % 945;
+			i = gf_rand() % 494;
 			if(random_pokemon(i))
 				break;
 		}	
