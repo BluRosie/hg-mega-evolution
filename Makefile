@@ -66,94 +66,11 @@ OW_SPRITES_SRC := $(wildcard data/graphics/overworlds/*.png)
 OW_SPRITES_OBJS := $(patsubst data/graphics/overworlds/*.png,build/data/graphics/overworlds/%.swav,$(OW_SPRITES_SRC))
 
 ####################### Build #########################
-narc/areadata.narc: armips/data/pokedex/areadata.s
-	@mkdir -p narc/a133/
-	$(ARMIPS) armips/data/pokedex/areadata.s
-	@cp "data/rawdata/first files from a133/a133_0000" "narc/a133/a133_0000"
-	@cp "data/rawdata/first files from a133/a133_0001" "narc/a133/a133_0001"
-	$(NARCHIVE) create narc/areadata.narc narc/a133 -nf
-	@rm -rf narc/a133
-
-narc/a180.narc: armips/data/spriteoffsets.s
-	@mkdir -p narc/a180/
-	$(NARCHIVE) extract base/root/a/1/8/0 -o build/a180/ -nf
-	$(ARMIPS) armips/data/spriteoffsets.s
-	$(NARCHIVE) create narc/a180.narc narc/a180 -nf
-	@rm -rf narc/a180
-
-narc/babymons.narc: armips/data/babymons.s
-	$(ARMIPS) armips/data/babymons.s
-
-narc/tutordata.narc: armips/data/tutordata.s
-	$(ARMIPS) armips/data/tutordata.s
-
-narc/pokezukan.narc: armips/data/regionaldex.s
-	@mkdir -p narc/a138/
-	$(ARMIPS) armips/data/regionaldex.s
-	$(NARCHIVE) create narc/pokezukan.narc narc/a138 -nf
-	@rm -rf narc/a138
-
-armips/data/wildmon.s: data/wildmon.xlsx
-	$(PYTHON) scripts/makewild.py
-
-narc/wilddata.narc: armips/data/wildmon.s
-	@mkdir -p narc/wilddata/
-	$(ARMIPS) armips/data/wildmon.s
-	$(NARCHIVE) create narc/wilddata.narc narc/wilddata -nf
-	@rm -rf narc/wilddata
-
-narc/movedata.narc: armips/data/movedata.s
-	@mkdir -p narc/a011/
-	$(ARMIPS) armips/data/movedata.s
-	$(NARCHIVE) create narc/movedata.narc narc/a011 -nf
-	@rm -rf narc/a011
-
-narc/eggmoves.narc: armips/data/eggmoves.s
-	@mkdir -p narc/eggmoves/
-	$(ARMIPS) armips/data/eggmoves.s
-	$(NARCHIVE) create narc/eggmoves.narc narc/eggmoves -nf
-	@rm -rf narc/eggmoves
-
-narc/evodata.narc: armips/data/evodata.s
-	@mkdir -p narc/evodata/
-	$(ARMIPS) armips/data/evodata.s
-	$(NARCHIVE) create narc/evodata.narc narc/evodata -nf
-	@rm -rf narc/evodata
-
-narc/pokedexdata.narc: armips/data/pokedex/pokedexdata.s
-	@mkdir -p narc/a214/
-	$(ARMIPS) armips/data/pokedex/pokedexdata.s
-	$(NARCHIVE) create narc/pokedexdata.narc narc/a214 -nf
-	@rm -rf narc/a214
-
-narc/heighttable.narc: armips/data/heighttable.s
-	@mkdir -p narc/heighttable/
-	$(ARMIPS) armips/data/heighttable.s
-	$(NARCHIVE) create narc/heighttable.narc narc/heighttable -nf
-	@rm -rf narc/heighttable
-
-narc/levelupdata.narc: armips/data/levelupdata.s
-	@mkdir -p narc/levelupdata/
-	$(ARMIPS) armips/data/levelupdata.s
-	$(NARCHIVE) create narc/levelupdata.narc narc/levelupdata -nf
-	@rm -rf narc/levelupdata
-
 narc/mondata.narc: armips/data/mondata.s
 	@mkdir -p narc/mondata/
 	$(ARMIPS) armips/data/mondata.s
 	$(NARCHIVE) create narc/mondata.narc narc/mondata -nf
 	@rm -rf narc/mondata
-
-narc/overworlddata.narc: armips/data/overworlddata.s
-	@mkdir -p narc/overworlddata/
-	$(ARMIPS) armips/data/overworlddata.s
-	$(NARCHIVE) create narc/overworlddata.narc narc/overworlddata -nf
-	@rm -rf narc/overworlddata
-
-narc/itemdata.narc: data/item.c
-	@$(CC) $(CFLAGS) -c $< -o data/item.o
-	tools/o2narc.exe data/item.o narc/itemdata.narc
-	rm -rf data/item.o
 
 build/%.d:asm/%.s
 	$(AS) $(ASFLAGS) -c $< -o $@
@@ -169,10 +86,9 @@ $(LINK):$(OBJS)
 $(OUTPUT):$(LINK)
 	@$(OBJCOPY) -O binary $< $@
 
-narc_data: narc/babymons.narc narc/eggmoves.narc narc/evodata.narc narc/heighttable.narc narc/levelupdata.narc \
-narc/areadata.narc narc/itemdata.narc narc/mondata.narc narc/overworlddata.narc narc/pokezukan.narc narc/tutordata.narc narc/pokedexdata.narc narc/movedata.narc
+narc_data: narc/mondata.narc
 
-all: $(OUTPUT) #narc_data
+all: $(OUTPUT) narc_data
 	@rm -rf base
 	@mkdir -p base
 	@mkdir -p narc
@@ -186,23 +102,7 @@ all: $(OUTPUT) #narc_data
 	@$(NARCHIVE) extract base/root/a/0/2/8 -o build/a028/ -nf
 	@$(PYTHON) scripts/make.py
 	$(ARMIPS) armips/global.s
-	#@$(NARCHIVE) create narc/footprints.narc data/rawdata/footprints -nf
-	#cp narc/levelupdata.narc base/root/a/0/3/3
-	#cp narc/mondata.narc base/root/a/0/0/2
-	#cp narc/heighttable.narc base/root/a/0/0/5
-	#cp narc/heighttable.narc base/root/a/1/9/5
-	#cp narc/a180.narc base/root/a/1/8/0
-	#cp narc/evodata.narc base/root/a/0/3/4
-	#cp narc/pokezukan.narc base/root/a/1/3/8
-	#cp narc/areadata.narc base/root/a/1/3/3
-	#cp narc/itemdata.narc base/root/a/0/1/7
-	#cp narc/eggmoves.narc base/root/a/2/2/9
-	#cp narc/movedata.narc base/root/a/0/1/1
-	#cp narc/pokedexdata.narc base/root/a/2/1/4
-	#cp narc/eggmoves.narc base/root/data/kowaza.narc
-	#cp narc/babymons.narc base/root/poketool/personal/pms.narc
-	#cp narc/tutordata.narc base/root/fielddata/wazaoshie/waza_oshie.bin
-	#cp narc/overworlddata.narc base/root/a/1/4/1
+	cp narc/mondata.narc base/root/a/0/0/2
 	@$(PYTHON) scripts/build.py
 	cp narc/pokemonpic.narc base/root/a/0/0/4
 	cp narc/pokemonpic.narc base/root/pbr/pokegra.narc

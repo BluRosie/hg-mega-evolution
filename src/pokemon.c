@@ -29,25 +29,6 @@ struct FormData
 const struct FormData PokeFormDataTbl[]=
 {
     {
-        .species = SPECIES_ZACIAN, 
-        .form_no = 1,
-        .need_rev = 1,
-        .file = 949,
-    },
-    {
-        .species = SPECIES_ZAMA, 
-        .form_no = 1,
-        .need_rev = 1,
-        .file = 950,
-    },
-    {
-        //莫鲁贝可花纹形态
-        .species = 877 + 50, 
-        .form_no = 1,
-        .need_rev = 1,
-        .file = 951,
-    },
-    {
         //小火马伽勒尔的样子
         .species = 77, 
         .form_no = 1,
@@ -446,21 +427,6 @@ const struct FormData PokeFormDataTbl[]=
         .form_no = 1,
         .need_rev = 1,
         .file = 1007,
-    },
-    {
-        //Mega差不多娃娃
-        .species = 531 + 50, 
-        .form_no = 1,
-        .need_rev = 1,
-        .file = 1008,
-    },
-
-    {
-        //Mega蒂安茜
-        .species = 719 + 50, 
-        .form_no = 1,
-        .need_rev = 1,
-        .file = 1009,
     },
 
 };

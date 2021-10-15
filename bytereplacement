@@ -1,40 +1,5 @@
-#chinese font
-#arm9 08026014 11 61
-#arm9 08026050 c0 46
-#arm9 080262c0 68 21 40 5c 70 47
-
-#infinite TM
-arm9 080825A7 E0
-0015 08006239 E0
-
-#dex fairy icon pal
-0018 08016505 03
-0018 08016534 7B
-
-#battle move fairy pal
-0006 08000290 DF 7E 3F F2 1E 6A DD 59 5B CD 17 C1 D6 B4 37 7F
-
 #fps60
 arm9 08000E28 00 00
-
-#wild test
-0002 08002214 00 23
-
-#shiny
-arm9 08070080 10
-
-#learn move limit
-arm9 080917C4 3C
-arm9 080917CE 3C
-arm9 08091858 1E
-arm9 08071908 3E
-arm9 0807153E 3E
-arm9 080712E0 3E
-
-#fix dex text ver bug
-arm9 0802A4FE 00 00 00 00
-arm9 08029C00 00 00
-arm9 0802A5D0 01 20
 
 #fix dp read pokemon pic to hgss
 arm9 08009D2A C3
