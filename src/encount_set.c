@@ -46,20 +46,11 @@ u16 random(void)
 		caught_num++;
 		for (;;)
 		{
-			i = gf_rand() % 945;
-			if (i > 0 && (!(i > 493 && i < 544)) && i < 945 && !random_pokemon(i))
+			i = gf_rand() % 493;
+			if (i > 0 && i < 493 && !random_pokemon(i))
 				break;
 		}
 	}
-
-	if (i <= 0)
-		i = 1;
-
-	if (i > 946)
-		i = 946;
-
-	if (i > 493 && i < 544)
-		i = 1;
 
     return i;
 }

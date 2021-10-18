@@ -29,406 +29,293 @@ struct FormData
 const struct FormData PokeFormDataTbl[]=
 {
     {
-        //小火马伽勒尔的样子
-        .species = 77, 
-        .form_no = 1,
-        .need_rev = 0,
-        .file = 952,
-    },
-    {
-        //烈焰马伽勒尔的样子
-        .species = 78, 
-        .form_no = 1,
-        .need_rev = 0,
-        .file = 953,
-    },
-    {
-        //呆呆兽伽勒尔的样子
-        .species = 79, 
-        .form_no = 1,
-        .need_rev = 0,
-        .file = 954,
-    },
-    {
-        //呆壳兽伽勒尔的样子
-        .species = 80, 
-        .form_no = 1,
-        .need_rev = 0,
-        .file = 955,
-    },
-    {
-        //急冻鸟伽勒尔的样子
-        .species = 144, 
-        .form_no = 1,
-        .need_rev = 0,
-        .file = 956,
-    },
-    {
-        //闪电鸟伽勒尔的样子
-        .species = 145, 
-        .form_no = 1,
-        .need_rev = 0,
-        .file = 957,
-    },
-    {
-        //火焰鸟伽勒尔的样子
-        .species = 146, 
-        .form_no = 1,
-        .need_rev = 0,
-        .file = 958,
-    },
-    {
-        //喵喵伽勒尔的样子
-        .species = 52, 
-        .form_no = 2,
-        .need_rev = 0,
-        .file = 959,
-    },
-    {
-        //Mega妙蛙花
-        .species = 3, 
+        .species = SPECIES_SCEPTILE,//SPECIES_VENUSAUR,
         .form_no = 1,
         .need_rev = 1,
-        .file = 960,
+        .file = SPECIES_MEGA_VENUSAUR,
     },
-    {
-        //Mega喷火龙x
-        .species = 6, 
+/*    {
+        .species = SPECIES_CHARIZARD,
         .form_no = 1,
         .need_rev = 1,
-        .file = 961,
+        .file = SPECIES_MEGA_CHARIZARD_X,
     },
     {
-        //Mega喷火龙y
-        .species = 6, 
+        .species = SPECIES_CHARIZARD,
         .form_no = 2,
         .need_rev = 1,
-        .file = 962,
+        .file = SPECIES_MEGA_CHARIZARD_Y,
     },
     {
-        //Mega水箭龟
-        .species = 9, 
+        .species = SPECIES_BLASTOISE,
         .form_no = 1,
         .need_rev = 1,
-        .file = 963,
+        .file = SPECIES_MEGA_BLASTOISE,
     },
     {
-        //Mega大针蜂
-        .species = 15, 
+        .species = SPECIES_BEEDRILL,
         .form_no = 1,
         .need_rev = 1,
-        .file = 964,
+        .file = SPECIES_MEGA_BEEDRILL,
     },
     {
-        //Mega比雕
-        .species = 18, 
+        .species = SPECIES_PIDGEOT,
         .form_no = 1,
         .need_rev = 1,
-        .file = 965,
+        .file = SPECIES_MEGA_PIDGEOT,
     },
     {
-        //Mega胡地
-        .species = 65, 
+        .species = SPECIES_ALAKAZAM,
         .form_no = 1,
         .need_rev = 1,
-        .file = 966,
+        .file = SPECIES_MEGA_ALAKAZAM,
     },
     {
-        //Mega呆呆王
-        .species = 199, 
+        .species = SPECIES_SLOWBRO,
         .form_no = 1,
         .need_rev = 1,
-        .file = 967,
+        .file = SPECIES_MEGA_SLOWBRO,
     },
     {
-        //Mega耿鬼
-        .species = 94, 
+        .species = SPECIES_GENGAR,
         .form_no = 1,
         .need_rev = 1,
-        .file = 968,
+        .file = SPECIES_MEGA_GENGAR,
     },
     {
-        //Mega袋兽
-        .species = 115, 
+        .species = SPECIES_KANGASKHAN,
         .form_no = 1,
         .need_rev = 1,
-        .file = 969,
+        .file = SPECIES_MEGA_KANGASKHAN,
     },
     {
-        //Mega大甲
-        .species = 127, 
+        .species = SPECIES_PINSIR,
         .form_no = 1,
         .need_rev = 1,
-        .file = 970,
+        .file = SPECIES_MEGA_PINSIR,
     },
     {
-        //Mega暴鲤龙
-        .species = 130, 
+        .species = SPECIES_GYARADOS,
         .form_no = 1,
         .need_rev = 1,
-        .file = 971,
+        .file = SPECIES_MEGA_GYARADOS,
     },
     {
-        //Mega化石翼龙
-        .species = 142,
+        .species = SPECIES_AERODACTYL,
         .form_no = 1,
         .need_rev = 1,
-        .file = 972,
+        .file = SPECIES_MEGA_AERODACTYL,
     },
     {
-        //Mega超梦x
-        .species = 150, 
+        .species = SPECIES_MEWTWO,
         .form_no = 1,
         .need_rev = 1,
-        .file = 973,
+        .file = SPECIES_MEGA_MEWTWO_X,
     },
     {
-        //Mega超梦y
-        .species = 150, 
-        .form_no = 2,
-        .need_rev = 1,
-        .file = 974,
-    },
-    {
-        //Mega电龙
-        .species = 181, 
+        .species = SPECIES_MEWTWO,
         .form_no = 1,
         .need_rev = 1,
-        .file = 975,
+        .file = SPECIES_MEGA_MEWTWO_Y,
     },
     {
-        //Mega大钢蛇
-        .species = 208, 
+        .species = SPECIES_AMPHAROS,
         .form_no = 1,
         .need_rev = 1,
-        .file = 976,
+        .file = SPECIES_MEGA_AMPHAROS,
     },
     {
-        //Mega巨钳螳螂
-        .species = 212, 
+        .species = SPECIES_STEELIX,
         .form_no = 1,
         .need_rev = 1,
-        .file = 977,
+        .file = SPECIES_MEGA_STEELIX,
     },
     {
-        //Mega赫拉克罗斯
-        .species = 214, 
+        .species = SPECIES_SCIZOR,
         .form_no = 1,
         .need_rev = 1,
-        .file = 978,
+        .file = SPECIES_MEGA_SCIZOR,
     },
     {
-        //Mega黑鲁加
-        .species = 229, 
+        .species = SPECIES_HERACROSS,
         .form_no = 1,
         .need_rev = 1,
-        .file = 979,
+        .file = SPECIES_MEGA_HERACROSS,
     },
     {
-        //Mega班吉拉
-        .species = 248, 
+        .species = SPECIES_HOUNDOOM,
         .form_no = 1,
         .need_rev = 1,
-        .file = 980,
+        .file = SPECIES_MEGA_HOUNDOOM,
     },
     {
-        //Mega蜥蜴王
-        .species = 254, 
+        .species = SPECIES_TYRANITAR,
         .form_no = 1,
         .need_rev = 1,
-        .file = 981,
+        .file = SPECIES_MEGA_TYRANITAR,
     },
     {
-        //Mega火焰鸡
-        .species = 257, 
+        .species = SPECIES_SCEPTILE,
         .form_no = 1,
         .need_rev = 1,
-        .file = 982,
+        .file = SPECIES_MEGA_SCEPTILE,
     },
     {
-        //Mega巨沼怪
-        .species = 260, 
+        .species = SPECIES_BLAZIKEN,
         .form_no = 1,
         .need_rev = 1,
-        .file = 983,
+        .file = SPECIES_MEGA_BLAZIKEN,
     },
     {
-        //Mega沙奈朵
-        .species = 282, 
+        .species = SPECIES_SWAMPERT,
         .form_no = 1,
         .need_rev = 1,
-        .file = 984,
+        .file = SPECIES_MEGA_SWAMPERT,
     },
     {
-        //Mega勾魂眼
-        .species = 302, 
+        .species = SPECIES_GARDEVOIR,
         .form_no = 1,
         .need_rev = 1,
-        .file = 985,
+        .file = SPECIES_MEGA_GARDEVOIR,
     },
     {
-        //Mega大嘴娃
-        .species = 303, 
+        .species = SPECIES_SABLEYE,
         .form_no = 1,
         .need_rev = 1,
-        .file = 986,
+        .file = SPECIES_MEGA_SABLEYE,
     },
     {
-        //Mega波士可多拉
-        .species = 306, 
+        .species = SPECIES_MAWILE,
         .form_no = 1,
         .need_rev = 1,
-        .file = 987,
+        .file = SPECIES_MEGA_MAWILE,
     },
     {
-        //Mega恰蕾姆
-        .species = 308, 
+        .species = SPECIES_AGGRON,
         .form_no = 1,
         .need_rev = 1,
-        .file = 988,
+        .file = SPECIES_MEGA_AGGRON,
     },
     {
-        //Mega雷电兽
-        .species = 310, 
+        .species = SPECIES_MEDICHAM,
         .form_no = 1,
         .need_rev = 1,
-        .file = 989,
+        .file = SPECIES_MEGA_MEDICHAM,
     },
     {
-        //Mega巨牙鲨
-        .species = 319, 
+        .species = SPECIES_MANECTRIC,
         .form_no = 1,
         .need_rev = 1,
-        .file = 990,
+        .file = SPECIES_MEGA_MANECTRIC,
     },
     {
-        //Mega喷火驼
-        .species = 323, 
+        .species = SPECIES_SHARPEDO,
         .form_no = 1,
         .need_rev = 1,
-        .file = 991,
+        .file = SPECIES_MEGA_SHARPEDO,
     },
     {
-        //Mega七夕青鸟
-        .species = 334, 
+        .species = SPECIES_CAMERUPT,
         .form_no = 1,
         .need_rev = 1,
-        .file = 992,
+        .file = SPECIES_MEGA_CAMERUPT,
     },
     {
-        //Mega诅咒娃娃
-        .species = 354, 
+        .species = SPECIES_ALTARIA,
         .form_no = 1,
         .need_rev = 1,
-        .file = 993,
+        .file = SPECIES_MEGA_ALTARIA,
     },
     {
-        //Mega阿勃梭鲁
-        .species = 359, 
+        .species = SPECIES_BANETTE,
         .form_no = 1,
         .need_rev = 1,
-        .file = 994,
+        .file = SPECIES_MEGA_BANETTE,
     },
     {
-        //Mega冰护鬼
-        .species = 362, 
+        .species = SPECIES_ABSOL,
         .form_no = 1,
         .need_rev = 1,
-        .file = 995,
+        .file = SPECIES_MEGA_ABSOL,
     },
     {
-        //Mega血翼飞龙
-        .species = 373, 
+        .species = SPECIES_GLALIE,
         .form_no = 1,
         .need_rev = 1,
-        .file = 996,
+        .file = SPECIES_MEGA_GLALIE,
     },
     {
-        //Mega巨金怪
-        .species = 376, 
+        .species = SPECIES_SALAMENCE,
         .form_no = 1,
         .need_rev = 1,
-        .file = 997,
+        .file = SPECIES_MEGA_SALAMENCE,
     },
     {
-        //Mega拉帝亚斯
-        .species = 380, 
+        .species = SPECIES_METAGROSS,
         .form_no = 1,
         .need_rev = 1,
-        .file = 998,
+        .file = SPECIES_MEGA_METAGROSS,
     },
     {
-        //Mega拉帝欧斯
-        .species = 381, 
+        .species = SPECIES_LATIAS,
         .form_no = 1,
         .need_rev = 1,
-        .file = 999,
-    },
-
-    {
-        //Mega固拉多
-        .species = 383, 
-        .form_no = 1,
-        .need_rev = 1,
-        .file = 1000,
-    },
-
-    {
-        //Mega盖欧卡
-        .species = 382, 
-        .form_no = 1,
-        .need_rev = 1,
-        .file = 1001,
-    },
-
-    {
-        //Mega裂空座
-        .species = 384, 
-        .form_no = 1,
-        .need_rev = 1,
-        .file = 1002,
-    },
-
-    {
-        //Mega长耳兔
-        .species = 428, 
-        .form_no = 1,
-        .need_rev = 1,
-        .file = 1003,
-    },
-
-    {
-        //Mega烈咬陆鲨
-        .species = 445, 
-        .form_no = 1,
-        .need_rev = 1,
-        .file = 1004,
+        .file = SPECIES_MEGA_LATIAS,
     },
     {
-        //Mega路卡利欧
-        .species = 448, 
+        .species = SPECIES_LATIOS,
         .form_no = 1,
         .need_rev = 1,
-        .file = 1005,
+        .file = SPECIES_MEGA_LATIOS,
     },
-
-
     {
-        //Mega暴雪王
-        .species = 460, 
+        .species = SPECIES_RAYQUAZA,
         .form_no = 1,
         .need_rev = 1,
-        .file = 1006,
+        .file = SPECIES_MEGA_RAYQUAZA,
     },
-
     {
-        //Mega艾路雷朵
-        .species = 475, 
+        .species = SPECIES_LOPUNNY,
         .form_no = 1,
         .need_rev = 1,
-        .file = 1007,
+        .file = SPECIES_MEGA_LOPUNNY,
     },
-
+    {
+        .species = SPECIES_GARCHOMP,
+        .form_no = 1,
+        .need_rev = 1,
+        .file = SPECIES_MEGA_GARCHOMP,
+    },
+    {
+        .species = SPECIES_LUCARIO,
+        .form_no = 1,
+        .need_rev = 1,
+        .file = SPECIES_MEGA_LUCARIO,
+    },
+    {
+        .species = SPECIES_ABOMASNOW,
+        .form_no = 1,
+        .need_rev = 1,
+        .file = SPECIES_MEGA_ABOMASNOW,
+    },
+    {
+        .species = SPECIES_GALLADE,
+        .form_no = 1,
+        .need_rev = 1,
+        .file = SPECIES_MEGA_GALLADE,
+    },
+    {
+        .species = SPECIES_AUDINO,
+        .form_no = 1,
+        .need_rev = 1,
+        .file = SPECIES_MEGA_AUDINO,
+    },
+    {
+        .species = SPECIES_DIANCIE,
+        .form_no = 1,
+        .need_rev = 1,
+        .file = SPECIES_MEGA_DIANCIE,
+    }*/
 };
 
 u8 GetOtherFormPic(MON_PIC *picdata, u16 mons_no, u8 dir, u8 col,u8 form_no)

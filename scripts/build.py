@@ -76,7 +76,7 @@ def build_sprite():
             if fileExists and os.path.getmtime(DIR + "/" + i) < os.path.getmtime(NARC):
                 continue
             cmd = ["tools/gengfxnarc.exe"] + ["data/graphics/sprites",BUILD,str(len(get_dir) - 1)]
-            print("编译宠物图片")
+            print("generating gfx narc...")
             RunCommand(cmd)
             flag = 1
             break
