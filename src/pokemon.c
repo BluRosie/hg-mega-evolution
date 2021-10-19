@@ -32,7 +32,7 @@ const struct FormData PokeFormDataTbl[]=
         .species = SPECIES_SCEPTILE,//SPECIES_VENUSAUR,
         .form_no = 1,
         .need_rev = 1,
-        .file = SPECIES_MEGA_VENUSAUR,
+        .file = SPECIES_RAYQUAZA,//SPECIES_MEGA_VENUSAUR,
     },
 /*    {
         .species = SPECIES_CHARIZARD,
@@ -901,24 +901,4 @@ void PokeChildRandSet(struct POKEMON_PARAM *pp,void *sodateya)
 		}
 	}
     PokePasoParaSpeabiSet(&pp->boxMonData);
-}
-
-/********************************************************************************************************************/
-/********************************************************************************************************************/
-//                                                获取宠物行走图
-/********************************************************************************************************************/
-/********************************************************************************************************************/
-
-u16 GetPokemonOwNum(u16 species)
-{
-    u16 ownum;
-    u16* monOwTable = sys_AllocMemory(0,0x770);
-
-    ArchiveDataLoad(monOwTable,28,8);
-
-    ownum = monOwTable[species];
-
-    sys_FreeMemoryEz(monOwTable);
-
-    return ownum;
 }

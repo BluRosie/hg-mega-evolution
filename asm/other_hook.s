@@ -155,15 +155,6 @@ pop {r0-r3}
 ldr r0, =0x02070EDE + 1
 bx r0
 
-//小图标色板
-.global IconPalGet
-IconPalGet:
-push {r3}
-bl PokeIconPalNumGet
-pop {r3}
-ldr r1, =0x020743F8 + 1
-bx r1
-
 //mega
 //hook 0802F89C
 .global LoadMegaOam

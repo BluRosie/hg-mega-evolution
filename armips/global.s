@@ -4,8 +4,5 @@
 .include "armips/include/itemnums.s"
 .include "armips/include/movenums.s"
 
-.include "armips/data/iconpalettetable.s"
-
-.include "armips/asm/icons.s"
 .include "armips/asm/move.s"
 .include "armips/asm/syntheticoverlay.s"
