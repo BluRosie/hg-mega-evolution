@@ -111,43 +111,6 @@ def build_icon():
             shutil.copy("data/rawdata/first files from a020/" + i, "narc/pokemonicon/" + i)
         RunCommand(cmd_narc)
 
-def build_ow():
-    DIR = "data/graphics/overworlds"
-    NARC = "narc/pokemonow.narc"
-
-    get_dir = os.listdir(DIR)
-    fileExists = os.path.isfile(NARC)
-
-    flag = False
-    file = []
-
-    cmd_extract = ["tools/narchive.exe"] + ["extract", "base/root/a/0/8/1", "-o","narc/pokemonow","-nf"]
-    cmd_narc = ["tools/narchive.exe"] + ["create", "narc/pokemonow.narc", "narc/pokemonow","-nf"]
-
-    for i in get_dir:
-        if "_shiny" in i:
-            continue
-        if len(i) > 7:
-            OBJ = "build/pokemonow/2_" + i.replace(".png","")
-        else:
-            OBJ = "build/pokemonow/1_" + i.replace(".png","")
-        if os.path.isfile(OBJ) and os.path.getmtime(DIR + "/" + i) < os.path.getmtime(OBJ):
-            continue
-        cmd = ["tools/pngtobtx0.exe"] + [DIR + "/" + i,OBJ]
-        print("build " + i)
-        file.append(i.replace(".png",''))
-        flag = True
-        RunCommand(cmd)
-        
-    if not fileExists or flag:
-        RunCommand(cmd_extract)
-        for i in file:
-            if len(i) > 3:
-                shutil.copyfile("build/pokemonow/2_" + i, "narc/pokemonow/2_" + i)
-            else:
-                shutil.copyfile("build/pokemonow/1_" + i, "narc/pokemonow/1_" + i)
-        RunCommand(cmd_narc)
-            
 def build_txt():
     DIR = "data/text"
     NARC = "narc/text.narc"
@@ -279,7 +242,6 @@ def build_item_sprite():
 if __name__ == '__main__':
     build_sprite()
     build_icon()
-    build_ow()
     build_txt()
     #build_script()
     build_anim_script()

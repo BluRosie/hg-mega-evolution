@@ -1,18 +1,6 @@
-0012 StateChange 08007504 0
-0012 PokemonApper_hook 0801B9B4 0
-0012 ST_PokemonParamGet_hook 080170D8 1
-0012 DamageCheck 0801F73C 1
-0012 AbilityWeatherSpeed 080184F6 0
-0012 AbilityCheckPriority 0801890C 1
-0012 ServerWazaOutAfterMessage 080151E4 2
-0012 ST_ServerWazaHitTokuseiCheck_hook 0801C56E 1
-0012 ST_ServerPCCTokuseiCheck 0801B7A8 3
 0012 GetLinkPokemonText 0800EF74 0
 0012 ServerBeforeAct 08011A4C 2
 0012 ServerWazaBefore 08014ACC 2
-0012 CheckWeatherDamage_1 0800A308 0
-0012 CheckWeatherDamage_2 0800A40C 0
-0012 ServerDefenceCheck_hook 08013ADC 1
 
 #mega
 0012 LoadMegaOam 0802F89C 1
