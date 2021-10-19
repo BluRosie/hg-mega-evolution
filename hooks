@@ -30,6 +30,7 @@ arm9 PokeIconCgxPatternGet 080742CC 1
 arm9 PokePasoParaSpeabiSet 080722DC 1
 arm9 PokeChildRandSet 0806C304 2
 arm9 GetFormEvo 08070ED4 1
+arm9 IconPalGet 08074364 2
 arm9 ItemDataTableLoad 08078138 1
 
 #ability
