@@ -32,7 +32,7 @@ const struct FormData PokeFormDataTbl[]=
         .species = SPECIES_SCEPTILE,//SPECIES_VENUSAUR,
         .form_no = 1,
         .need_rev = 1,
-        .file = SPECIES_RAYQUAZA,//SPECIES_MEGA_VENUSAUR,
+        .file = SPECIES_MEGA_VENUSAUR,//SPECIES_MEGA_VENUSAUR,
     },
 /*    {
         .species = SPECIES_CHARIZARD,

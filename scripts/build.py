@@ -240,7 +240,7 @@ def build_item_sprite():
 
 
 if __name__ == '__main__':
-    #build_sprite()
+    build_sprite()
     #build_icon()
     #build_ow()
     build_txt()

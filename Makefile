@@ -95,6 +95,8 @@ all: $(OUTPUT)
 	@$(PYTHON) scripts/make.py
 	$(ARMIPS) armips/global.s
 	@$(PYTHON) scripts/build.py
+	cp narc/pokemonpic.narc base/root/a/0/0/4
+	cp narc/pokemonpic.narc base/root/pbr/pokegra.narc
 	@cp narc/text.narc base/root/a/0/2/7
 	@make move_narc
 	@$(NARCHIVE) create narc/synth.narc build/a028/ -nf
