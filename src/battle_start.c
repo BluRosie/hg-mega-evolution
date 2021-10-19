@@ -203,7 +203,7 @@ static BOOL MegaEvolution(void *bw, struct BattleStruct *sp)
             
             newBS.needMega[client_no] = MEGA_CHECK_APPER;
             sp->client_work = client_no;
-            ST_ServerSequenceLoad(sp,1,305);
+            ST_ServerSequenceLoad(sp,1,297); // load sequence 297 and execute
 	        sp->next_server_seq_no=sp->server_seq_no;
 	        sp->server_seq_no=0x16;
             return TRUE;
