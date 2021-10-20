@@ -331,3 +331,222 @@ void ServerWazaBefore(void *bw, struct BattleStruct *sp)
     }
     ST_ServerMetronomeBeforeCheck(bw, sp);//801ED20h
 }
+
+#define	SWOAM_NORMAL	(0)	//通常
+#define	SWOAM_LOOP		(1)	//连续技能
+
+enum{
+    SEQ_NORMAL_CRITICAL_MSG=0,
+    SEQ_NORMAL_WAZA_STATUS_MSG,
+    SEQ_NORMAL_ADD_STATUS_MSG,
+    SEQ_NORMAL_FORM_CHG_CHECK,
+    SEQ_NORMAL_IKARI_CHECK,
+    SEQ_NORMAL_TOKUSEI_CHECK,
+    SEQ_NORMAL_TOKUSEI_2_CHECK,
+    SEQ_NORMAL_ITEM_CHECK,
+    SEQ_NORMAL_HIRUMASERU_CHECK,
+    
+    SEQ_LOOP_CRITICAL_MSG=0,
+    SEQ_LOOP_ADD_STATUS_MSG,
+    SEQ_LOOP_FORM_CHG_CHECK,
+    SEQ_LOOP_IKARI_CHECK,
+    SEQ_LOOP_TOKUSEI_CHECK,
+    SEQ_LOOP_TOKUSEI_2_CHECK,
+    SEQ_LOOP_ITEM_CHECK,
+    SEQ_LOOP_WAZA_STATUS_MSG,
+    SEQ_LOOP_HIRUMASERU_CHECK,
+};
+
+//技能使用后的效果检查
+void ServerWazaOutAfterMessage(void *bw, struct BattleStruct *sp)
+{
+    if(sp->swoam_type == SWOAM_NORMAL)
+    {
+        switch (sp->swoam_seq_no)
+        {
+        //命中信息显示
+        case SEQ_NORMAL_CRITICAL_MSG:
+            sp->swoam_seq_no++;
+            if (ServerCriticalMessage(bw, sp) == TRUE)
+            {
+                return;
+            }
+        //技能状态文本显示
+        case SEQ_NORMAL_WAZA_STATUS_MSG:
+            sp->swoam_seq_no++;
+            if (ServerWazaStatusMessage(bw, sp) == TRUE)
+            {
+                return;
+            }
+        //追加效果文本显示
+        case SEQ_NORMAL_ADD_STATUS_MSG:
+        {
+            int seq_no;
+
+            sp->swoam_seq_no++;
+            if ((ST_ServerAddStatusCheck(bw, sp, &seq_no) == TRUE) && ((sp->waza_status_flag & WAZA_STATUS_FLAG_HAZURE) == 0))
+            {
+                ST_ServerSequenceLoad(sp, ARC_SUB_SEQ, seq_no);
+                sp->next_server_seq_no = sp->server_seq_no;
+                sp->server_seq_no = SERVER_WAZA_SEQUENCE_NO;
+                return;
+            }
+        }
+        //形态变化文本
+        case SEQ_NORMAL_FORM_CHG_CHECK:
+            sp->swoam_seq_no++;
+            ST_ServerSequenceLoad(sp, ARC_SUB_SEQ, 0x125);
+            sp->next_server_seq_no = sp->server_seq_no;
+            sp->server_seq_no = SERVER_WAZA_SEQUENCE_NO;
+            return;
+        case SEQ_NORMAL_IKARI_CHECK:
+            sp->swoam_seq_no++;
+            if (ServerIkariCheck(bw, sp) == TRUE)
+            {
+                return;
+            }
+        //特性检查,被攻击的效果
+        case SEQ_NORMAL_TOKUSEI_CHECK:
+        {
+            int seq_no;
+
+            sp->swoam_seq_no++;
+            //if (ST_ServerWazaHitTokuseiCheck_Old(bw, sp, &seq_no) == TRUE)
+            //{
+            //    ST_ServerSequenceLoad(sp, ARC_SUB_SEQ, seq_no);
+            //    sp->next_server_seq_no = sp->server_seq_no;
+            //    sp->server_seq_no = SERVER_WAZA_SEQUENCE_NO;
+            //    return;
+            //}
+        }
+        //特性检查2，攻击方效果
+        case SEQ_NORMAL_TOKUSEI_2_CHECK:
+        {
+            int seq_no;
+
+            sp->swoam_seq_no++;
+            //if (AttackAbilityCheck(bw, sp, &seq_no) == TRUE)
+            //{
+            //    ST_ServerSequenceLoad(sp, ARC_SUB_SEQ, seq_no);
+            //    sp->next_server_seq_no = sp->server_seq_no;
+            //    sp->server_seq_no = SERVER_WAZA_SEQUENCE_NO;
+            //    return;
+            //}
+        }
+        //道具效果
+        case SEQ_NORMAL_ITEM_CHECK:
+        {
+            int seq_no;
+
+            sp->swoam_seq_no++;
+            //if (AttackItemCheck(bw, sp, &seq_no, FALSE) == TRUE)
+            //{
+            //    ST_ServerSequenceLoad(sp, ARC_SUB_SEQ, seq_no);
+            //    sp->next_server_seq_no = sp->server_seq_no;
+            //    sp->server_seq_no = SERVER_WAZA_SEQUENCE_NO;
+            //    return;
+            //}
+        }
+        case SEQ_NORMAL_HIRUMASERU_CHECK:
+            sp->swoam_seq_no++;
+            if (ServerHirumaseruCheck(bw, sp) == TRUE)
+            {
+                return;
+            }
+        default:
+            break;
+        }
+    }
+    else if(sp->swoam_type == SWOAM_LOOP)
+    {
+        switch (sp->swoam_seq_no)
+        {
+        case SEQ_LOOP_CRITICAL_MSG:
+            sp->swoam_seq_no++;
+            if (ServerCriticalMessage(bw, sp) == TRUE)
+            {
+                return;
+            }
+        case SEQ_LOOP_ADD_STATUS_MSG:
+        {
+            int seq_no;
+
+            sp->swoam_seq_no++;
+            if ((ST_ServerAddStatusCheck(bw, sp, &seq_no) == TRUE) && ((sp->waza_status_flag & WAZA_STATUS_FLAG_HAZURE) == 0))
+            {
+                ST_ServerSequenceLoad(sp, ARC_SUB_SEQ, seq_no);
+                sp->next_server_seq_no = sp->server_seq_no;
+                sp->server_seq_no = SERVER_WAZA_SEQUENCE_NO;
+                return;
+            }
+        }
+        case SEQ_LOOP_FORM_CHG_CHECK:
+            sp->swoam_seq_no++;
+            ST_ServerSequenceLoad(sp, ARC_SUB_SEQ, 0x125);
+            sp->next_server_seq_no = sp->server_seq_no;
+            sp->server_seq_no = SERVER_WAZA_SEQUENCE_NO;
+            return;
+        case SEQ_LOOP_IKARI_CHECK:
+            sp->swoam_seq_no++;
+            if (ServerIkariCheck(bw, sp) == TRUE)
+            {
+                return;
+            }
+        case SEQ_LOOP_TOKUSEI_CHECK:
+        {
+            int seq_no;
+
+            sp->swoam_seq_no++;
+            if (ST_ServerWazaHitTokuseiCheck_Old(bw, sp, &seq_no) == TRUE)
+            {
+                ST_ServerSequenceLoad(sp, ARC_SUB_SEQ, seq_no);
+                sp->next_server_seq_no = sp->server_seq_no;
+                sp->server_seq_no = SERVER_WAZA_SEQUENCE_NO;
+                return;
+            }
+        }
+        case SEQ_LOOP_TOKUSEI_2_CHECK:
+        {
+            int seq_no;
+
+            sp->swoam_seq_no++;
+            //if (AttackAbilityCheck(bw, sp, &seq_no) == TRUE)
+            //{
+            //    ST_ServerSequenceLoad(sp, ARC_SUB_SEQ, seq_no);
+            //    sp->next_server_seq_no = sp->server_seq_no;
+            //    sp->server_seq_no = SERVER_WAZA_SEQUENCE_NO;
+            //    return;
+            //}
+        }
+        case SEQ_LOOP_ITEM_CHECK:
+        {
+            int seq_no;
+
+            sp->swoam_seq_no++;
+            //if (AttackItemCheck(bw, sp, &seq_no,TRUE) == TRUE)
+            //{
+            //    ST_ServerSequenceLoad(sp, ARC_SUB_SEQ, seq_no);
+            //    sp->next_server_seq_no = sp->server_seq_no;
+            //    sp->server_seq_no = SERVER_WAZA_SEQUENCE_NO;
+            //    return;
+            //}
+        }
+        case SEQ_LOOP_WAZA_STATUS_MSG:
+            sp->swoam_seq_no++;
+            if (ServerWazaStatusMessage(bw, sp) == TRUE)
+            {
+                return;
+            }
+        case SEQ_LOOP_HIRUMASERU_CHECK:
+            sp->swoam_seq_no++;
+            if (ServerHirumaseruCheck(bw, sp) == TRUE)
+            {
+                return;
+            }
+        default:
+            break;
+        }
+    }
+    sp->swoam_seq_no = 0;
+    sp->server_seq_no = 0x1F;
+}

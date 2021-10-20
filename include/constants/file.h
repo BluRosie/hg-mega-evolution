@@ -1,6 +1,7 @@
 #pragma once
 
 //NARC files
+#define ARC_SUB_SEQ 1
 #define ARC_PERSONAL 2
 #define ARC_MON_PIC 4
 #define ARC_OTHER_MON_PIC 114
@@ -18,11 +19,4 @@
 #define SEQ_WEAK_ARMOR 301
 #define SEQ_HARVEST 306
 #define SEQ_MOODY 307
-
-//mega种族值文件
-#define BASE_MEGA_VENUSAUR_DATA MEGA_VENUSAUR
-
-
-//MEGA图片
-#define FONTPIC_MEGA_VENUSAUR MEGA_VENUSAUR * 6 + 4
-#define PAL_MEGA_VENUSAUR MEGA_VENUSAUR * 6
+#define SERVER_WAZA_SEQUENCE_NO 22
