@@ -2,9 +2,9 @@
 .thumb
 
 .include "armips/asm/offset.s"
-.open "base/arm9.bin", 0x02000000
+.include "armips/data/iconpalettetable.s"
 
-gIconPalTable equ 0x020FFC10
+.open "base/arm9.bin", 0x02000000
 
 .org 0x02074364
 push {r3,lr}

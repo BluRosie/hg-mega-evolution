@@ -3,30 +3,3 @@ arm9 08000E28 00 00
 
 #fix dp read pokemon pic to hgss
 arm9 08009D2A C3
-
-#battle engine
-0012 0801F738 20 B4 0D 1C
-
-#move effect
-0012 08020ADA FF
-0012 08020AF0 10 70 25 02
-
-#item mart
-arm9 080FBC2A 1F 02 20 02 21 02 22 02
-arm9 080FBBF4 50 00 51 00 52 00 53 00 54 00 55 00
-
-#wild test
-0002 08002214 00 23
-
-#battle_debug
-#0012 08036AE8 12 17 01 15
-#0012 08036B03 B0
-#0012 0802FD6C 60
-#0012 0803695D 05
-
-#limit pokemon overworld
-0063 08002628 B4 03
-0096 080038FC B4 03
-
-#overworld
-#0001 08013A14 46 20

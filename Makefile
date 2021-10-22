@@ -183,10 +183,11 @@ move_narc:
 	@$(NARCHIVE) create narc/a012.narc build/a012/ -nf
 	mv narc/a012.narc base/root/a/0/1/2
 	rm -rf build/a012/
+	
+	@echo "pokemon icons:"
+	mv narc/pokemonicon.narc base/root/a/0/2/0
 
 	@$(NARCHIVE) extract base/root/a/0/1/7 -o build/a017/ -nf
 	@$(NARCHIVE) extract base/root/a/0/1/6 -o build/a016/ -nf
-	
-	cp data/rawdata/a068 base/root/a/0/6/8
 
 	

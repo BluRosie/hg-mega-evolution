@@ -1,8 +1,5 @@
-0012 GetLinkPokemonText 0800EF74 0
 0012 ServerBeforeAct 08011A4C 2
 0012 ServerWazaBefore 08014ACC 2
-0012 DamageCheck 0801F73C 1 
-# fuck
 
 #mega
 0012 LoadMegaOam 0802F89C 1
@@ -11,36 +8,15 @@
 0012 Sub_PokeIconResourceLoad 080308D4 1
 0012 Sub_PokeIconResourceFree 08030954 1
 
-#transparent textbox
-arm9 Tr_TextBox 0805B564 2
-arm9 FieldMsgPrintInit 0805B4EC 2
-arm9 WindowClose 08041190 0
-
-0002 rand 0800220C 1
-0002 AddPokemonParm_Encount 080029E0 1
-
-0015 BagSetRepelUse 080005BC 2
-
-arm9 ev_screen 08088B60 1
-
 arm9 PokePicLoad 080701EC 1
 arm9 PokeOtherFormMonsNoGet 08072634 2
-arm9 GetItemIndex 08077C18 2
-arm9 GetItemArcData 08077CE8 3
 arm9 PokeIconIndexGetByMonsNumber 080741BC 3
 arm9 PokeIconCgxPatternGet 080742CC 1
 arm9 PokePasoParaSpeabiSet 080722DC 1
 arm9 PokeChildRandSet 0806C304 2
 arm9 GetFormEvo 08070ED4 1
 arm9 IconPalGet 08074364 2
-arm9 ItemDataTableLoad 08078138 1
 
 #ability
 0012 Battle_End 08000B90 1
 0012 FormResert 080069AC 2
-0012 CheckCanTakeItem 08009A74 0
-
-#use item
-arm9 ItemUse_FuncGet 08064980 2
-
-#0001 lureCheck 08001DDC 0
