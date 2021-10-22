@@ -1,7 +1,8 @@
 0012 GetLinkPokemonText 0800EF74 0
 0012 ServerBeforeAct 08011A4C 2
 0012 ServerWazaBefore 08014ACC 2
-0012 ServerWazaOutAfterMessage 080151E4 2
+0012 DamageCheck 0801F73C 1 
+# fuck
 
 #mega
 0012 LoadMegaOam 0802F89C 1

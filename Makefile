@@ -147,20 +147,20 @@ move_narc:
 	cp -r data/move/move_seq/. build/a001
 	@$(NARCHIVE) create narc/a001.narc build/a001/ -nf
 	mv narc/a001.narc base/root/a/0/0/1
-	#rm -rf build/a001/
+	rm -rf build/a001/
 
-	@echo "move effects:"
-	@$(NARCHIVE) extract base/root/a/0/3/0 -o build/a030/ -nf
-	cp -r data/move/move_effect/. build/a030
-	@$(NARCHIVE) create narc/a030.narc build/a030/ -nf
-	mv narc/a030.narc base/root/a/0/3/0
-	rm -rf build/a030/
+	#@echo "move effects:"
+	#@$(NARCHIVE) extract base/root/a/0/3/0 -o build/a030/ -nf
+	#cp -r data/move/move_effect/. build/a030
+	#@$(NARCHIVE) create narc/a030.narc build/a030/ -nf
+	#mv narc/a030.narc base/root/a/0/3/0
+	#rm -rf build/a030/
 
-	@echo "move subroutines:"
-	@$(NARCHIVE) extract base/root/a/0/0/0 -o build/a000/ -nf
-	cp -r data/move/move_sub/. build/a000
-	@$(NARCHIVE) create narc/a000.narc build/a000/ -nf
-	mv narc/a000.narc base/root/a/0/0/0
+	#@echo "move subroutines:"
+	#@$(NARCHIVE) extract base/root/a/0/0/0 -o build/a000/ -nf
+	#cp -r data/move/move_sub/. build/a000
+	#@$(NARCHIVE) create narc/a000.narc build/a000/ -nf
+	#mv narc/a000.narc base/root/a/0/0/0
 	#rm -rf build/a000/
 
 	@echo "item gfx:"

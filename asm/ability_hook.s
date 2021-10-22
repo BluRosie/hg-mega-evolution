@@ -23,3 +23,11 @@ backToThief_1:
 ldr r0, =0x9A86 + Overlay_12_Start
 bx r0
 
+
+.global DamageCheck
+DamageCheck:
+mov r1, r5
+pop {r5}
+push {lr}
+bl DamageCalc
+pop {pc}
