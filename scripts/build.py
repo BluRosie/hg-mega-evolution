@@ -249,4 +249,4 @@ if __name__ == '__main__':
     build_seq_script()
     #build_effect_script()
     build_item_sprite()
-    build_suub_script()
+    #build_suub_script()

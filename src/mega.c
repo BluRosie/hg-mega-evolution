@@ -16,7 +16,54 @@ struct MegaStrcut
 
 const struct MegaStrcut sMegaTable[] =
 {
-    {SPECIES_SCEPTILE /*SPECIES_VENUSAUR*/, 1},
+    //{SPECIES_VENUSAUR, 1},
+    //{SPECIES_CHARIZARD, 1}, // x
+    //{SPECIES_CHARIZARD, 2}, // y
+    //{SPECIES_BLASTOISE, 1},
+    //{SPECIES_BEEDRILL, 1},
+    //{SPECIES_PIDGEOT, 1},
+    //{SPECIES_ALAKAZAM, 1},
+    //{SPECIES_SLOWBRO, 1},
+    //{SPECIES_GENGAR, 1},
+    //{SPECIES_KANGASKHAN, 1},
+    //{SPECIES_PINSIR, 1},
+    //{SPECIES_GYARADOS, 1},
+    //{SPECIES_AERODACTYL, 1},
+    //{SPECIES_MEWTWO, 1}, // x
+    //{SPECIES_MEWTWO, 2}, // y
+    //{SPECIES_AMPHAROS, 1},
+    //{SPECIES_STEELIX, 1},
+    //{SPECIES_SCIZOR, 1},
+    //{SPECIES_HERACROSS, 1},
+    //{SPECIES_HOUNDOOM, 1},
+    //{SPECIES_TYRANITAR, 1},
+    {SPECIES_SCEPTILE, 1},
+    //{SPECIES_BLAZIKEN, 1},
+    //{SPECIES_SWAMPERT, 1},
+    //{SPECIES_GARDEVOIR, 1},
+    //{SPECIES_SABLEYE, 1},
+    //{SPECIES_MAWILE, 1},
+    //{SPECIES_AGGRON, 1},
+    //{SPECIES_MEDICHAM, 1},
+    //{SPECIES_MANECTRIC, 1},
+    //{SPECIES_SHARPEDO, 1},
+    //{SPECIES_CAMERUPT, 1},
+    //{SPECIES_ALTARIA, 1},
+    //{SPECIES_BANETTE, 1},
+    //{SPECIES_ABSOL, 1},
+    //{SPECIES_GLALIE, 1},
+    //{SPECIES_SALAMENCE, 1},
+    //{SPECIES_METAGROSS, 1},
+    //{SPECIES_LATIAS, 1},
+    //{SPECIES_LATIOS, 1},
+    //{SPECIES_RAYQUAZA, 1},
+    //{SPECIES_LOPUNNY, 1},
+    //{SPECIES_GARCHOMP, 1},
+    //{SPECIES_LUCARIO, 1},
+    //{SPECIES_ABOMASNOW, 1},
+    //{SPECIES_GALLADE, 1},
+    //{SPECIES_AUDINO, 1},
+    //{SPECIES_DIANCIE, 1},
 };
 
 static BOOL CheckMegaData(u16 mon, u16 item);

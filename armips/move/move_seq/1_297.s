@@ -5,7 +5,7 @@
 
 //mega计划动画
 //Guard Split
-MegaMsg equ 1304
+MegaMsg equ 1276
 
 .create "data/move/move_seq/1_297", 0x0
 

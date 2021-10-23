@@ -149,20 +149,6 @@ move_narc:
 	mv narc/a001.narc base/root/a/0/0/1
 	rm -rf build/a001/
 
-	#@echo "move effects:"
-	#@$(NARCHIVE) extract base/root/a/0/3/0 -o build/a030/ -nf
-	#cp -r data/move/move_effect/. build/a030
-	#@$(NARCHIVE) create narc/a030.narc build/a030/ -nf
-	#mv narc/a030.narc base/root/a/0/3/0
-	#rm -rf build/a030/
-
-	#@echo "move subroutines:"
-	#@$(NARCHIVE) extract base/root/a/0/0/0 -o build/a000/ -nf
-	#cp -r data/move/move_sub/. build/a000
-	#@$(NARCHIVE) create narc/a000.narc build/a000/ -nf
-	#mv narc/a000.narc base/root/a/0/0/0
-	#rm -rf build/a000/
-
 	@echo "item gfx:"
 	@$(NARCHIVE) extract base/root/a/0/1/8 -o build/a018/ -nf
 	cp -r data/rawdata/itempic/. build/a018
@@ -170,13 +156,6 @@ move_narc:
 	mv narc/a018.narc base/root/a/0/1/8
 	rm -rf build/a018/
 
-	@echo "saving/frame gfx:"		
-	@$(NARCHIVE) extract base/root/a/0/3/8 -o build/a038/ -nf
-	cp -r data/rawdata/filesa038/. build/a038
-	@$(NARCHIVE) create narc/a038.narc build/a038/ -nf
-	mv narc/a038.narc base/root/a/0/3/8
-	rm -rf build/a038/
-	
 	@echo "scripts:"
 	@$(NARCHIVE) extract base/root/a/0/1/2 -o build/a012/ -nf
 	cp -r data/script/. build/a012
@@ -186,8 +165,4 @@ move_narc:
 	
 	@echo "pokemon icons:"
 	mv narc/pokemonicon.narc base/root/a/0/2/0
-
-	@$(NARCHIVE) extract base/root/a/0/1/7 -o build/a017/ -nf
-	@$(NARCHIVE) extract base/root/a/0/1/6 -o build/a016/ -nf
-
 	
