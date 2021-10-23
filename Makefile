@@ -66,13 +66,6 @@ OW_SPRITES_SRC := $(wildcard data/graphics/overworlds/*.png)
 OW_SPRITES_OBJS := $(patsubst data/graphics/overworlds/*.png,build/data/graphics/overworlds/%.swav,$(OW_SPRITES_SRC))
 
 ####################### Build #########################
-narc/mondata.narc: armips/data/mondata.s
-	@mkdir -p narc/mondata/
-	$(ARMIPS) armips/data/mondata.s
-	$(NARCHIVE) create narc/mondata.narc narc/mondata -nf
-	@rm -rf narc/mondata
-	@cp narc/mondata.narc base/root/a/0/0/2
-
 build/%.d:asm/%.s
 	$(AS) $(ASFLAGS) -c $< -o $@
 
@@ -86,8 +79,6 @@ $(LINK):$(OBJS)
 
 $(OUTPUT):$(LINK)
 	@$(OBJCOPY) -O binary $< $@
-
-narc_data: narc/mondata.narc
 
 all: $(OUTPUT)
 	@rm -rf base
@@ -104,11 +95,10 @@ all: $(OUTPUT)
 	@$(PYTHON) scripts/make.py
 	$(ARMIPS) armips/global.s
 	@$(PYTHON) scripts/build.py
-	@make narc_data -j$(nproc)
 	cp narc/pokemonpic.narc base/root/a/0/0/4
 	cp narc/pokemonpic.narc base/root/pbr/pokegra.narc
 	@cp narc/text.narc base/root/a/0/2/7
-	@make move_narc
+	@make move_narc -j$(nproc)
 	@$(NARCHIVE) create narc/synth.narc build/a028/ -nf
 	@mv narc/synth.narc base/root/a/0/2/8
 	@echo -e "\e[32;1mMaking ROM..\e[37;1m"
@@ -165,4 +155,12 @@ move_narc:
 	
 	@echo "pokemon icons:"
 	mv narc/pokemonicon.narc base/root/a/0/2/0
+	
+	@echo "mon data:"
+	@cp base/root/a/0/0/2 narc/mondata.narc
+	@$(NARCHIVE) extract narc/mondata.narc -o narc/mondata -nf
+	@$(ARMIPS) armips/data/mondata.s
+	@$(NARCHIVE) create narc/mondata.narc narc/mondata -nf
+	@rm -rf narc/mondata
+	@cp narc/mondata.narc base/root/a/0/0/2
 	
