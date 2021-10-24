@@ -93,6 +93,7 @@ def build_icon():
 
     flag = False
 
+    RunCommand(["tools/narchive.exe"] + ["extract", "base/root/a/0/2/0", "-o", "narc/pokemonicon","-nf"])
     cmd_narc = ["tools/narchive.exe"] + ["create", "narc/pokemonicon.narc", "narc/pokemonicon","-nf"]
 
     for i in get_dir:
@@ -110,52 +111,6 @@ def build_icon():
         for i in os.listdir("data/rawdata/first files from a020/"):
             shutil.copy("data/rawdata/first files from a020/" + i, "narc/pokemonicon/" + i)
         RunCommand(cmd_narc)
-
-def build_txt():
-    DIR = "data/text"
-    NARC = "narc/text.narc"
-    BUILD = "build/text"
-
-    get_dir = os.listdir(DIR)
-    fileExists = os.path.isfile(NARC)
-
-    flag = False
-
-    cmd_narc = ["tools/narchive.exe"] + ["create", "narc/text.narc", "build/text","-nf"]
-        
-    for i in get_dir:
-        if ".key" in i:
-            continue
-        OBJ = "build/text/7_" + i.replace(".txt","")
-        if os.path.isfile(OBJ) and os.path.getmtime(DIR + "/" + i) < os.path.getmtime(OBJ):
-            continue
-        cmd = ["tools/msgenc.exe"] + ["-e", "-c","charmap.txt", DIR + "/" + i,OBJ]
-        flag = True
-        RunCommand(cmd)
-
-    if not fileExists or flag:
-        RunCommand(cmd_narc)
-        
-def build_script():
-    DIR = "armips/script/"
-    BUILD = "data/script/"
-
-    get_dir = os.listdir(DIR)
-    if len(get_dir) == 0:
-        return
-
-    for i in get_dir:
-        OBJ = BUILD + i.replace(".s","")
-        if ".o" in i:
-            continue
-        if os.path.isfile(OBJ) and os.path.getmtime(DIR + i) < os.path.getmtime(OBJ):
-            continue
-        cmd = [AS] + ASFLAGS + ['-c', DIR + i, '-o', DIR + i.replace(".s",".o")]
-        print("script "+i)
-        RunCommand(cmd)
-        cmd = [OBJCOPY, '-O', 'binary', DIR + i.replace(".s",".o"), OBJ]
-        RunCommand(cmd)
-        os.remove(DIR + i.replace(".s",".o"))
 
 def build_anim_script():
     DIR = "armips/move/move_anim/"
@@ -188,38 +143,6 @@ def build_seq_script():
         cmd = ["tools/armips.exe"] + [DIR + i]
         print("script "+i)
         RunCommand(cmd)
-
-def build_effect_script():
-    DIR = "armips/move/move_effect/"
-    BUILD = "data/move/move_effect/"
-
-    get_dir = os.listdir(DIR)
-    if len(get_dir) == 0:
-        return
-
-    for i in get_dir:
-        OBJ = BUILD + i.replace(".s","")
-        if os.path.isfile(OBJ) and os.path.getmtime(DIR + i) < os.path.getmtime(OBJ):
-            continue
-        cmd = ["tools/armips.exe"] + [DIR + i]
-        print("script "+i)
-        RunCommand(cmd)
-
-def build_suub_script():
-    DIR = "armips/move/move_sub/"
-    BUILD = "data/move/move_sub/"
-
-    get_dir = os.listdir(DIR)
-    if len(get_dir) == 0:
-        return
-
-    for i in get_dir:
-        OBJ = BUILD + "0_" + i.replace(".s","")
-        if os.path.isfile(OBJ) and os.path.getmtime(DIR + i) < os.path.getmtime(OBJ):
-            continue
-        cmd = ["tools/armips.exe"] + [DIR + i]
-        print("script "+i)
-        RunCommand(cmd)
     
 def build_item_sprite():
     DIR = "data/graphics/item/"
@@ -242,11 +165,6 @@ def build_item_sprite():
 if __name__ == '__main__':
     build_sprite()
     build_icon()
-    #build_ow()
-    build_txt()
-    #build_script()
     build_anim_script()
     build_seq_script()
-    #build_effect_script()
     build_item_sprite()
-    #build_suub_script()
