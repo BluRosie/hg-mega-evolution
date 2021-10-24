@@ -66,7 +66,6 @@ def build_sprite():
     fileExists = os.path.isfile(NARC)
 
     flag = 0
-    cmd_narc = ["tools/narchive.exe"] + ["create", "narc/pokemonpic.narc", "build/pokemonpic","-nf"]
     if not os.path.exists(BUILD):
         os.makedirs(BUILD)
 
@@ -76,12 +75,9 @@ def build_sprite():
             if fileExists and os.path.getmtime(DIR + "/" + i) < os.path.getmtime(NARC):
                 continue
             cmd = ["tools/gengfxnarc.exe"] + ["data/graphics/sprites",BUILD,str(len(get_dir) - 1)]
-            print("generating gfx narc...")
+            print("generating gfx data for folder " + i + "...")
             RunCommand(cmd)
             flag = 1
-            break
-        if flag == 1:
-            RunCommand(cmd_narc)
             break
 
 def build_icon():

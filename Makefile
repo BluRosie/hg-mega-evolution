@@ -96,8 +96,6 @@ all: $(OUTPUT)
 	$(ARMIPS) armips/global.s
 	$(NARCHIVE) extract base/root/a/0/2/7 -o build/text -nf
 	$(PYTHON) scripts/build.py
-	cp narc/pokemonpic.narc base/root/a/0/0/4
-	cp narc/pokemonpic.narc base/root/pbr/pokegra.narc
 	make move_narc -j$(nproc)
 	$(NARCHIVE) create narc/synth.narc build/a028/ -nf
 	mv narc/synth.narc base/root/a/0/2/8
@@ -168,3 +166,8 @@ move_narc:
 	$(NARCHIVE) extract base/root/a/0/2/7 -o build/text/ -nf
 	$(MSGENC) -e -c charmap.txt data/text/197.txt build/text/7_197
 	$(NARCHIVE) create base/root/a/0/2/7 build/text/ -nf
+	
+	@echo "mon sprite data:"
+	$(NARCHIVE) extract base/root/a/0/0/4 -o build/pokemonpic -nf
+	$(NARCHIVE) create base/root/a/0/0/4 build/pokemonpic -nf
+	$(NARCHIVE) create base/root/pbr/pokegra.narc build/pokemonpic -nf
