@@ -15,7 +15,6 @@ narc/*
 b.c
 dump.py
 dumpitem.py
-make.py
 
 # pycache files
 *.pyc
