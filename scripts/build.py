@@ -142,7 +142,7 @@ def build_seq_script():
     
 def build_item_sprite():
     DIR = "data/graphics/item/"
-    BUILD = "data/rawdata/itempic/"
+    BUILD = "data/build/itempic/"
 
     get_dir = os.listdir(DIR)
 

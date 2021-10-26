@@ -1,18 +1,9 @@
-## It's not finished, but I'm too lazy to finish it, because I'm a rookie
-# Pokemon-Heart-Gold-Engine
+# hg-mega-evolution
 ## About
- A complete upgrade for HeartGold(USA), inspired by Skeli's CFRU
+ Mega Evolution in English Pok
 
 ## Features:
-* New Ability
-* New Move
-* New item
-* New Type
-* Mega(only gen1 pokemon can mega, held master ball and click button on battle)
-* Transparent textbox
-* Show IVEV in mon summary screen
-* form change
-* More
+* Mega Evolutions
 
 
 ## Installation Instructions(from CFRU):
@@ -34,13 +25,11 @@ After downloading and before proceeding to install, make sure that the **add to 
 
 # Credits
 * [CREDITS.md](CREDITS.md).
-* [**Bubble (C Injection Template)**][TEMPLATE]
+* [**Bubble (Base Mega Code)**][TEMPLATE]
 * [**Skeli (FR template)**][CFRU]
-* [**CodenamePU (NARC tool)**][G5T]
-* [**BluRosie (hgss-monexpansion)**][MONEXPAND]
-* [**PokeDiamond decompilation projects (some tool)**][diamond]
+* [**PokeDiamond decompilation projects (nitrogfx, msgenc)**][diamond]
 * [**Mikelan98, Nomura (ARM9 Expansion Subroutine )**][ARM9]
-* Rafael Vuijk (Nintendo DS rom tool)
+* Rafael Vuijk (ndstool)
 
 [MONEXPAND]: https://github.com/BluRosie/hgss-monexpansion
 [CFRU]: https://github.com/Skeli789/Complete-Fire-Red-Upgrade
