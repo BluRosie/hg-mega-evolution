@@ -29,12 +29,12 @@ struct FormData
 const struct FormData PokeFormDataTbl[]=
 {
     {
-        .species = SPECIES_SCEPTILE,
+        .species = SPECIES_VENUSAUR,
         .form_no = 1,
         .need_rev = 1,
         .file = SPECIES_MEGA_VENUSAUR,
     },
-/*    {
+    {
         .species = SPECIES_CHARIZARD,
         .form_no = 1,
         .need_rev = 1,
@@ -304,7 +304,7 @@ const struct FormData PokeFormDataTbl[]=
         .need_rev = 1,
         .file = SPECIES_MEGA_GALLADE,
     },
-    {
+    /*{
         .species = SPECIES_AUDINO,
         .form_no = 1,
         .need_rev = 1,
@@ -549,7 +549,6 @@ void BattleFormChange(int client, int form_no, void* bw,struct BattleStruct *sp,
     SetMonData(pp2,112,&form_no);
 
     PokeParaCalc(pp2);
-    //特性
     if(SwitchAbility)
     {
         PokeParaSpeabiSet(pp2);

@@ -29,11 +29,11 @@ struct newBattleStruct newBS = {0};
 
 const ButtonTBL SkillMenuTouchData[] = {
 	//UP DOWN LEFT RIGHT
-	{0x13 * 8, 0x18 * 8, 1 * 8, 0xB0},	  //返回
-	{3 * 8, 10 * 8, 0 * 8, 0x10 * 8},	  //技1
-	{3 * 8, 10 * 8, 0x10 * 8, 255},		  //技2
-	{0xb * 8, 0x12 * 8, 0 * 8, 0x10 * 8}, //技3
-	{0xb * 8, 0x12 * 8, 0x10 * 8, 255},	  //技4
+	{0x13 * 8, 0x18 * 8, 1 * 8, 0xB0},	  //return
+	{3 * 8, 10 * 8, 0 * 8, 0x10 * 8},	  //move 1
+	{3 * 8, 10 * 8, 0x10 * 8, 255},		  //move 2
+	{0xb * 8, 0x12 * 8, 0 * 8, 0x10 * 8}, //move 3
+	{0xb * 8, 0x12 * 8, 0x10 * 8, 255},	  //move 4
 	{0x13 * 8, 0x18 * 8, 0xB0, 0xF8},	  //mega
 	{RECT_HIT_END, 0, 0, 0}};
 
@@ -50,8 +50,8 @@ ALIGN4 const u8 SkillMenuPaletteNo[NELEMS(SkillMenuTouchData) - 1] = {
 	4,	 //SELECT_CANCEL,
 	8,	 //SELECT_SKILL_1,
 	9,	 //SELECT_SKILL_2,
-	0xa, //SELECT_SKILL_3,
-	0xb, //SELECT_SKILL_4,
+	10, //SELECT_SKILL_3,
+	11, //SELECT_SKILL_4,
 	4,	 //mega
 };
 
@@ -97,7 +97,7 @@ static const OAMSpriteTemplate MegaButtonTemplate = {
 
 static void EFFECT_MegaTouch(void *tcb, void *work);
 
-//读取精灵小图标
+// reads the sprite icon
 void Sub_PokeIconResourceLoad(struct BI_PARAM *bip)
 {
 	void *csp;
@@ -182,7 +182,7 @@ void LoadMegaButton(struct BI_PARAM *bip)
 	void *csp;
 	void *crp;
 	void *pfd = BattleWorkPfdGet(bip->bw);
-	int iconindex = 801;
+	int iconindex = 801; // indices of new sprites added to item narc
 	int palindex = 802;
 
 	if (newBS.PlayerMegaed)
@@ -207,22 +207,20 @@ void LoadMegaButton(struct BI_PARAM *bip)
 }
 
 #define RECT_HIT_NONE (0xffffffff)
-///スクリーン番号：技選択「キャンセル」アニメ0、左上
-#define SCRN_NO_WAZA_CANCEL_0 (0x1d)
-///スクリーン番号：技選択「キャンセル」アニメ1、左上
-#define SCRN_NO_WAZA_CANCEL_1 (0xdd)
-///スクリーン番号：技選択「キャンセル」アニメ2、左上
-#define SCRN_NO_WAZA_CANCEL_2 (0x19d)
-ALIGN4 static const s16 WazaButtonScrnOffset[][3] = {
+#define SCREEN_CANCEL_0 (0x1d)
+#define SCREEN_CANCEL_1 (0xdd)
+#define SCREEN_CANCEL_2 (0x19d)
+
+ALIGN4 static const s16 MoveSelectScreenOffsets[][3] = {
 	{
 		//SELECT_CANCEL
-		SCRN_NO_WAZA_CANCEL_0 - SCRN_NO_WAZA_CANCEL_0,
-		SCRN_NO_WAZA_CANCEL_1 - SCRN_NO_WAZA_CANCEL_0,
-		SCRN_NO_WAZA_CANCEL_2 - SCRN_NO_WAZA_CANCEL_0,
+		SCREEN_CANCEL_0 - SCREEN_CANCEL_0,
+		SCREEN_CANCEL_1 - SCREEN_CANCEL_0,
+		SCREEN_CANCEL_2 - SCREEN_CANCEL_0,
 	},
 };
 
-ALIGN4 static const ButtonTBL WazaButtonScrnRect[] = {
+ALIGN4 static const ButtonTBL MoveSelectButtonScreenRectangle[] = {
 	{0x12, 0x17, 22, 0x1e},
 };
 
@@ -261,8 +259,8 @@ u8 CheckMegaButton(struct BI_PARAM *bip, int tp_ret)
 	OAM_ObjectUpdate(newBS.MegaButton->act);
 	Snd_SePlay(1501);
 	EffectTCB_Add(EFFECT_MegaTouch, bip); //315c4
-	bip->scrn_offset = WazaButtonScrnOffset[0];
-	bip->scrn_range = &WazaButtonScrnRect[0];
+	bip->scrn_offset = MoveSelectScreenOffsets[0];
+	bip->scrn_range = &MoveSelectButtonScreenRectangle[0];
 	bip->scrnbuf_no = 3;
 	bip->tp_ret = RECT_HIT_NONE;
 	bip->obj_del = FALSE;

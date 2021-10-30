@@ -5,6 +5,7 @@
 #include "../include/constants/ability.h"
 #include "../include/constants/item.h"
 #include "../include/constants/file.h"
+#include "../include/constants/species.h"
 
 /********************************************************************************************************************/
 /********************************************************************************************************************/
@@ -13,9 +14,9 @@
 /********************************************************************************************************************/
 
 enum{
-	SBA_KIAI_PUNCH=0,
-	SBA_IKARI,
-	SBA_AGI_CALC,
+	SBA_FOCUS_PUNCH=0,
+	SBA_RAGE,
+	SBA_RANDOM_SPEED_ROLL,
     SBA_MEGA,
 	SBA_END
 };
@@ -46,8 +47,7 @@ void ServerBeforeAct(void *bw, struct BattleStruct *sp)
     {
         switch (sp->sba_seq_no)
         {
-            //气合拳
-        case SBA_KIAI_PUNCH:
+        case SBA_FOCUS_PUNCH:
             while (sp->sba_work < client_set_max)
             {
                 client_no = sp->client_agi_work[sp->sba_work];
@@ -74,8 +74,7 @@ void ServerBeforeAct(void *bw, struct BattleStruct *sp)
             sp->sba_work = 0;
             sp->sba_seq_no++;
             break;
-        //愤怒
-        case SBA_IKARI:
+        case SBA_RAGE:
             for (client_no = 0; client_no < client_set_max; client_no++)
             {
                 if ((sp->battlemon[client_no].condition2 & 0x800000) && (ST_ServerSelectWazaGet(sp, client_no) != 99))
@@ -85,8 +84,7 @@ void ServerBeforeAct(void *bw, struct BattleStruct *sp)
             }
             sp->sba_seq_no++;
             break;
-        //速度随机
-        case SBA_AGI_CALC:
+        case SBA_RANDOM_SPEED_ROLL:
             for (client_no = 0; client_no < CLIENT_MAX; client_no++)
             {
                 sp->agi_rand[client_no] = BattleWorkRandGet(bw);
@@ -100,17 +98,17 @@ void ServerBeforeAct(void *bw, struct BattleStruct *sp)
                 if (sp->client_act_work[0][3] != SELECT_ESCAPE_COMMAND &&
                     sp->client_act_work[2][3] != SELECT_ESCAPE_COMMAND)
                 {
-                    //玩家mega
+                    //player requests mega
                     if (client_no == 0 || client_no == 2)
                     {
                         if (CheckCanMega(sp, client_no) && newBS.playerWantMega)
                         {
                             sp->battlemon[client_no].canMega = 1;
-                            newBS.SideMega[0] = TRUE;
+                               newBS.SideMega[0] = TRUE;
                             flag = TRUE;
                         }
                     }
-                    //AI Mega
+                    //ai requests mega
                     else
                     { 
                         if (CheckCanMega(sp, client_no))
@@ -187,14 +185,13 @@ static BOOL MegaEvolution(void *bw, struct BattleStruct *sp)
             {
                 newBS.PlayerMegaed = TRUE;
             }
-            //喷火龙和超梦
-            if((sp->battlemon[client_no].species == 6 && sp->battlemon[client_no].item == 1) || 
-                (sp->battlemon[client_no].species == 150 && sp->battlemon[client_no].item == 1))
-                {
-                    BattleFormChange(client_no,2,bw,sp,TRUE);
-                    sp->battlemon[client_no].form_no = 2;
-                }
-            
+            // handle charizard/mewtwo branch mega evos
+            if((sp->battlemon[client_no].species == SPECIES_CHARIZARD && sp->battlemon[client_no].item == 2) || 
+                (sp->battlemon[client_no].species == SPECIES_MEWTWO && sp->battlemon[client_no].item == 2))
+            {
+                BattleFormChange(client_no,2,bw,sp,TRUE);
+                sp->battlemon[client_no].form_no = 2;
+            }
             else
             {
                 BattleFormChange(client_no,1,bw,sp,TRUE);

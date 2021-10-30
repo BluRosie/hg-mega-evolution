@@ -87,6 +87,7 @@ all: $(OUTPUT)
 	mkdir -p narc/pokemonow
 	mkdir -p narc/pokemonicon
 	mkdir -p build/pokemonow
+	mkdir -p build/a018
 	mkdir -p build/text
 	mkdir -p narc/text
 	$(NDSTOOL) -x $(ROMNAME) -9 base/arm9.bin -7 base/arm7.bin -y9 base/overarm9.bin -y7 base/overarm7.bin -d base/root -y base/overlay -t base/banner.bin -h base/header.bin
@@ -139,10 +140,8 @@ move_narc:
 
 	@echo "item gfx:"
 	$(NARCHIVE) extract base/root/a/0/1/8 -o build/a018/ -nf
-	cp -r data/rawdata/itempic/. build/a018
 	$(NARCHIVE) create narc/a018.narc build/a018/ -nf
 	mv narc/a018.narc base/root/a/0/1/8
-	rm -rf build/a018/
 
 	@echo "scripts:"
 	$(NARCHIVE) extract base/root/a/0/1/2 -o build/a012/ -nf

@@ -1,6 +1,6 @@
 # hg-mega-evolution
 ## About
- Mega Evolution in English Pok
+ Mega Evolution in English Pokemon Heart Gold
 
 ## Features:
 * Mega Evolutions
