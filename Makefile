@@ -164,6 +164,9 @@ move_narc:
 	@echo "text data:"
 	$(NARCHIVE) extract base/root/a/0/2/7 -o build/text/ -nf
 	$(MSGENC) -e -c charmap.txt data/text/197.txt build/text/7_197
+	$(MSGENC) -e -c charmap.txt data/text/221.txt build/text/7_221
+	$(MSGENC) -e -c charmap.txt data/text/222.txt build/text/7_222
+	$(MSGENC) -e -c charmap.txt data/text/223.txt build/text/7_223
 	$(NARCHIVE) create base/root/a/0/2/7 build/text/ -nf
 	
 	@echo "mon sprite data:"

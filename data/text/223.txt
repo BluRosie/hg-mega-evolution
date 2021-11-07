@@ -535,3 +535,50 @@ a {COLOR 255}Lock Capsule{COLOR 0}
 a {COLOR 255}Red Orb{COLOR 0}
 a {COLOR 255}Blue Orb{COLOR 0}
 an {COLOR 255}Enigma Stone{COLOR 0}
+a {COLOR 255}Venusaurite{COLOR 0}
+a {COLOR 255}Charizite X{COLOR 0}
+a {COLOR 255}Charizite Y{COLOR 0}
+a {COLOR 255}Blastoisite{COLOR 0}
+a {COLOR 255}Beedrillite{COLOR 0}
+a {COLOR 255}Pidgeotite{COLOR 0}
+an {COLOR 255}Alakazite{COLOR 0}
+a {COLOR 255}Slowbronite{COLOR 0}
+a {COLOR 255}Gengarite{COLOR 0}
+a {COLOR 255}Kangaskhite{COLOR 0}
+a {COLOR 255}Pinsirite{COLOR 0}
+a {COLOR 255}Gyaradosite{COLOR 0}
+an {COLOR 255}Aerodactite{COLOR 0}
+a {COLOR 255}Mewtwonite X{COLOR 0}
+a {COLOR 255}Mewtwonite Y{COLOR 0}
+an {COLOR 255}Ampharosite{COLOR 0}
+a {COLOR 255}Steelixite{COLOR 0}
+a {COLOR 255}Scizorite{COLOR 0}
+a {COLOR 255}Heracronite{COLOR 0}
+a {COLOR 255}Houndoomite{COLOR 0}
+a {COLOR 255}Tyranitarite{COLOR 0}
+a {COLOR 255}Sceptilite{COLOR 0}
+a {COLOR 255}Blazikenite{COLOR 0}
+a {COLOR 255}Swampertite{COLOR 0}
+a {COLOR 255}Gardevoirite{COLOR 0}
+a {COLOR 255}Sablenite{COLOR 0}
+a {COLOR 255}Mawilite{COLOR 0}
+an {COLOR 255}Aggronite{COLOR 0}
+a {COLOR 255}Medichamite{COLOR 0}
+a {COLOR 255}Manectite{COLOR 0}
+a {COLOR 255}Sharpedonite{COLOR 0}
+a {COLOR 255}Cameruptite{COLOR 0}
+an {COLOR 255}Altarianite{COLOR 0}
+a {COLOR 255}Banettite{COLOR 0}
+an {COLOR 255}Absolite{COLOR 0}
+a {COLOR 255}Glalitite{COLOR 0}
+a {COLOR 255}Salamencite{COLOR 0}
+a {COLOR 255}Metagrossite{COLOR 0}
+a {COLOR 255}Latiasite{COLOR 0}
+a {COLOR 255}Latiosite{COLOR 0}
+a {COLOR 255}Lopunnite{COLOR 0}
+a {COLOR 255}Garchompite{COLOR 0}
+a {COLOR 255}Lucarionite{COLOR 0}
+an {COLOR 255}Abomasite{COLOR 0}
+a {COLOR 255}Galladite{COLOR 0}
+an {COLOR 255}Audinite{COLOR 0}
+a {COLOR 255}Diancite{COLOR 0}

@@ -535,3 +535,50 @@ Lock Capsule
 Red Orb
 Blue Orb
 Enigma Stone
+Venusaurite
+Charizite X
+Charizite Y
+Blastoisite
+Beedrillite
+Pidgeotite
+Alakazite
+Slowbronite
+Gengarite
+Kangaskhite
+Pinsirite
+Gyaradosite
+Aerodactite
+Mewtwonite X
+Mewtwonite Y
+Ampharosite
+Steelixite
+Scizorite
+Heracronite
+Houndoomite
+Tyranitarite
+Sceptilite
+Blazikenite
+Swampertite
+Gardevoirite
+Sablenite
+Mawilite
+Aggronite
+Medichamite
+Manectite
+Sharpedonite
+Cameruptite
+Altarianite
+Banettite
+Absolite
+Glalitite
+Salamencite
+Metagrossite
+Latiasite
+Latiosite
+Lopunnite
+Garchompite
+Lucarionite
+Abomasite
+Galladite
+Audinite
+Diancite
