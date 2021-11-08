@@ -176,10 +176,10 @@ const struct MegaStruct sMegaTable[] =
         .monindex = SPECIES_LATIOS, 
         .itemindex = ITEM_MEGA_STONE_LATIOS,
     },
-    {
+    /*{
         .monindex = SPECIES_RAYQUAZA, 
         .itemindex = ITEM_MEGA_STONE_RAYQUAZA,
-    },
+    },*/
     {
         .monindex = SPECIES_LOPUNNY, 
         .itemindex = ITEM_MEGA_STONE_LOPUNNY,

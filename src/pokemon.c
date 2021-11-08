@@ -114,7 +114,7 @@ const struct FormData PokeFormDataTbl[]=
     },
     {
         .species = SPECIES_MEWTWO,
-        .form_no = 1,
+        .form_no = 2,
         .need_rev = 1,
         .file = SPECIES_MEGA_MEWTWO_Y,
     },
@@ -268,12 +268,12 @@ const struct FormData PokeFormDataTbl[]=
         .need_rev = 1,
         .file = SPECIES_MEGA_LATIOS,
     },
-    {
+    /*{
         .species = SPECIES_RAYQUAZA,
         .form_no = 1,
         .need_rev = 1,
         .file = SPECIES_MEGA_RAYQUAZA,
-    },
+    },*/
     {
         .species = SPECIES_LOPUNNY,
         .form_no = 1,

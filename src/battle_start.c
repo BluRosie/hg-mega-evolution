@@ -186,8 +186,8 @@ static BOOL MegaEvolution(void *bw, struct BattleStruct *sp)
                 newBS.PlayerMegaed = TRUE;
             }
             // handle charizard/mewtwo branch mega evos
-            if((sp->battlemon[client_no].species == SPECIES_CHARIZARD && sp->battlemon[client_no].item == 2) || 
-                (sp->battlemon[client_no].species == SPECIES_MEWTWO && sp->battlemon[client_no].item == 2))
+            if((sp->battlemon[client_no].species == SPECIES_CHARIZARD && sp->battlemon[client_no].item == ITEM_MEGA_STONE_CHARIZARD_Y) || 
+                (sp->battlemon[client_no].species == SPECIES_MEWTWO && sp->battlemon[client_no].item == ITEM_MEGA_STONE_MEWTWO_Y))
             {
                 BattleFormChange(client_no,2,bw,sp,TRUE);
                 sp->battlemon[client_no].form_no = 2;
