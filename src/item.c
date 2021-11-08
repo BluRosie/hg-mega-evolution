@@ -3,6 +3,7 @@
 #include "../include/constants/item.h"
 
 #define ITEM_DATA_MAX 536
+#define NEW_ITEM_GFX 803
 
 u16 GetItemIndex(u16 item, u16 type)
 {
@@ -30,7 +31,7 @@ u16 GetItemIndex(u16 item, u16 type)
             return 795;
         }
         if (item > ITEM_DATA_MAX)
-            ret = 803 + (item - ITEM_DATA_MAX - 1) * 2;
+            ret = NEW_ITEM_GFX + (item - ITEM_DATA_MAX - 1) * 2;
         else
             ret = ItemDataIndex[item].arc_cgx;
         return ret;
@@ -45,7 +46,7 @@ u16 GetItemIndex(u16 item, u16 type)
             return 796;
         }
         if (item > ITEM_DATA_MAX)
-            ret = 804 + (item - ITEM_DATA_MAX - 1) * 2;
+            ret = NEW_ITEM_GFX+1 + (item - ITEM_DATA_MAX - 1) * 2;
         else
             ret = ItemDataIndex[item].arc_pal;
         return ret;
@@ -71,8 +72,8 @@ void *GetItemArcData(u16 item, u16 type, u32 heap_id)
     if (item > ITEM_DATA_MAX)
     {
         dataid = ITEM_SHOAL_SALT; // shoal salt item data == index //513 + (item - ITEM_DATA_MAX);
-        picid = 803 + (item - ITEM_DATA_MAX - 1) * 2;
-        palid = 804 + (item - ITEM_DATA_MAX - 1) * 2;
+        picid = NEW_ITEM_GFX + (item - ITEM_DATA_MAX - 1) * 2;
+        palid = NEW_ITEM_GFX+1 + (item - ITEM_DATA_MAX - 1) * 2;
     }
     else
     {
