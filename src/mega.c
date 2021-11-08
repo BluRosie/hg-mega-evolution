@@ -8,62 +8,206 @@
 #include "../include/constants/file.h"
 #include "../include/constants/species.h"
 
-struct MegaStrcut
+struct MegaStruct
 {
     u16 monindex;
     u16 itemindex;
 };
 
-const struct MegaStrcut sMegaTable[] =
+const struct MegaStruct sMegaTable[] =
 {
-    {SPECIES_VENUSAUR, 1},
-    {SPECIES_CHARIZARD, 1}, // x
-    {SPECIES_CHARIZARD, 2}, // y
-    {SPECIES_BLASTOISE, 1},
-    {SPECIES_BEEDRILL, 1},
-    {SPECIES_PIDGEOT, 1},
-    {SPECIES_ALAKAZAM, 1},
-    {SPECIES_SLOWBRO, 1},
-    {SPECIES_GENGAR, 1},
-    {SPECIES_KANGASKHAN, 1},
-    {SPECIES_PINSIR, 1},
-    {SPECIES_GYARADOS, 1},
-    {SPECIES_AERODACTYL, 1},
-    {SPECIES_MEWTWO, 1}, // x
-    {SPECIES_MEWTWO, 2}, // y
-    {SPECIES_AMPHAROS, 1},
-    {SPECIES_STEELIX, 1},
-    {SPECIES_SCIZOR, 1},
-    {SPECIES_HERACROSS, 1},
-    {SPECIES_HOUNDOOM, 1},
-    {SPECIES_TYRANITAR, 1},
-    {SPECIES_SCEPTILE, 1},
-    {SPECIES_BLAZIKEN, 1},
-    {SPECIES_SWAMPERT, 1},
-    {SPECIES_GARDEVOIR, 1},
-    {SPECIES_SABLEYE, 1},
-    {SPECIES_MAWILE, 1},
-    {SPECIES_AGGRON, 1},
-    {SPECIES_MEDICHAM, 1},
-    {SPECIES_MANECTRIC, 1},
-    {SPECIES_SHARPEDO, 1},
-    {SPECIES_CAMERUPT, 1},
-    {SPECIES_ALTARIA, 1},
-    {SPECIES_BANETTE, 1},
-    {SPECIES_ABSOL, 1},
-    {SPECIES_GLALIE, 1},
-    {SPECIES_SALAMENCE, 1},
-    {SPECIES_METAGROSS, 1},
-    {SPECIES_LATIAS, 1},
-    {SPECIES_LATIOS, 1},
-    {SPECIES_RAYQUAZA, 1},
-    {SPECIES_LOPUNNY, 1},
-    {SPECIES_GARCHOMP, 1},
-    {SPECIES_LUCARIO, 1},
-    {SPECIES_ABOMASNOW, 1},
-    {SPECIES_GALLADE, 1},
-    //{SPECIES_AUDINO, 1},
-    //{SPECIES_DIANCIE, 1},
+    {
+        .monindex = SPECIES_VENUSAUR, 
+        .itemindex = ITEM_MEGA_STONE_VENUSAUR,
+    },
+    {
+        .monindex = SPECIES_CHARIZARD, 
+        .itemindex = ITEM_MEGA_STONE_CHARIZARD_X,
+    }, // x
+    {
+        .monindex = SPECIES_CHARIZARD, 
+        .itemindex = ITEM_MEGA_STONE_CHARIZARD_Y,
+    }, // y
+    {
+        .monindex = SPECIES_BLASTOISE, 
+        .itemindex = ITEM_MEGA_STONE_BLASTOISE,
+    },
+    {
+        .monindex = SPECIES_BEEDRILL, 
+        .itemindex = ITEM_MEGA_STONE_BEEDRILL,
+    },
+    {
+        .monindex = SPECIES_PIDGEOT, 
+        .itemindex = ITEM_MEGA_STONE_PIDGEOT,
+    },
+    {
+        .monindex = SPECIES_ALAKAZAM, 
+        .itemindex = ITEM_MEGA_STONE_ALAKAZAM,
+    },
+    {
+        .monindex = SPECIES_SLOWBRO, 
+        .itemindex = ITEM_MEGA_STONE_SLOWBRO,
+    },
+    {
+        .monindex = SPECIES_GENGAR, 
+        .itemindex = ITEM_MEGA_STONE_GENGAR,
+    },
+    {
+        .monindex = SPECIES_KANGASKHAN, 
+        .itemindex = ITEM_MEGA_STONE_KANGASKHAN,
+    },
+    {
+        .monindex = SPECIES_PINSIR, 
+        .itemindex = ITEM_MEGA_STONE_PINSIR,
+    },
+    {
+        .monindex = SPECIES_GYARADOS, 
+        .itemindex = ITEM_MEGA_STONE_GYARADOS,
+    },
+    {
+        .monindex = SPECIES_AERODACTYL, 
+        .itemindex = ITEM_MEGA_STONE_AERODACTYL,
+    },
+    {
+        .monindex = SPECIES_MEWTWO, 
+        .itemindex = ITEM_MEGA_STONE_MEWTWO_X,
+    }, // x
+    {
+        .monindex = SPECIES_MEWTWO, 
+        .itemindex = ITEM_MEGA_STONE_MEWTWO_Y,
+    }, // y
+    {
+        .monindex = SPECIES_AMPHAROS, 
+        .itemindex = ITEM_MEGA_STONE_AMPHAROS,
+    },
+    {
+        .monindex = SPECIES_STEELIX, 
+        .itemindex = ITEM_MEGA_STONE_STEELIX,
+    },
+    {
+        .monindex = SPECIES_SCIZOR, 
+        .itemindex = ITEM_MEGA_STONE_SCIZOR,
+    },
+    {
+        .monindex = SPECIES_HERACROSS, 
+        .itemindex = ITEM_MEGA_STONE_HERACROSS,
+    },
+    {
+        .monindex = SPECIES_HOUNDOOM, 
+        .itemindex = ITEM_MEGA_STONE_HOUNDOOM,
+    },
+    {
+        .monindex = SPECIES_TYRANITAR, 
+        .itemindex = ITEM_MEGA_STONE_TYRANITAR,
+    },
+    {
+        .monindex = SPECIES_SCEPTILE, 
+        .itemindex = ITEM_MEGA_STONE_SCEPTILE,
+    },
+    {
+        .monindex = SPECIES_BLAZIKEN, 
+        .itemindex = ITEM_MEGA_STONE_BLAZIKEN,
+    },
+    {
+        .monindex = SPECIES_SWAMPERT, 
+        .itemindex = ITEM_MEGA_STONE_SWAMPERT,
+    },
+    {
+        .monindex = SPECIES_GARDEVOIR, 
+        .itemindex = ITEM_MEGA_STONE_GARDEVOIR,
+    },
+    {
+        .monindex = SPECIES_SABLEYE, 
+        .itemindex = ITEM_MEGA_STONE_SABLEYE,
+    },
+    {
+        .monindex = SPECIES_MAWILE, 
+        .itemindex = ITEM_MEGA_STONE_MAWILE,
+    },
+    {
+        .monindex = SPECIES_AGGRON, 
+        .itemindex = ITEM_MEGA_STONE_AGGRON,
+    },
+    {
+        .monindex = SPECIES_MEDICHAM, 
+        .itemindex = ITEM_MEGA_STONE_MEDICHAM,
+    },
+    {
+        .monindex = SPECIES_MANECTRIC, 
+        .itemindex = ITEM_MEGA_STONE_MANECTRIC,
+    },
+    {
+        .monindex = SPECIES_SHARPEDO, 
+        .itemindex = ITEM_MEGA_STONE_SHARPEDO,
+    },
+    {
+        .monindex = SPECIES_CAMERUPT, 
+        .itemindex = ITEM_MEGA_STONE_CAMERUPT,
+    },
+    {
+        .monindex = SPECIES_ALTARIA, 
+        .itemindex = ITEM_MEGA_STONE_ALTARIA,
+    },
+    {
+        .monindex = SPECIES_BANETTE, 
+        .itemindex = ITEM_MEGA_STONE_BANETTE,
+    },
+    {
+        .monindex = SPECIES_ABSOL, 
+        .itemindex = ITEM_MEGA_STONE_ABSOL,
+    },
+    {
+        .monindex = SPECIES_GLALIE, 
+        .itemindex = ITEM_MEGA_STONE_GLALIE,
+    },
+    {
+        .monindex = SPECIES_SALAMENCE, 
+        .itemindex = ITEM_MEGA_STONE_SALAMENCE,
+    },
+    {
+        .monindex = SPECIES_METAGROSS, 
+        .itemindex = ITEM_MEGA_STONE_METAGROSS,
+    },
+    {
+        .monindex = SPECIES_LATIAS, 
+        .itemindex = ITEM_MEGA_STONE_LATIAS,
+    },
+    {
+        .monindex = SPECIES_LATIOS, 
+        .itemindex = ITEM_MEGA_STONE_LATIOS,
+    },
+    {
+        .monindex = SPECIES_RAYQUAZA, 
+        .itemindex = ITEM_MEGA_STONE_RAYQUAZA,
+    },
+    {
+        .monindex = SPECIES_LOPUNNY, 
+        .itemindex = ITEM_MEGA_STONE_LOPUNNY,
+    },
+    {
+        .monindex = SPECIES_GARCHOMP, 
+        .itemindex = ITEM_MEGA_STONE_GARCHOMP,
+    },
+    {
+        .monindex = SPECIES_LUCARIO, 
+        .itemindex = ITEM_MEGA_STONE_LUCARIO,
+    },
+    {
+        .monindex = SPECIES_ABOMASNOW, 
+        .itemindex = ITEM_MEGA_STONE_ABOMASNOW,
+    },
+    {
+        .monindex = SPECIES_GALLADE, 
+        .itemindex = ITEM_MEGA_STONE_GALLADE,
+    },
+    /*{
+        .monindex = SPECIES_AUDINO, 
+        .itemindex = ITEM_MEGA_STONE_AUDINO,
+    },
+    {
+        .monindex = SPECIES_DIANCIE, 
+        .itemindex = ITEM_MEGA_STONE_DIANCIE,
+    },*/
 };
 
 static BOOL CheckMegaData(u16 mon, u16 item);

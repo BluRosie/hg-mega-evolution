@@ -97,7 +97,7 @@ all: $(OUTPUT)
 	$(ARMIPS) armips/global.s
 	$(NARCHIVE) extract base/root/a/0/2/7 -o build/text -nf
 	$(PYTHON) scripts/build.py
-	make move_narc -j$(nproc)
+	make move_narc
 	$(NARCHIVE) create narc/synth.narc build/a028/ -nf
 	mv narc/synth.narc base/root/a/0/2/8
 	@echo -e "\e[32;1mMaking ROM..\e[37;1m"
