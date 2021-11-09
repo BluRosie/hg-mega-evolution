@@ -1,9 +1,11 @@
 .nds
 .thumb
 
+.include "armips/include/config.s"
+
 .open "build/a028/8_0", 0x023C8000
 
-.org 0x023C8000
+.org 0x023C8000 + START_ADDRESS
 
 // the icon palette table maps each icon to which of the 3 icon palettes
 
