@@ -828,31 +828,31 @@ mondata SPECIES_MEGA_GALLADE
 	colorflip 0, 0
 	tmdata SPECIES_NONE_TM_DATA_0, SPECIES_NONE_TM_DATA_1, SPECIES_NONE_TM_DATA_2, SPECIES_NONE_TM_DATA_3
 
-/*mondata SPECIES_MEGA_AUDINO
+mondata SPECIES_MEGA_AUDINO
 	basestats 103, 60, 126, 50, 80, 126
 	types TYPE_NORMAL, TYPE_FAIRY
 	catchrate 255
 	baseexp 245
 	evyields 2, 0, 0, 0, 0, 0
 	items ITEM_NONE, ITEM_NONE
-	genderratio 127,
+	genderratio 127
 	eggcycles 20
 	basefriendship 50
 	growthrate GROWTH_FAST
 	egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
-	abilities ABILITY_HEALER, ABILITY_HEALER
+	abilities ABILITY_NATURAL_CURE, ABILITY_SERENE_GRACE // fix ability
 	runchance 0
 	colorflip 0, 0
 	tmdata SPECIES_NONE_TM_DATA_0, SPECIES_NONE_TM_DATA_1, SPECIES_NONE_TM_DATA_2, SPECIES_NONE_TM_DATA_3
 
-mondata SPECIES_MEGA_DIANCIE
+/*mondata SPECIES_MEGA_DIANCIE
 	basestats 50, 160, 110, 110, 160, 110
 	types TYPE_ROCK, TYPE_FAIRY
 	catchrate 3
 	baseexp 255
 	evyields 0, 0, 1, 0, 0, 2
 	items ITEM_NONE, ITEM_NONE
-	genderratio MON_GENDERLESS,
+	genderratio 255
 	eggcycles 25
 	basefriendship 50
 	growthrate GROWTH_SLOW
