@@ -522,7 +522,7 @@ def changeoffset():
     txt.close()
 
 if __name__ == '__main__':
-    decompress()
+    #decompress()
     writeall()
     install()
     hook()

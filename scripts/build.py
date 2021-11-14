@@ -74,11 +74,12 @@ def build_sprite():
         for s in os.listdir(DIR +"/" + i):
             if fileExists and os.path.getmtime(DIR + "/" + i) < os.path.getmtime(NARC):
                 continue
-            cmd = ["tools/gengfxnarc.exe"] + ["data/graphics/sprites",BUILD,str(len(get_dir) - 1)]
-            print("generating gfx data for folder " + i + "...")
-            RunCommand(cmd)
             flag = 1
             break
+
+    cmd = ["tools/gengfxnarc.exe"] + ["data/graphics/sprites",BUILD,str(len(get_dir) - 1)]
+    print("generating gfx data for folder " + i + "...")
+    RunCommand(cmd)
 
 def build_icon():
     DIR = "data/graphics/icongfx"
