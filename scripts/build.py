@@ -76,9 +76,10 @@ def build_sprite():
                 continue
             cmd = ["tools/gengfxnarc.exe"] + ["data/graphics/sprites",BUILD,str(len(get_dir) - 1)]
             print("generating gfx data for folder " + i + "...")
-            RunCommand(cmd)
             flag = 1
             break
+    
+    RunCommand(cmd)
 
 def build_icon():
     DIR = "data/graphics/icongfx"

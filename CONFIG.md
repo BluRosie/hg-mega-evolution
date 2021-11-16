@@ -24,4 +24,6 @@
  change START_OFFSET to be your location in the synthetic overlay with enough free space for the pokemon icons.  if using the monexpansion, MAKE SURE TO COPY YOUR ICON PALETTE TABLE FROM YOUR hgss-monexpansion REPOSITORY TO THIS FILE.
 
 ### scripts\make.py
- on line 13, change OFFSET_TO_START to be your location in the synthetic overlay with enough free space.  this is separate from the above one.  MAKE SURE THE OFFSETS DON'T OVERLAP.
+ on line 13 of make.py, change OFFSET_TO_START to be your location in the synthetic overlay with enough free space.  this is separate from the above one.  MAKE SURE THE OFFSETS DON'T OVERLAP.
+ 
+ change the numbers at the beginning of linker.ld to be the same thing
