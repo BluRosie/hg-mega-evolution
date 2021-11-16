@@ -5,8 +5,10 @@
 ## Features:
 * Mega Evolutions
 
+* All new functional Mega Stones added after the already-existing items
 
-## Installation Instructions(from CFRU):
+
+## Installation Instructions:
 1. Download and install Devkitpro. 
 
 2. Download the latest version of Python 3.7 (3.7.6). **DO NOT DOWNLOAD PYTHON 3.8!**
@@ -15,13 +17,15 @@ After downloading and before proceeding to install, make sure that the **add to 
 3. Download (or clone) the master folder from this github page.
 (Click 'Clone or Download', then 'Download Zip')
 
-4. Get your ROM, rename it to **rom.nds** and place it the main (master) folder.
+4. Install WSL using  [**Lunos' tutorial**][LUNOS].  Follow steps 6 and 6.5 to make sure Devkitpro is installed correctly.
 
-5. Run **cmd.exe** from the **main folder**. 
+5. Get your ROM, rename it to **rom.nds** and place it the main (master) folder.
 
-6. In the command prompt window, type `make`
+6. Shift + right click in the main folder, click on **Open Linux shell here** from the **main folder**. 
 
-7. A new nds file will appear named as **test.nds** and an **offsets.ini** file.
+7. In the window, type `make`.
+
+8. A new nds file will appear named as **test.nds** and an **offsets.ini** file after everything has built.
 
 # Credits
 * [CREDITS.md](CREDITS.md).
@@ -37,3 +41,4 @@ After downloading and before proceeding to install, make sure that the **add to 
 [ARM9]: https://pokehacking.com/tutorials/ramexpansion/
 [diamond]:https://github.com/pret/pokediamond
 [TEMPLATE]: https://github.com/Bubble791/Pokemon-Heart-Gold-Engine
+[LUNOS]: https://www.pokecommunity.com/showthread.php?t=432351
