@@ -5,6 +5,7 @@
 .include "armips/include/monnums.s"
 .include "armips/include/itemnums.s"
 .include "armips/include/constants.s"
+.include "armips/include/config.s"
 .include "armips/include/abilities.s"
 .include "armips/data/tmlearnset.s"
 
@@ -422,7 +423,7 @@ mondata SPECIES_MEGA_SWAMPERT
 
 mondata SPECIES_MEGA_GARDEVOIR
 	basestats 68, 85, 65, 100, 165, 135
-	types TYPE_PSYCHIC, TYPE_FAIRY
+	types TYPE_PSYCHIC, FAIRY_TYPE_IMPLEMENTED ? TYPE_FAIRY : TYPE_PSYCHIC
 	catchrate 45
 	baseexp 208
 	evyields 0, 0, 0, 0, 3, 0
@@ -456,7 +457,7 @@ mondata SPECIES_MEGA_SABLEYE
 
 mondata SPECIES_MEGA_MAWILE
 	basestats 50, 105, 125, 50, 55, 95
-	types TYPE_STEEL, TYPE_FAIRY
+	types TYPE_STEEL, FAIRY_TYPE_IMPLEMENTED ? TYPE_FAIRY : TYPE_STEEL
 	catchrate 45
 	baseexp 98
 	evyields 0, 1, 1, 0, 0, 0
@@ -558,7 +559,7 @@ mondata SPECIES_MEGA_CAMERUPT
 
 mondata SPECIES_MEGA_ALTARIA
 	basestats 75, 110, 110, 80, 110, 105
-	types TYPE_DRAGON, TYPE_FAIRY
+	types TYPE_DRAGON, FAIRY_TYPE_IMPLEMENTED ? TYPE_FAIRY : TYPE_NORMAL
 	catchrate 45
 	baseexp 188
 	evyields 0, 0, 0, 0, 0, 2
@@ -830,7 +831,7 @@ mondata SPECIES_MEGA_GALLADE
 
 mondata SPECIES_MEGA_AUDINO
 	basestats 103, 60, 126, 50, 80, 126
-	types TYPE_NORMAL, TYPE_FAIRY
+	types TYPE_NORMAL, FAIRY_TYPE_IMPLEMENTED ? TYPE_FAIRY : TYPE_NORMAL
 	catchrate 255
 	baseexp 245
 	evyields 2, 0, 0, 0, 0, 0
@@ -847,7 +848,7 @@ mondata SPECIES_MEGA_AUDINO
 
 /*mondata SPECIES_MEGA_DIANCIE
 	basestats 50, 160, 110, 110, 160, 110
-	types TYPE_ROCK, TYPE_FAIRY
+	types TYPE_ROCK, FAIRY_TYPE_IMPLEMENTED ? TYPE_FAIRY : TYPE_PSYCHIC
 	catchrate 3
 	baseexp 255
 	evyields 0, 0, 1, 0, 0, 2
