@@ -32,7 +32,10 @@ if sys.platform.startswith('win'):
     AS = os.path.join(PATH, PREFIX + 'as')
 
 else:  # Linux, OSX, etc.
-    PREFIX = 'arm-none-eabi-'
+    if os.path.exists('/opt/devkitpro/devkitARM/bin/'):
+        PREFIX = '/opt/devkitpro/devkitARM/bin/arm-none-eabi-'
+    else:
+        PREFIX = 'arm-none-eabi-'
     OBJDUMP = (PREFIX + 'objdump')
     NM = (PREFIX + 'nm')
     AS = (PREFIX + 'as')
