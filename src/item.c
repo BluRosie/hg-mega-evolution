@@ -1,9 +1,11 @@
 #include "../include/types.h"
 #include "../include/item.h"
+#include "../include/config.h"
 #include "../include/constants/item.h"
 
 #define ITEM_DATA_MAX 536
-#define NEW_ITEM_GFX 803
+// the pixie plate takes up slot 803, so in the case it is implemented, the items need to be offset.
+#define NEW_ITEM_GFX 803 + FAIRY_TYPE_IMPLEMENTED
 
 u16 GetItemIndex(u16 item, u16 type)
 {
