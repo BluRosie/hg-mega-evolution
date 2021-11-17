@@ -20,8 +20,10 @@
 ### include\constants\item.h
  same deal here as above, change ITEM_MEGA_STONES_START to what it needs to be.
 
-### armips\include\config.s
+### armips\include\config.s and include\config.h
  change START_OFFSET to be your location in the synthetic overlay with enough free space for the pokemon icons.  if using the monexpansion, MAKE SURE TO COPY YOUR ICON PALETTE TABLE FROM YOUR hgss-monexpansion REPOSITORY TO THIS FILE.
+ 
+ make sure to catch FAIRY_TYPE_IMPLEMENTED in both of these files if that pertains to you.
 
 ### scripts\make.py and linker.ld
  on line 13 of make.py, change OFFSET_TO_START to be your location in the synthetic overlay with enough free space.  this is separate from the above one.  MAKE SURE THE OFFSETS DON'T OVERLAP.

@@ -1,5 +1,6 @@
 #include "../include/types.h"
 #include "../include/battle.h"
+#include "../include/config.h"
 #include "../include/pokemon.h"
 #include "../include/sprite.h"
 #include "../include/mega.h"
@@ -25,6 +26,11 @@ struct newBattleStruct newBS = {0};
 
 #define MEGA_BUTTON_SPRITE_TAG 20054
 #define MEGA_BUTTON_PAL_TAG 20055
+
+// shift these by 1 if the fairy type has been implemented in the hgss-filesys-example branch.
+#define MEGA_ICON_FIGHT_GFX 797 + FAIRY_TYPE_IMPLEMENTED
+#define MEGA_ICON_SELECTED_GFX 799 + FAIRY_TYPE_IMPLEMENTED
+#define MEGA_ICON_BLANK_GFX 801 + FAIRY_TYPE_IMPLEMENTED
 
 
 const ButtonTBL SkillMenuTouchData[] = {
@@ -114,7 +120,7 @@ void Sub_PokeIconResourceLoad(struct BI_PARAM *bip)
 
 	OAM_LoadResourceCellAnmArc(csp, crp, ARC_POKEICON, PokeIconAnmCellAnmArcIndexGet(), 0, 20021);
 
-	OAM_LoadResourcePlttWorkArc(pfd, FADE_SUB_OBJ, csp, crp, ARC_ITEMICON, 798, 0, 1, NNS_G2D_VRAM_TYPE_2DSUB, MEGA_ICON_PAL_TAG);
+	OAM_LoadResourcePlttWorkArc(pfd, FADE_SUB_OBJ, csp, crp, ARC_ITEMICON, MEGA_ICON_FIGHT_GFX+1, 0, 1, NNS_G2D_VRAM_TYPE_2DSUB, MEGA_ICON_PAL_TAG);
 
 	OAM_LoadResourceCellArc(csp, crp, ARC_ITEMICON, 1, 0, MEGA_ICON_CELL_TAG);
 
@@ -171,7 +177,7 @@ void LoadMegaIcon(struct BI_PARAM *bip)
 		csp = BattleWorkCATS_SYS_PTRGet(bip->bw);
 		crp = BattleWorkCATS_RES_PTRGet(bip->bw);
 
-		OAM_LoadResourceCharArc(csp, crp, ARC_ITEMICON, 797, 0, NNS_G2D_VRAM_TYPE_2DSUB, MEGA_ICON_SPRITE_TAG);
+		OAM_LoadResourceCharArc(csp, crp, ARC_ITEMICON, MEGA_ICON_FIGHT_GFX, 0, NNS_G2D_VRAM_TYPE_2DSUB, MEGA_ICON_SPRITE_TAG);
 		newBS.MegaOAM = OAM_ObjectAdd_S(csp, crp, &PokeIconObjParam);
 		OAM_ObjectUpdate(newBS.MegaOAM->act);
 	}
@@ -182,8 +188,8 @@ void LoadMegaButton(struct BI_PARAM *bip)
 	void *csp;
 	void *crp;
 	void *pfd = BattleWorkPfdGet(bip->bw);
-	int iconindex = 801; // indices of new sprites added to item narc
-	int palindex = 802;
+	int iconindex = MEGA_ICON_BLANK_GFX; // indices of new sprites added to item narc
+	int palindex = MEGA_ICON_BLANK_GFX+1;
 
 	if (newBS.PlayerMegaed)
 		return;
@@ -193,8 +199,8 @@ void LoadMegaButton(struct BI_PARAM *bip)
 		crp = BattleWorkCATS_RES_PTRGet(bip->bw);
 		if (newBS.MegaIconLight)
 		{
-			iconindex = 799;
-			palindex = 800;
+			iconindex = MEGA_ICON_SELECTED_GFX;
+			palindex = MEGA_ICON_SELECTED_GFX+1;
 		}
 		OAM_LoadResourcePlttWorkArc(pfd, FADE_SUB_OBJ, csp, crp, ARC_ITEMICON, palindex, 0, 1, NNS_G2D_VRAM_TYPE_2DSUB, MEGA_BUTTON_PAL_TAG);
 		OAM_LoadResourceCharArc(csp, crp, ARC_ITEMICON, iconindex, 0, NNS_G2D_VRAM_TYPE_2DSUB, MEGA_BUTTON_SPRITE_TAG);
@@ -229,8 +235,8 @@ u8 CheckMegaButton(struct BI_PARAM *bip, int tp_ret)
 	void *csp;
 	void *crp;
 	void *pfd;
-	int iconindex = 799;
-	int palindex = 800;
+	int iconindex = MEGA_ICON_SELECTED_GFX;
+	int palindex = MEGA_ICON_SELECTED_GFX+1;
 
 	if (tp_ret != 5)
 		return 0;
@@ -248,8 +254,8 @@ u8 CheckMegaButton(struct BI_PARAM *bip, int tp_ret)
 
 	if (newBS.MegaIconLight)
 	{
-		iconindex = 801;
-		palindex = 802;
+		iconindex = MEGA_ICON_BLANK_GFX;
+		palindex = MEGA_ICON_BLANK_GFX+1;
 		newBS.MegaIconLight = 0;
 	}
 	else
