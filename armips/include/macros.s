@@ -3,11 +3,11 @@
 .macro levelup,species
 
 	.if species < 10
-		.create "narc/levelupdata/learnset_00" + tostring(species),0
+		.create "narc/levelupdata/3_00" + tostring(species),0
 	.elseif species < 100
-		.create "narc/levelupdata/learnset_0" + tostring(species),0
+		.create "narc/levelupdata/3_0" + tostring(species),0
 	.else
-		.create "narc/levelupdata/learnset_" + tostring(species),0
+		.create "narc/levelupdata/3_" + tostring(species),0
 	.endif
 
 .endmacro

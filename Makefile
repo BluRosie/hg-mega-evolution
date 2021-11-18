@@ -160,6 +160,12 @@ move_narc:
 	$(NARCHIVE) create narc/mondata.narc narc/mondata -nf
 	rm -rf narc/mondata
 	cp narc/mondata.narc base/root/a/0/0/2
+	
+	@echo "mon learnset data:"
+	$(NARCHIVE) extract base/root/a/0/3/3 -o narc/levelupdata -nf
+	$(ARMIPS) armips/data/levelup.s
+	$(NARCHIVE) create base/root/a/0/3/3 narc/levelupdata -nf
+	rm -rf narc/levelupdata
 
 	@echo "text data:"
 	$(NARCHIVE) extract base/root/a/0/2/7 -o build/text/ -nf
