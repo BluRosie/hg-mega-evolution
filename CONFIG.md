@@ -29,3 +29,7 @@
  on line 13 of make.py, change OFFSET_TO_START to be your location in the synthetic overlay with enough free space.  this is separate from the above one.  MAKE SURE THE OFFSETS DON'T OVERLAP.
  
  change the numbers at the beginning of linker.ld to be the same thing
+ 
+### armips\include\macros.s
+
+ change line 16 to ```    .word (level << 16 | move)``` and line 20 to ```    .word 0xFFFF``` to account for 4-byte learnsets.
