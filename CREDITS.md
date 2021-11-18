@@ -1,11 +1,13 @@
 # credits
-Bubble791 - strong basis for where this came from
-
 BagBoy - dex entries
 
 Barro - Swav2Swar
 
-Dreadwing93 on DeviantArt - backsprites
+Bubble791 - strong basis for where this came from
+
+Contributors to MrDollSteak's DS-Style 64x64 Pokemon Sprite Resource - Mega Sprite placeholders
+
+Gnomowladny, Krune, Prodigal96 on DeviantArt - Mega Sprites
 
 goodri63 - GenIVSpriteReplacer (which is gengfxdata, png2ncgr, gengfxicons, ncgr2png, and gengfxnarc)
 
@@ -24,5 +26,9 @@ Mikelan98 and Nomura - synthetic overlay approach and graphics compilation
 nickworonekin - narchive
 
 ProfessorDoktorGamer - wav2sav
+
+Rushi - beta testing
+
+XLuma - helping get this buildable initially
 
 Game Freak - amazing Pokémon games from way back when
