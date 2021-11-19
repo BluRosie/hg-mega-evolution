@@ -6,7 +6,7 @@
 //mega battle script
 MegaMsg equ 1276
 
-.create "data/move/move_seq/1_297", 0x0
+.create "build/move/move_seq/1_297", 0x0
 
 mega:
     // set up animation
