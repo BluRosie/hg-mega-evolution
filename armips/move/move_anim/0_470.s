@@ -1,69 +1,70 @@
 .nds
 .thumb
-.include "armips/include/move_script.s"
+.include "armips/include/animscriptcmd.s"
 
 //mega
 
-.create "data/move/move_anim/0_470", 0x0
-move_55:
-    LOAD_PARTICLE_DROP 0, 489
-    LOAD_PARTICLE_DROP 1, 490
-    WAIT 10
+.create "build/move/move_anim/0_470", 0x0
 
-    SOUND_FLOW_LR 1939
+MegaAnimScript:
+    loadparticlefromspa 0, 489
+    loadparticlefromspa 1, 490
+    wait 10
 
-    CHANGE_BG 47,0x020001
-    CHANGE_BG_WAIT
+    playsepanmod 1939, -117, 0x75, 4, 2
 
-    ADD_PARTICLE 0,0,EMTFUNC_ATTACK_POS
-    ADD_PARTICLE 0,8,EMTFUNC_ATTACK_POS
-    WAIT 50
+    changebg 47, 0x020001
+    waitforchangebg
+
+    addparticle 0,0,3
+    addparticle 0,8,3
+    wait 50
 
     
-    ADD_PARTICLE 0,1,EMTFUNC_ATTACK_POS
-    ADD_PARTICLE 0,2,EMTFUNC_ATTACK_POS
+    addparticle 0,1,3
+    addparticle 0,2,3
 
-    MON_COLOR_CHANGE FLAG_ATTACK,PAL_WHITE,100
-    ADD_PARTICLE 1,1,EMTFUNC_ATTACK_POS
-    ADD_PARTICLE 0,3,EMTFUNC_ATTACK_POS
-    ADD_PARTICLE 0,4,EMTFUNC_ATTACK_POS
-    ADD_PARTICLE 0,5,EMTFUNC_ATTACK_POS
-    ADD_PARTICLE 0,7,EMTFUNC_ATTACK_POS
-    WAIT 20
-    ADD_PARTICLE 1,1,EMTFUNC_ATTACK_POS
+    callfunction 0x22, 6, 2, 0, 1, 0x7FFF, 10, 100, 0, 0, 0, 0
+    addparticle 1, 1, 3
+    addparticle 0, 3, 3
+    addparticle 0, 4, 3
+    addparticle 0, 5, 3
+    addparticle 0, 7, 3
+    wait 20
+    addparticle 1, 1, 3
 
-    ADD_PARTICLE 0,6,EMTFUNC_ATTACK_POS
-    ADD_PARTICLE 1,1,EMTFUNC_ATTACK_POS
-    WAIT_PARTICLE
-    EXIT_PARTICLE 1
-    LOAD_PARTICLE_DROP 1, 107
+    addparticle 0, 6, 3
+    addparticle 1, 1, 3
+    waitparticle
+    unloadparticle 1
+    loadparticlefromspa 1, 107
 
-    ADD_PARTICLE 1,8,EMTFUNC_ATTACK_POS
-    ADD_PARTICLE 1,9,EMTFUNC_ATTACK_POS
-    ADD_PARTICLE 1,10,EMTFUNC_ATTACK_POS
+    addparticle 1,8,3
+    addparticle 1,9,3
+    addparticle 1,10,3
 
-    WAIT 20
-    MON_SHAKE SHAKE_M_X,SHAKE_M_WAIT,SHAKE_NUM_LONG,FLAG_DEF | 0x100
-    WAIT_PARTICLE
+    wait 20
+    callfunction 0x24, 5, 2, 0, 1, 4, 8 | 0x100, 0, 0, 0, 0, 0
+    waitparticle
 
-    ADD_PARTICLE 0,10,EMTFUNC_ATTACK_POS
-    ADD_PARTICLE 0,12,EMTFUNC_ATTACK_POS
-    WAIT 30
+    addparticle 0, 10, 3
+    addparticle 0, 12, 3
+    wait 30
 
-    CHANGE_BG_RECOVER 47, 0x040001
-    VOICE_PLAY 0x9, 0xffffff8b, 0x64
-    VOICE_WAIT_STOP 0
-    VOICE_PLAY 0xa, 0xffffff8b, 0x7f
+    resetbg 47, 0x040001
+    playcry 0x9, 0xffffff8b, 0x64
+    waitcry 0
+    playcry 0xa, 0xffffff8b, 0x7f
     
-    VOICE_WAIT_STOP 0
-    WAIT_FLAG
-    CHANGE_BG_WAIT
+    waitcry 0
+    waitstate
+    waitforchangebg
 
-    WAIT_PARTICLE
+    waitparticle
     
-    EXIT_PARTICLE 0
-    EXIT_PARTICLE 1
-    WAIT_FLAG
+    unloadparticle 0
+    unloadparticle 1
+    waitstate
 
     END
 

@@ -111,7 +111,7 @@ def build_icon():
 
 def build_anim_script():
     DIR = "armips/move/move_anim/"
-    BUILD = "data/move/move_anim/"
+    BUILD = "build/move/move_anim/"
 
     get_dir = os.listdir(DIR)
     if len(get_dir) == 0:
@@ -127,7 +127,7 @@ def build_anim_script():
 
 def build_seq_script():
     DIR = "armips/move/move_seq/"
-    BUILD = "data/move/move_seq/"
+    BUILD = "build/move/move_seq/"
 
     get_dir = os.listdir(DIR)
     if len(get_dir) == 0:

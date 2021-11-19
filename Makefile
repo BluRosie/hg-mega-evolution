@@ -89,7 +89,9 @@ all: $(OUTPUT)
 	mkdir -p build/pokemonow
 	mkdir -p build/a018
 	mkdir -p build/text
-	mkdir -p narc/text
+	mkdir -p build/move
+	mkdir -p build/move/move_seq
+	mkdir -p build/move/move_anim
 	$(NDSTOOL) -x $(ROMNAME) -9 base/arm9.bin -7 base/arm7.bin -y9 base/overarm9.bin -y7 base/overarm7.bin -d base/root -y base/overlay -t base/banner.bin -h base/header.bin
 	@echo -e "\e[32;1m$(ROMNAME) Decompression successful!!\e[37;1m"
 	$(NARCHIVE) extract base/root/a/0/2/8 -o build/a028/ -nf
@@ -126,14 +128,14 @@ move_narc:
 
 	@echo "move animations:"
 	$(NARCHIVE) extract base/root/a/0/1/0 -o build/a010/ -nf
-	cp -r data/move/move_anim/. build/a010
+	cp -r build/move/move_anim/. build/a010
 	$(NARCHIVE) create narc/a010.narc build/a010/ -nf
 	mv narc/a010.narc base/root/a/0/1/0
 	#rm -rf build/a010/
 
 	@echo "move subeffects:"
 	$(NARCHIVE) extract base/root/a/0/0/1 -o build/a001/ -nf
-	cp -r data/move/move_seq/. build/a001
+	cp -r build/move/move_seq/. build/a001
 	$(NARCHIVE) create narc/a001.narc build/a001/ -nf
 	mv narc/a001.narc base/root/a/0/0/1
 	rm -rf build/a001/
