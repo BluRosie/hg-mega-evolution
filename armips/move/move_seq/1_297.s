@@ -31,7 +31,6 @@ mega:
     wait 0x7e
     wait 0x16e
     // change form
-    changeform BATTLER_xFF
     waitmessage
     printmessage MegaMsg + 3, 0xB, 0xFF, 0x15,0,0,0,0
     waitmessage
@@ -54,7 +53,6 @@ _0044:
     wait 0x7e
     wait 0x16e
     // change form
-    changeform BATTLER_xFF
     waitmessage
     printmessage MegaMsg + 3, 0xB, 0xFF, 0x15,0,0,0,0
     waitmessage

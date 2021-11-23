@@ -318,8 +318,12 @@ const struct FormData PokeFormDataTbl[]=
     }*/
 };
 
+extern u32 word_to_store_form_at;
+
 u8 GetOtherFormPic(MON_PIC *picdata, u16 mons_no, u8 dir, u8 col,u8 form_no)
 {
+    word_to_store_form_at = form_no;
+
     if (!form_no)
         return FALSE;
 
@@ -379,6 +383,16 @@ int PokeOtherFormMonsNoGet(int mons_no, int form_no)
     }
 
     for (i = 0; i < NELEMS(PokeFormDataTbl); i++)
+    {
+        if (mons_no == PokeFormDataTbl[i].species && form_no == PokeFormDataTbl[i].form_no)
+            mons_no = PokeFormDataTbl[i].file;
+    }
+    return mons_no;
+}
+
+u16 GetSpeciesBasedOnForm(int mons_no, int form_no)
+{
+    for (u8 i = 0; i < NELEMS(PokeFormDataTbl); i++)
     {
         if (mons_no == PokeFormDataTbl[i].species && form_no == PokeFormDataTbl[i].form_no)
             mons_no = PokeFormDataTbl[i].file;

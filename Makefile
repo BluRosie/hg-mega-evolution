@@ -176,6 +176,16 @@ move_narc:
 	$(MSGENC) -e -c charmap.txt data/text/222.txt build/text/7_222
 	$(MSGENC) -e -c charmap.txt data/text/223.txt build/text/7_223
 	$(NARCHIVE) create base/root/a/0/2/7 build/text/ -nf
+
+	@echo "mon sprite offsets (a180):"
+	$(NARCHIVE) extract base/root/a/1/8/0 -o build/a180/ -nf
+	$(ARMIPS) armips/data/spriteoffsets.s
+	$(NARCHIVE) create base/root/a/1/8/0 build/a180/ -nf
+
+	@echo "mon height offsets (a005):"
+	$(NARCHIVE) extract base/root/a/0/0/5 -o build/a005/ -nf
+	$(ARMIPS) armips/data/heighttable.s
+	$(NARCHIVE) create base/root/a/0/0/5 build/a005/ -nf
 	
 	@echo "mon sprite data:"
 	$(NARCHIVE) extract base/root/a/0/0/4 -o build/pokemonpic -nf
