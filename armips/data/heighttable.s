@@ -8,7 +8,7 @@
 // heightentry species, female back height offset, male back height offset, female front height offset, male front height offset
 // "null" is specifically reserved for pokémon that do not have a specific gender:  i.e. the male entries for female nidoran are "null"
 
-/*heightentry SPECIES_EGG, "null", "null", "null", "null"
+heightentry SPECIES_EGG, "null", "null", "null", "null"
 heightentry SPECIES_BAD_EGG, "null", "null", "null", "null"
 heightentry SPECIES_DEOXYS_ATTACK, "null", "null", "null", "null"
 heightentry SPECIES_DEOXYS_DEFENSE, "null", "null", "null", "null"
@@ -57,7 +57,7 @@ heightentry SPECIES_539, "null", "null", "null", "null"
 heightentry SPECIES_540, "null", "null", "null", "null"
 heightentry SPECIES_541, "null", "null", "null", "null"
 heightentry SPECIES_542, "null", "null", "null", "null"
-heightentry SPECIES_543, "null", "null", "null", "null"*/
+heightentry SPECIES_543, "null", "null", "null", "null"
 heightentry SPECIES_MEGA_VENUSAUR, 3, 3, 0, 0
 heightentry SPECIES_MEGA_CHARIZARD_X, 3, 3, 0, 0
 heightentry SPECIES_MEGA_CHARIZARD_Y, 3, 3, 0, 0
@@ -104,6 +104,6 @@ heightentry SPECIES_MEGA_GARCHOMP, 12, 12, 0, 0
 heightentry SPECIES_MEGA_LUCARIO, 3, 3, 0, 0
 heightentry SPECIES_MEGA_ABOMASNOW, 8, 8, 0, 0
 heightentry SPECIES_MEGA_GALLADE, 3, 3, 0, 0
-heightentry SPECIES_MEGA_AUDINO, 3, 3, 0, 0
-heightentry SPECIES_MEGA_DIANCIE, 3, 3, 0, 0
+//heightentry SPECIES_MEGA_AUDINO, 3, 3, 0, 0
+//heightentry SPECIES_MEGA_DIANCIE, 3, 3, 0, 0
 
