@@ -43,10 +43,12 @@ MegaAnimScript:
     addparticle 1,9,3
     addparticle 1,10,3
 
-    wait 20
+    wait 15
     callfunction 0x24, 5, 2, 0, 1, 4, 8 | 0x100, 0, 0, 0, 0, 0
-    waitparticle
-
+    callfunction 69, 4, 0, 1, 0, 0, "NaN", "NaN", "NaN", "NaN", "NaN", "NaN"
+    waitstate
+    transform 0
+    waitstate
     addparticle 0, 10, 3
     addparticle 0, 12, 3
     wait 30
@@ -66,6 +68,6 @@ MegaAnimScript:
     unloadparticle 1
     waitstate
 
-    END
+    end
 
 .close

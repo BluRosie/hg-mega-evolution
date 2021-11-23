@@ -138,3 +138,47 @@ pop {r0-r3}
 mov r0, #0x0
 mvn r0, r0
 pop {r3-r7,pc}
+
+//02234868
+//08018A48
+.global hook_7_spriteOffsetSpecies
+hook_7_spriteOffsetSpecies:
+// sp+18 is form--apparently not.
+push {r0-r5, r7}
+mov r0, r6
+ldr r1, =word_to_store_form_at
+ldr r1, [r1]
+bl GetSpeciesBasedOnForm // (species, form)
+mov r6, r0
+pop {r0-r5, r7}
+str r0, [sp]
+lsl r0, r6, #0x10
+lsl r1, r1, #0x18
+lsr r0, #0x10
+ldr r3, =0x02234870 | 1
+bx r3
+
+
+//02259A14
+//08022154
+.global hook_12_spriteOffsetSpecies
+hook_12_spriteOffsetSpecies:
+// pretty sure this one is right.
+push {r0-r7}
+ldr r1, =word_to_store_form_at
+ldr r1, [r1]
+ldrh r0, [r5, #2]
+bl GetSpeciesBasedOnForm // (species, form)
+strh r0, [r5, #2]
+pop {r0-r7}
+ldr r0, [r5, #4]
+str r0, [sp]
+ldrb r3, [r5, #1]
+ldrh r0, [r5, #2]
+ldr r2, =0x02259A1C | 1
+bx r2
+
+.align 2
+.global word_to_store_form_at
+word_to_store_form_at:
+.word 0
