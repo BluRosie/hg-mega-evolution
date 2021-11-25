@@ -191,3 +191,8 @@ move_narc:
 	$(NARCHIVE) extract base/root/a/0/0/4 -o build/pokemonpic -nf
 	$(NARCHIVE) create base/root/a/0/0/4 build/pokemonpic -nf
 	$(NARCHIVE) create base/root/pbr/pokegra.narc build/pokemonpic -nf
+	
+	@echo "item data files:"
+	$(NARCHIVE) extract base/root/a/0/1/7 -o build/itemdata -nf
+	cp -r data/rawdata/itemdata/. build/itemdata/
+	$(NARCHIVE) create base/root/a/0/1/7 build/itemdata -nf
