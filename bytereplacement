@@ -1,5 +1,2 @@
-#fps60
-arm9 08000E28 00 00
-
 #fix dp read pokemon pic to hgss
 arm9 08009D2A C3
