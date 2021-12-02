@@ -11,13 +11,12 @@
 ## Installation Instructions:
 1. Download and install Devkitpro. 
 
-2. Download the latest version of Python 3.7 (3.7.6). **DO NOT DOWNLOAD PYTHON 3.8!**
-After downloading and before proceeding to install, make sure that the **add to path** checkbox is ticked, otherwise you'll have to add the Python path in the environment variables manually. 
-
-3. Download (or clone) the master folder from this github page.
+2. Download (or clone) the master folder from this github page.
 (Click 'Clone or Download', then 'Download Zip')
 
-4. Install WSL using  [**Lunos' tutorial**][LUNOS].  Follow steps 6 and 6.5 to make sure Devkitpro is installed correctly.
+3. Install WSL using  [**Lunos' tutorial**][LUNOS].  Follow steps 6 and 6.5 to make sure Devkitpro is installed correctly.
+
+4. Install Python 3.7 through WSL using `sudo apt-get install python3.7`.
 
 5. Get your ROM, rename it to **rom.nds** and place it the main (master) folder.
 
