@@ -123,8 +123,8 @@ void ServerBeforeAct(void *bw, struct BattleStruct *sp)
                 if(flag)
                 {
                     newBS.needMega[client_no] = MEGA_NEED;
-                    if ((sp->battlemon[client_no].species == 6 && sp->battlemon[client_no].item == 1) ||
-                        (sp->battlemon[client_no].species == 150 && sp->battlemon[client_no].item == 1))
+                    if ((sp->battlemon[client_no].species == SPECIES_CHARIZARD && sp->battlemon[client_no].item == ITEM_MEGA_STONE_CHARIZARD_Y) ||
+                        (sp->battlemon[client_no].species == SPECIES_MEWTWO && sp->battlemon[client_no].item == ITEM_MEGA_STONE_MEWTWO_Y))
                     {
                         sp->battlemon[client_no].form_no = 2;
                         BattleFormChange(client_no, 2, bw, sp, FALSE);
