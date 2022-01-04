@@ -27,6 +27,7 @@ mega:
     waitmessage
     // clear doubles flag?
     changevartomonvalue VAR_OP_CLEARMASK, BATTLER_xFF, MON_DATA_STATUS_2, 0x1000000
+	// play set up animation
     seteffectsecondary BATTLER_xFF, BATTLER_x15, BATTLER_xFF
     wait 0x7e
     wait 0x16e
