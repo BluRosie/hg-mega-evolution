@@ -2,6 +2,7 @@
 
 from glob import glob
 from pathlib import Path
+from platform import uname
 import os
 import shutil
 import itertools
@@ -74,11 +75,13 @@ def build_sprite():
         for s in os.listdir(DIR +"/" + i):
             if fileExists and os.path.getmtime(DIR + "/" + i) < os.path.getmtime(NARC):
                 continue
-            cmd = ["tools/gengfxnarc.exe"] + ["data/graphics/sprites",BUILD,str(len(get_dir) - 1)]
-            print("generating gfx data for folder " + i + "...")
             flag = 1
             break
-    
+    if 'icrosoft' in uname().release:
+        cmd = ["tools/gengfxnarc.exe"] + ["data/graphics/sprites",BUILD,str(len(get_dir) - 1)]
+    else:
+        cmd = ["mono"] + ["tools/gengfxnarc.exe"] + ["data/graphics/sprites",BUILD,str(len(get_dir) - 1)]
+    print("generating gfx data for folder " + i + "...")
     RunCommand(cmd)
 
 def build_icon():
@@ -90,8 +93,8 @@ def build_icon():
 
     flag = False
 
-    RunCommand(["tools/narchive.exe"] + ["extract", "base/root/a/0/2/0", "-o", "narc/pokemonicon","-nf"])
-    cmd_narc = ["tools/narchive.exe"] + ["create", "narc/pokemonicon.narc", "narc/pokemonicon","-nf"]
+    RunCommand(["python3"] + ["tools/narcpy.py"] + ["extract", "base/root/a/0/2/0", "-o", "narc/pokemonicon","-nf"])
+    cmd_narc = ["python3"] + ["tools/narcpy.py"] + ["create", "narc/pokemonicon.narc", "narc/pokemonicon","-nf"]
 
     for i in get_dir:
         if int(i.replace(".png","")) > 999:
@@ -100,7 +103,7 @@ def build_icon():
             OBJ = "narc/pokemonicon/1_" + i.replace(".png",".NCGR")
         if os.path.isfile(OBJ) and os.path.getmtime(DIR + "/" + i) < os.path.getmtime(OBJ):
             continue
-        cmd = ["tools/nitrogfx.exe"] + ["data/graphics/icongfx/" + i, OBJ , "-clobbersize", "-version101"]
+        cmd = ["tools/nitrogfx"] + ["data/graphics/icongfx/" + i, OBJ , "-clobbersize", "-version101"]
         flag = True
         RunCommand(cmd)
         
@@ -121,7 +124,7 @@ def build_anim_script():
         OBJ = BUILD + i.replace(".s","")
         if os.path.isfile(OBJ) and os.path.getmtime(DIR + i) < os.path.getmtime(OBJ):
             continue
-        cmd = ["tools/armips.exe"] + [DIR + i]
+        cmd = ["tools/armips"] + [DIR + i]
         print("script "+i)
         RunCommand(cmd)
 
@@ -137,7 +140,7 @@ def build_seq_script():
         OBJ = BUILD + i.replace(".s","")
         if os.path.isfile(OBJ) and os.path.getmtime(DIR + i) < os.path.getmtime(OBJ):
             continue
-        cmd = ["tools/armips.exe"] + [DIR + i]
+        cmd = ["tools/armips"] + [DIR + i]
         print("script "+i)
         RunCommand(cmd)
     
@@ -152,10 +155,10 @@ def build_item_sprite():
         OBJ2 = BUILD + "8_" + str(int(i.replace(".png","")) + 1)
         if os.path.isfile(OBJ) and os.path.getmtime(DIR + i) < os.path.getmtime(OBJ):
             continue
-        cmd = ["tools/nitrogfx.exe"] + ["data/graphics/item/" + i, OBJ , "-clobbersize", "-version101"]
+        cmd = ["tools/nitrogfx"] + ["data/graphics/item/" + i, OBJ , "-clobbersize", "-version101"]
         print("item "+i)
         RunCommand(cmd)
-        cmd = ["tools/nitrogfx.exe"] + ["data/graphics/item/" + i, OBJ2 + ".NCLR" , "-ir" ,"-bitdepth","4"]
+        cmd = ["tools/nitrogfx"] + ["data/graphics/item/" + i, OBJ2 + ".NCLR" , "-ir" ,"-bitdepth","4"]
         RunCommand(cmd)
 
 

@@ -18,3 +18,8 @@ dumpitem.py
 
 # pycache files
 *.pyc
+
+armips/asm/offset.s
+*.o
+*.d
+tools/source/nitrogfx/*

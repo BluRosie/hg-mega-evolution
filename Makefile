@@ -11,11 +11,14 @@ TOOLCHAIN := $(DEVKITARM)
 
 .PHONY: clean all
 
+SYSTEM = $(shell grep -i -q 'microsoft' /proc/version; echo $$?)
 
-ifeq ($(OS),Windows_NT)
+ifeq ($(SYSTEM), 0)
 EXE := .exe
+SEP := \\
 else
-EXE := .exe
+EXE := 
+SEP := /
 endif
 
 default: all
@@ -23,28 +26,29 @@ default: all
 ROMNAME = rom.nds
 BUILDROM = test.nds
 ####################### Tools #########################
-MSGENC = tools/msgenc$(EXE)
-NITROGFX = tools/nitrogfx$(EXE)
-NDSTOOL = tools/ndstool$(EXE)
+MSGENC = tools/msgenc
+NITROGFX = tools/nitrogfx
+NDSTOOL = tools/ndstool
 JSONPROC = tools/jsonproc$(EXE)
 O2NARC = tools/o2narc$(EXE)
 KNARC = tools/knarc$(EXE)
 BLZ = tools/blz$(EXE)
-ARMIPS = tools/armips$(EXE)
+ARMIPS = tools/armips
 POKEPICTOOL = tools/pokepic$(EXE)
-NARCHIVE = tools/narchive$(EXE)
+NARCHIVE = tools/narcpy.py
 ####################### Seting ########################
 PREFIX = bin/arm-none-eabi-
 AS = $(DEVKITARM)/$(PREFIX)as
 CC = $(DEVKITARM)/$(PREFIX)gcc
 LD = $(DEVKITARM)/$(PREFIX)ld
 OBJCOPY = $(DEVKITARM)/$(PREFIX)objcopy
+CSC = csc$(EXE)
 
 LDFLAGS = rom.ld -T linker.ld
 ASFLAGS = -mthumb -I ./data
 CFLAGS = -mthumb -mno-thumb-interwork -mcpu=arm7tdmi -mtune=arm7tdmi -mno-long-calls -march=armv4t -Wall -Wextra -Os -fira-loop-pressure -fipa-pta
 
-PYTHON = python3.7
+PYTHON = python3
 LINK = build/linked.o
 OUTPUT = build/output.bin
 ####################### output #########################
@@ -94,61 +98,117 @@ all: $(OUTPUT)
 	mkdir -p build/move/move_anim
 	$(NDSTOOL) -x $(ROMNAME) -9 base/arm9.bin -7 base/arm7.bin -y9 base/overarm9.bin -y7 base/overarm7.bin -d base/root -y base/overlay -t base/banner.bin -h base/header.bin
 	@echo -e "\e[32;1m$(ROMNAME) Decompression successful!!\e[37;1m"
-	$(NARCHIVE) extract base/root/a/0/2/8 -o build/a028/ -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/2/8 -o build/a028/ -nf
 	$(PYTHON) scripts/make.py
 	$(ARMIPS) armips/global.s
-	$(NARCHIVE) extract base/root/a/0/2/7 -o build/text -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/2/7 -o build/text -nf
 	$(PYTHON) scripts/build.py
 	make move_narc
-	$(NARCHIVE) create narc/synth.narc build/a028/ -nf
+	$(PYTHON) $(NARCHIVE) create narc/synth.narc build/a028/ -nf
 	mv narc/synth.narc base/root/a/0/2/8
 	@echo -e "\e[32;1mMaking ROM..\e[37;1m"
 	$(NDSTOOL) -c $(BUILDROM) -9 base/arm9.bin -7 base/arm7.bin -y9 base/overarm9.bin -y7 base/overarm7.bin -d base/root -y base/overlay -t base/banner.bin -h base/header.bin
 	@echo -e "\e[32;1mDone.\e[37;1m"
 
+build_tools:
+	cd tools ; $(CSC) /target:exe /out:gengfxnarc.exe source$(SEP)gengfxnarc.cs
+
+	cd tools/source/msgenc ; make
+	mv tools/source/msgenc/msgenc tools/msgenc
+
+	cd tools ; $(CSC) /target:exe /out:pngtobtx0.exe source$(SEP)BTX\ Editor$(SEP)Program-P.cs source$(SEP)BTX\ Editor$(SEP)pngtobtx0.cs source$(SEP)BTX\ Editor$(SEP)BTX0.cs
+
+	rm -r -f tools/source/ndstool
+	cd tools/source ; git clone https://github.com/devkitPro/ndstool.git
+	cd tools/source/ndstool ; find . -name '*.sh' -execdir chmod +x {} \;
+	cd tools/source/ndstool ; ./autogen.sh
+	cd tools/source/ndstool ; ./configure && make
+	mv tools/source/ndstool/ndstool tools/ndstool
+	rm -r -f tools/source/ndstool
+
+	rm -r -f tools/source/armips
+	cd tools/source ; git clone --recursive https://github.com/Kingcom/armips.git
+	cd tools/source/armips ; mkdir build
+	cd tools/source/armips/build ; cmake -DCMAKE_BUILD_TYPE=Release ..
+	cd tools/source/armips/build ; cmake --build .
+	mv tools/source/armips/build/armips tools/armips
+	rm -r -f tools/source/armips
+
+
+build_nitrogfx:
+	cd tools/source/nitrogfx ; make
+	mv tools/source/nitrogfx/nitrogfx tools/nitrogfx
+
 clean:
-	rm -rf build/*
-	rm -rf narc/*
-	rm -rf base/*
+	rm -r -f build
+	rm -r -f base
+	rm -r -f tools/source/ndstool
+	rm -r -f tools/source/armips
+
+clean_tools:
+	rm -f tools/genbabymondata$(EXE)
+	rm -f tools/gendexsortlists$(EXE)
+	rm -f tools/geneggmovedata$(EXE)
+	rm -f tools/genevodatatxt$(EXE)
+	rm -f tools/genheightdata$(EXE)
+	rm -f tools/genleveldatatxt$(EXE)
+	rm -f tools/genmonareadexdata$(EXE)
+	rm -f tools/genmondatatxt$(EXE)
+	rm -f tools/gentutormovedata$(EXE)
+	rm -f tools/replacehexwithdec$(EXE)
+	rm -f tools/sortmonareadexdata$(EXE)
+	rm -f tools/gengfxdata.exe
+	rm -f tools/gengfxicons.exe
+	rm -f tools/gengfxnarc.exe
+	rm -f tools/geniconnarc.exe
+	rm -f tools/ncgrtopng.exe
+	rm -f tools/pngtoncgr.exe
+	rm -f tools/msgenc
+	rm -f tools/btx0topng.exe
+	rm -f tools/pngtobtx0.exe
+	rm -f tools/ndstool
+	rm -f tools/armips
+	rm -f tools/ndstool
+	rm -f tools/nitrogfx
 
 move_narc:
 	@echo "battle hud layout:"
-	$(NARCHIVE) extract base/root/a/0/0/7 -o build/a007/ -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/0/7 -o build/a007/ -nf
 	cp -r data/rawdata/battle_sprite/. build/a007
-	$(NARCHIVE) create narc/a007.narc build/a007/ -nf
+	$(PYTHON) $(NARCHIVE) create narc/a007.narc build/a007/ -nf
 	mv narc/a007.narc base/root/a/0/0/7
 	rm -rf build/a007/
 	
 	@echo "move particles:"
-	$(NARCHIVE) extract base/root/a/0/2/9 -o build/a029/ -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/2/9 -o build/a029/ -nf
 	cp -r data/rawdata/move_spa/. build/a029
-	$(NARCHIVE) create narc/a029.narc build/a029/ -nf
+	$(PYTHON) $(NARCHIVE) create narc/a029.narc build/a029/ -nf
 	mv narc/a029.narc base/root/a/0/2/9
 	rm -rf build/a029/
 
 	@echo "move animations:"
-	$(NARCHIVE) extract base/root/a/0/1/0 -o build/a010/ -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/1/0 -o build/a010/ -nf
 	cp -r build/move/move_anim/. build/a010
-	$(NARCHIVE) create narc/a010.narc build/a010/ -nf
+	$(PYTHON) $(NARCHIVE) create narc/a010.narc build/a010/ -nf
 	mv narc/a010.narc base/root/a/0/1/0
 	#rm -rf build/a010/
 
 	@echo "move subeffects:"
-	$(NARCHIVE) extract base/root/a/0/0/1 -o build/a001/ -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/0/1 -o build/a001/ -nf
 	cp -r build/move/move_seq/. build/a001
-	$(NARCHIVE) create narc/a001.narc build/a001/ -nf
+	$(PYTHON) $(NARCHIVE) create narc/a001.narc build/a001/ -nf
 	mv narc/a001.narc base/root/a/0/0/1
 	rm -rf build/a001/
 
 	@echo "item gfx:"
-	$(NARCHIVE) extract base/root/a/0/1/8 -o build/a018/ -nf
-	$(NARCHIVE) create narc/a018.narc build/a018/ -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/1/8 -o build/a018/ -nf
+	$(PYTHON) $(NARCHIVE) create narc/a018.narc build/a018/ -nf
 	mv narc/a018.narc base/root/a/0/1/8
 
 	@echo "scripts:"
-	$(NARCHIVE) extract base/root/a/0/1/2 -o build/a012/ -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/1/2 -o build/a012/ -nf
 	cp -r data/script/. build/a012
-	$(NARCHIVE) create narc/a012.narc build/a012/ -nf
+	$(PYTHON) $(NARCHIVE) create narc/a012.narc build/a012/ -nf
 	mv narc/a012.narc base/root/a/0/1/2
 	rm -rf build/a012/
 	
@@ -157,42 +217,42 @@ move_narc:
 	
 	@echo "mon data:"
 	cp base/root/a/0/0/2 narc/mondata.narc
-	$(NARCHIVE) extract narc/mondata.narc -o narc/mondata -nf
+	$(PYTHON) $(NARCHIVE) extract narc/mondata.narc -o narc/mondata -nf
 	$(ARMIPS) armips/data/mondata.s
-	$(NARCHIVE) create narc/mondata.narc narc/mondata -nf
+	$(PYTHON) $(NARCHIVE) create narc/mondata.narc narc/mondata -nf
 	rm -rf narc/mondata
 	cp narc/mondata.narc base/root/a/0/0/2
 	
 	@echo "mon learnset data:"
-	$(NARCHIVE) extract base/root/a/0/3/3 -o narc/levelupdata -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/3/3 -o narc/levelupdata -nf
 	$(ARMIPS) armips/data/levelup.s
-	$(NARCHIVE) create base/root/a/0/3/3 narc/levelupdata -nf
+	$(PYTHON) $(NARCHIVE) create base/root/a/0/3/3 narc/levelupdata -nf
 	rm -rf narc/levelupdata
 
 	@echo "text data:"
-	$(NARCHIVE) extract base/root/a/0/2/7 -o build/text/ -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/2/7 -o build/text/ -nf
 	$(MSGENC) -e -c charmap.txt data/text/197.txt build/text/7_197
 	$(MSGENC) -e -c charmap.txt data/text/221.txt build/text/7_221
 	$(MSGENC) -e -c charmap.txt data/text/222.txt build/text/7_222
 	$(MSGENC) -e -c charmap.txt data/text/223.txt build/text/7_223
-	$(NARCHIVE) create base/root/a/0/2/7 build/text/ -nf
+	$(PYTHON) $(NARCHIVE) create base/root/a/0/2/7 build/text/ -nf
 
 	@echo "mon sprite offsets (a180):"
-	$(NARCHIVE) extract base/root/a/1/8/0 -o build/a180/ -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/1/8/0 -o build/a180/ -nf
 	$(ARMIPS) armips/data/spriteoffsets.s
-	$(NARCHIVE) create base/root/a/1/8/0 build/a180/ -nf
+	$(PYTHON) $(NARCHIVE) create base/root/a/1/8/0 build/a180/ -nf
 
 	@echo "mon height offsets (a005):"
-	$(NARCHIVE) extract base/root/a/0/0/5 -o build/a005/ -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/0/5 -o build/a005/ -nf
 	$(ARMIPS) armips/data/heighttable.s
-	$(NARCHIVE) create base/root/a/0/0/5 build/a005/ -nf
+	$(PYTHON) $(NARCHIVE) create base/root/a/0/0/5 build/a005/ -nf
 	
 	@echo "mon sprite data:"
-	$(NARCHIVE) extract base/root/a/0/0/4 -o build/pokemonpic -nf
-	$(NARCHIVE) create base/root/a/0/0/4 build/pokemonpic -nf
-	$(NARCHIVE) create base/root/pbr/pokegra.narc build/pokemonpic -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/0/4 -o build/pokemonpic -nf
+	$(PYTHON) $(NARCHIVE) create base/root/a/0/0/4 build/pokemonpic -nf
+	$(PYTHON) $(NARCHIVE) create base/root/pbr/pokegra.narc build/pokemonpic -nf
 	
 	@echo "item data files:"
-	$(NARCHIVE) extract base/root/a/0/1/7 -o build/itemdata -nf
+	$(PYTHON) $(NARCHIVE) extract base/root/a/0/1/7 -o build/itemdata -nf
 	cp -r data/rawdata/itemdata/. build/itemdata/
-	$(NARCHIVE) create base/root/a/0/1/7 build/itemdata -nf
+	$(PYTHON) $(NARCHIVE) create base/root/a/0/1/7 build/itemdata -nf

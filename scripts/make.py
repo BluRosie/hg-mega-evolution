@@ -6,6 +6,7 @@ import shutil
 import sys
 from datetime import datetime
 import _io
+import ndspy.codeCompression
 
 OFFSET_TO_PUT = 0
 SOURCE_ROM = "rom.nds"
@@ -458,10 +459,8 @@ def decompress():
         bin = rom.read()
         if len(bin) < 0xBC000:
             print("Decompress arm9.")
-            rom.seek(0)
-            bin2 = rom.read(len(bin) - 12)
-            arm9.write(bin2)
-            subprocess.run(["tools/blz.exe"] + ["-d", "build/arm9.bin"],stdout=FNULL)
+            dec = ndspy.codeCompression.decompress(bin)
+            arm9.write(dec)
             shutil.copyfile("build/arm9.bin","base/arm9.bin")
         rom.close()
         arm9.close()
@@ -488,16 +487,23 @@ def decompress():
         rom.seek(0xC1F)
         rom.write(bytes(bunh))
         rom.close()
-    subprocess.run(["tools/blz.exe"] + ["-d", "base/overlay/overlay_0001.bin"],stdout=FNULL)
-    subprocess.run(["tools/blz.exe"] + ["-d", "base/overlay/overlay_0002.bin"],stdout=FNULL)
-    subprocess.run(["tools/blz.exe"] + ["-d", "base/overlay/overlay_0006.bin"],stdout=FNULL) 
-    subprocess.run(["tools/blz.exe"] + ["-d", "base/overlay/overlay_0007.bin"],stdout=FNULL) 
-    subprocess.run(["tools/blz.exe"] + ["-d", "base/overlay/overlay_0010.bin"],stdout=FNULL)
-    subprocess.run(["tools/blz.exe"] + ["-d", "base/overlay/overlay_0012.bin"],stdout=FNULL)
-    subprocess.run(["tools/blz.exe"] + ["-d", "base/overlay/overlay_0015.bin"],stdout=FNULL)
-    subprocess.run(["tools/blz.exe"] + ["-d", "base/overlay/overlay_0018.bin"],stdout=FNULL)
-    subprocess.run(["tools/blz.exe"] + ["-d", "base/overlay/overlay_0063.bin"],stdout=FNULL) 
-    subprocess.run(["tools/blz.exe"] + ["-d", "base/overlay/overlay_0096.bin"],stdout=FNULL) 
+    decompress_file("base/overlay/overlay_0001.bin")
+    decompress_file("base/overlay/overlay_0002.bin")
+    decompress_file("base/overlay/overlay_0006.bin")
+    decompress_file("base/overlay/overlay_0007.bin")
+    decompress_file("base/overlay/overlay_0010.bin")
+    decompress_file("base/overlay/overlay_0012.bin")
+    decompress_file("base/overlay/overlay_0015.bin")
+    decompress_file("base/overlay/overlay_0018.bin")
+    decompress_file("base/overlay/overlay_0063.bin")
+    decompress_file("base/overlay/overlay_0096.bin")
+
+
+def decompress_file(path):
+    with open(path, 'rb') as f:
+        dec = ndspy.codeCompression.decompress(f.read())
+    with open(path, 'wb') as f:
+        f.write(dec)
 
 def changeoffset():
     txt = open('offsets.ini', 'r',encoding="utf-8")
@@ -510,22 +516,13 @@ def changeoffset():
             word = i.replace(" ",'').split('/')[0].split(":")[1]
             break
     
-    txt = open("armips/asm/offset.s", 'r',encoding="utf-8")
-    p = txt.readlines()
-    txt.close()
-
-    f = 0
-    for i in p:
-        if "PokeIconPalNumGet" in i:
-            p[f] = "PokeIconPalNumGet equ 0x" + word + "\n"
-            break
-        f +=1
+    p = "PokeIconPalNumGet equ 0x" + word + "\n"
     txt = open("armips/asm/offset.s", 'w',encoding="utf-8")
     txt.writelines(p)
     txt.close()
 
 if __name__ == '__main__':
-    decompress()
+    #decompress()
     writeall()
     install()
     hook()
