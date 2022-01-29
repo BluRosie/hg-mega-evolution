@@ -23,3 +23,9 @@ armips/asm/offset.s
 *.o
 *.d
 tools/source/nitrogfx/*
+tools/armips
+tools/gengfxnarc.exe
+tools/msgenc
+tools/ndstool
+tools/nitrogfx
+tools/pngtobtx0.exe

@@ -67,7 +67,7 @@
 
 ## Build Instructions (All Platforms) (Continued from Further Setup Instructions)
 
-1. Get your ROM, rename it to **rom.nds** and place it in `Documents/hg-engine`.
+1. Get your ROM, rename it to **rom.nds** and place it in `Documents/hg-mega-evolution``.
 2. In Terminal/WSL, run ```cd hg-mega-evolution```
 3. In Terminal/WSL, run ```make build_tools```. This will compile most of the tools that hg-engine needs to build.
 4. In Terminal/WSL, run ```make build_nitrogfx```. This will compile nitrogfx, one of the tools needed for hg-engine to build.
@@ -80,6 +80,7 @@
    * It is important to note that this alone will not add new pokemon to the wild, trainers, etc...; it simply makes them available in your game. It is up to you to place them.
 
 # Credits
+* TurtleIsaac for making this OS-agnostic + updating this file accordingly
 * [CREDITS.md](CREDITS.md).
 * [**Bubble (Base Mega Code)**][TEMPLATE]
 * [**Skeli (FR template)**][CFRU]
