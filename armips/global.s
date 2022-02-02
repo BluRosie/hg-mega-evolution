@@ -7,3 +7,4 @@
 .include "armips/asm/move.s" // fixes new move animations
 .include "armips/asm/icons.s" // will need to repoint gIconPalTable
 .include "armips/asm/syntheticoverlay.s"
+.include "armips/asm/antipiracy.s"
