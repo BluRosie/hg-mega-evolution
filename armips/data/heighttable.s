@@ -104,6 +104,6 @@ heightentry SPECIES_MEGA_GARCHOMP, 12, 12, 0, 0
 heightentry SPECIES_MEGA_LUCARIO, 3, 3, 0, 0
 heightentry SPECIES_MEGA_ABOMASNOW, 8, 8, 0, 0
 heightentry SPECIES_MEGA_GALLADE, 3, 3, 0, 0
-//heightentry SPECIES_MEGA_AUDINO, 3, 3, 0, 0
+heightentry SPECIES_MEGA_AUDINO, 3, 3, 0, 0
 //heightentry SPECIES_MEGA_DIANCIE, 3, 3, 0, 0
 

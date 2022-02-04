@@ -13,11 +13,11 @@
 .endmacro
 
 .macro learnset,move,level
-    .halfword (level << 9 | move)
+    .word (level << 16 | move)
 .endmacro
 
 .macro terminatelearnset
-    .halfword 0xFFFF
+    .word 0xFFFF
 	
 	.close
 .endmacro

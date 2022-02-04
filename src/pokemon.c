@@ -304,13 +304,13 @@ const struct FormData PokeFormDataTbl[]=
         .need_rev = 1,
         .file = SPECIES_MEGA_GALLADE,
     },
-    /*{
+    {
         .species = SPECIES_AUDINO,
         .form_no = 1,
         .need_rev = 1,
         .file = SPECIES_MEGA_AUDINO,
     },
-    {
+    /*{
         .species = SPECIES_DIANCIE,
         .form_no = 1,
         .need_rev = 1,
