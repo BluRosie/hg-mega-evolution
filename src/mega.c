@@ -285,3 +285,85 @@ BOOL CheckCanDrawMegaButton(struct BI_PARAM *bip)
 
     return CheckMegaData(mon,item);
 }
+
+// i don't care anymore
+#define SERVER_STATUS_FLAG_NO_ANIMATIONS (0x00004000)
+#define SUB_SEQ_WAIT_FOR_UNPLAYED_ANIMATION (291)
+#define MOVE_TRANSFORM (144)
+
+void __attribute__((long_call)) IncrementBattleScriptPtr(struct BattleStruct *sp, u32 num);
+u32 __attribute__((long_call)) read_battle_script_param(struct BattleStruct *sp);
+u32 BattleWorkConfigWazaEffectOnOffCheck(void *bw);
+void __attribute__((long_call)) SCIO_WazaEffectSet(void *bw, struct BattleStruct *sp, u32 num);
+void __attribute__((long_call)) SCIO_WazaEffect2Set(void *bw, struct BattleStruct *sp, u32 num, int cli_a, int cli_d);
+void __attribute__((long_call)) SkillSequenceGosub(struct BattleStruct *sp, u32 num, u32 script);
+int __attribute__((long_call)) SideClientNoGet(void *bw, struct BattleStruct *sp, int client);
+
+BOOL btl_scr_cmd_17_playanimation(void *bw, struct BattleStruct *sp)
+{
+    int side;
+    u16 move;
+
+    IncrementBattleScriptPtr(sp, 1);
+    side = read_battle_script_param(sp);
+
+    if (side == 0xFF)
+    {
+        move = sp->waza_work;
+    }
+    else
+    {
+        move = sp->movetype_now;
+    }
+
+    if ((((sp->server_status_flag & SERVER_STATUS_FLAG_NO_ANIMATIONS) == 0)
+      && (BattleWorkConfigWazaEffectOnOffCheck(bw) == TRUE))
+     || (move == MOVE_TRANSFORM || move == 470)) // mega evolution is animation 470--force it to play regardless of whether or not animations are on
+    {
+        sp->server_status_flag |= SERVER_STATUS_FLAG_NO_ANIMATIONS;
+        SCIO_WazaEffectSet(bw, sp, move);
+    }
+    if (BattleWorkConfigWazaEffectOnOffCheck(bw) == FALSE)
+    {
+        SkillSequenceGosub(sp, 1, SUB_SEQ_WAIT_FOR_UNPLAYED_ANIMATION);
+    }
+
+    return FALSE;
+}
+
+
+BOOL btl_scr_cmd_18_playanimation2(void *bw, struct BattleStruct *sp)
+{
+    int side, attack, defence, cli_a, cli_d;
+    u16 move;
+
+    IncrementBattleScriptPtr(sp, 1);
+    side = read_battle_script_param(sp);
+    attack = read_battle_script_param(sp);
+    defence = read_battle_script_param(sp);
+
+    if (side == 0xFF)
+    {
+        move = sp->waza_work;
+    }
+    else{
+        move = sp->movetype_now;
+    }
+
+    cli_a = SideClientNoGet(bw, sp, attack);
+    cli_d = SideClientNoGet(bw, sp, defence);
+
+    if ((((sp->server_status_flag & SERVER_STATUS_FLAG_NO_ANIMATIONS)==0)
+      && (BattleWorkConfigWazaEffectOnOffCheck(bw) == TRUE))
+     || (move == MOVE_TRANSFORM || move == 470))
+    {
+        sp->server_status_flag |= SERVER_STATUS_FLAG_NO_ANIMATIONS;
+        SCIO_WazaEffect2Set(bw, sp, move, cli_a, cli_d);
+    }
+    if (BattleWorkConfigWazaEffectOnOffCheck(bw) == FALSE)
+    {
+        SkillSequenceGosub(sp, 1, SUB_SEQ_WAIT_FOR_UNPLAYED_ANIMATION);
+    }
+
+    return FALSE;
+}

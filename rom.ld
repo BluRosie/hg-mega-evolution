@@ -154,3 +154,12 @@ Sub_ScrnOffsetRewrite = 0x31624 + 0x022378C1;
 EffectTCB_Add = 0x315C4 + 0x022378C1;
 
 Snd_SePlay = 0x0200604C | 1;
+
+
+IncrementBattleScriptPtr = 0x02245508 | 1;
+read_battle_script_param = 0x022454E8 | 1;
+BattleWorkConfigWazaEffectOnOffCheck = 0x0223B6D4 | 1;
+SCIO_WazaEffectSet = 0x0226340C | 1;
+SCIO_WazaEffect2Set = 0x0226343C | 1;
+SkillSequenceGosub = 0x02245520 | 1;
+SideClientNoGet = 0x0224768C | 1;
