@@ -7,6 +7,10 @@
 0012 load_mega_button 0802FBFC 1
 0012 Sub_PokeIconResourceLoad 080308D4 1
 0012 Sub_PokeIconResourceFree 08030954 1
+#0223E004
+0012 btl_scr_cmd_17_playanimation 08006744 3
+#0223E080
+0012 btl_scr_cmd_18_playanimation2 080067C0 3
 
 arm9 PokePicLoad 080701EC 1
 arm9 PokeOtherFormMonsNoGet 08072634 2
